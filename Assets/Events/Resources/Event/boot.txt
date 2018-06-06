@@ -19,7 +19,7 @@
 	+move "Home"
 	+pshow 96, -64
 	
-	+spset "catsguy", "entity.guy.stay", 144, -64
+	+spset "catsguy", "entity.guy.walk", 144, -64
 	// 左を向く
 	catsguy+spwalk -1, 0.01
 	+bgmstopasync 0.2
@@ -31,14 +31,15 @@
 	+wait 2
 	:"かえしてほしいってか？"
 	:"ふん。じゃあ　こうしようぜ。"
-	catsguy+spwalk 12, 1.6
+	catsguy+spwalk 12, 1
 	catsguy+spwalk -1, 0.08
 	:"おれを　おっかけて　ギャフンと　いわせたら"
 	:"おまえに　こいつを　かえしてやるよ。"
 	+wait 0.6
 	:"ノロマな　おまえじゃ　できるとは　おもえないけどな！"
-	catsguy+spwalk 32, 3
-	catsguy+spclr 
+	catsguy+spwalk 64, 1.4
+	catsguy+spclr
+	+wait 1.2
 	+fade out, 0.5
 	+phide
 
@@ -46,9 +47,6 @@
 
 	+pfreeze off
 +end
-
-#spawn_catsguy
-+return
 
 #talk
 	+pfreeze on
