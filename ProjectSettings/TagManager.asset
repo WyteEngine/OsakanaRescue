@@ -6,6 +6,7 @@ TagManager:
   tags:
   - UIWindow
   - HpGauge
+  - HpNumeric
   layers:
   - Default
   - TransparentFX
