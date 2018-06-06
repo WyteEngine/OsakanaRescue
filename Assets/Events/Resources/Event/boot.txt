@@ -1,0 +1,70 @@
+﻿// Main
+
+#boot
+	+freeze on
+	+wait 2
+	+move "Field1"
+	+bgmplay "field"
+	+pshow 16, -72
+	+fadeasync in, 0.2
+	+freeze off
++end
+
+#回想
+	+pfreeze on
+
+	:"そう。あのとき　ぼくは..."
+	+fade out, 0.5
+	+phide
+	+move "Home"
+	+pshow 96, -64
+	
+	+spset "catsguy", "entity.guy.stay", 144, -64
+	// 左を向く
+	catsguy+spwalk -1, 0.01
+	+bgmstopasync 0.2
+	+fade in, 0.2
+	+wait 1.2
+	:"いいもん　もってんじゃねえか．"
+	+wait 0.5
+	:"こいつは　おれに　もらわれて　よろこんでるぜ。"
+	+wait 2
+	:"かえしてほしいってか？"
+	:"ふん。じゃあ　こうしようぜ。"
+	catsguy+spwalk 12, 1.6
+	catsguy+spwalk -1, 0.08
+	:"おれを　おっかけて　ギャフンと　いわせたら"
+	:"おまえに　こいつを　かえしてやるよ。"
+	+wait 0.6
+	:"ノロマな　おまえじゃ　できるとは　おもえないけどな！"
+	catsguy+spwalk 32, 3
+	catsguy+spclr 
+	+fade out, 0.5
+	+phide
+
+	+goto #wip
+
+	+pfreeze off
++end
+
+#spawn_catsguy
++return
+
+#talk
+	+pfreeze on
+	:"いいもん　もってんじゃねえか．$nod;こいつは　おれに　もらわれて　よろこんでるぜ。"
+	:"......？$nod;かえせって？"
+	:"じゃあ　こうしようぜ。"
+	:"おれを　おっかけて　ギャフンと　いわせたら　$nod;おまえに　こいつを　かえしてやる。"
+	:"ノロマな　おまえじゃ　つかまりっこ　ないよ〜だ。"
+	+pfreeze off
++end
+
+#wip
+	+bgmplay "field2"
+	:"とまあ　今回は　ここまでってことで。"
+	:"ここから　先の展開は　これから作るよ〜。"
+	:"というわけで　一番最初に　飛ぶねー。"
+	+bgmstop
+	+goto #boot
++end

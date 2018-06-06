@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: d563f2aca27515147ab858ce13ea6c2f
-timeCreated: 1509279197
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: tiledemo1_0
@@ -167,7 +165,7 @@ TextureImporter:
     21300320: tiledemo1_160
     21300322: tiledemo1_161
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -203,22 +201,25 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 29
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -227,7 +228,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -236,7 +239,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: iPhone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -245,7 +250,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -254,6 +261,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -279,6 +287,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0fdaf51da172f40ce9adcb7490f0cab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_1
       rect:
@@ -301,6 +315,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 21451f745af694d96b6f1745670c3ac1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_2
       rect:
@@ -323,6 +343,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a9992f33eaeae4f20be48083cc47d1e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_3
       rect:
@@ -345,6 +371,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 37029457cb7214da48ac90432f955f59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_4
       rect:
@@ -367,6 +399,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e3d4132a721fd4b8ca9b146f6a11e594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_5
       rect:
@@ -389,6 +427,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e5163786d4aa94a40baa9a19a2ee3a86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_6
       rect:
@@ -411,6 +455,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e6f9ac5d942a4a37bf8dd340b115052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_7
       rect:
@@ -433,6 +483,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: caed2f710e21c4255ba803d2af1d6db7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_8
       rect:
@@ -455,6 +511,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f7a9b1a105d274418bdf6b21dc57d0ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_9
       rect:
@@ -477,6 +539,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4ca42facb6e214c4787546c01a37717c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_10
       rect:
@@ -500,6 +568,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7359beedf9ac74ecaa598a86fa76e8ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_11
       rect:
@@ -522,6 +596,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: bec934d8b5dd04f34907cee718d8f143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_12
       rect:
@@ -544,6 +624,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2ae82b865c2cf4c82a74de38e0b8e5bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_13
       rect:
@@ -566,6 +652,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b7d77400576154c339f7a2adcfbb985f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_14
       rect:
@@ -588,6 +680,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ba43ea033c13b4578993c23f7a755f51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_15
       rect:
@@ -610,6 +708,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a558a9068f3cc4e179259d4ce43377f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_16
       rect:
@@ -632,6 +736,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dbef92b1f0cd74626aa284ced3763d81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_17
       rect:
@@ -654,6 +764,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 403a6021573ea4c9c93cf7f189f9795f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_18
       rect:
@@ -676,6 +792,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 29afc2167d92a4d4ca389d0eed8a9e5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_19
       rect:
@@ -698,6 +820,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5dcac497b6083477baf9c094a28ff9a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_20
       rect:
@@ -720,6 +848,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d910a9bf037c94e248937a4fabba25cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_21
       rect:
@@ -742,6 +876,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c4c0794b741df4d17a4134f11899e23b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_22
       rect:
@@ -764,6 +904,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 030ddab97adf647e2a47430c2d29bdeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_23
       rect:
@@ -786,6 +932,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d0e8e36e57c14c9ab6bd3cf9d1bbc9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_24
       rect:
@@ -808,6 +960,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2159b4428a8bc4d57851323529ddca82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_25
       rect:
@@ -830,6 +988,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 02211247d627e416e8309c3892b86994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_26
       rect:
@@ -852,6 +1016,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ef418cd85a6341cc87f9f2785e82b5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_27
       rect:
@@ -874,6 +1044,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c88a2acfe44974c24a528669d79a0695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_28
       rect:
@@ -896,6 +1072,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 20b0dd45982f744c7b1ba328ad11a3d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_29
       rect:
@@ -918,6 +1100,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 70af52dc9d3524c6c8bb914862b14a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_30
       rect:
@@ -940,6 +1128,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 81ce73ad8f5994480aed9aba578a857d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_31
       rect:
@@ -962,6 +1156,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a2f4aee38f5864252a5e9cbf3061dab4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_32
       rect:
@@ -984,6 +1184,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c71000632ccf640438fa01aaad1bbb58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_33
       rect:
@@ -1006,6 +1212,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b038cd7e9122545f9b3d2f716a996453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_34
       rect:
@@ -1028,6 +1240,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0bcc5565c613d44e39e6da7bc7782865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_35
       rect:
@@ -1050,6 +1268,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ee827da7346434b939821c6186d07ac6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_36
       rect:
@@ -1072,6 +1296,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ccc3f496f5c7142eb9b1790ae0195f9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_37
       rect:
@@ -1094,6 +1324,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d19759471e5141afb80ae7fa405c60f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_38
       rect:
@@ -1116,6 +1352,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8ff9d64a92c884f629b1115ae85eb74a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_39
       rect:
@@ -1138,6 +1380,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a00738dad083a413080dea3bb8553ba8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_40
       rect:
@@ -1162,6 +1410,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: -0.122909546}
       tessellationDetail: 0
+      bones: []
+      spriteID: bad152e42581b4ea3a07a1f0c8b89cab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_41
       rect:
@@ -1184,6 +1438,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 24eb3235ce14b43bfa2875f879e4e87f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_42
       rect:
@@ -1208,6 +1468,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 97117ff4c186c47968a94d231da9dc71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_43
       rect:
@@ -1230,6 +1496,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2cb48d4382f0848e5a2059548dc1e729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_44
       rect:
@@ -1252,6 +1524,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e5615c7b101a41b7963a3236b6cd604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_45
       rect:
@@ -1274,6 +1552,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ad927f17e24604348976feb7497c59e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_46
       rect:
@@ -1296,6 +1580,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 180831448056840539f5137ffcf49307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_47
       rect:
@@ -1318,6 +1608,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 75828d497d16e44c9b40f1c7da1ff243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_48
       rect:
@@ -1340,6 +1636,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f3df666443de4a8388fce3720af032a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_49
       rect:
@@ -1362,6 +1664,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e0700aabf01f844c7b4527b5cd9725ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_50
       rect:
@@ -1384,6 +1692,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 01415cce34e9f47d5a40204fad238d81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_51
       rect:
@@ -1406,6 +1720,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 04e24d6ef1b4f4141b1decf86ce05513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_52
       rect:
@@ -1430,6 +1750,12 @@ TextureImporter:
         - {x: 8, y: -7}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 72de76407fa084ca19705dd0eb572c6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_53
       rect:
@@ -1456,6 +1782,12 @@ TextureImporter:
         - {x: 8, y: 4}
         - {x: -6, y: 4}
       tessellationDetail: 0
+      bones: []
+      spriteID: 648360cf309ce4d30b994ad1bcaf51f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_54
       rect:
@@ -1482,6 +1814,12 @@ TextureImporter:
         - {x: 8, y: 2}
         - {x: 6, y: 4}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8cee0625ef6d143649a0fca6cc1e8643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_55
       rect:
@@ -1504,6 +1842,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3a6992b651fb74321894880bb973c7fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_56
       rect:
@@ -1526,6 +1870,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9c22372177ebf4e50974cca6ef6f39fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_57
       rect:
@@ -1548,6 +1898,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ac0f5588f19754eeea645bda2942485b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_58
       rect:
@@ -1570,6 +1926,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8ad4f7d78c636429c817524dbe22c5de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_59
       rect:
@@ -1592,6 +1954,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4ab436fa1e72040f88417ae58b91da7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_60
       rect:
@@ -1614,6 +1982,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 788665285a81b4f8a9f056418488552a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_61
       rect:
@@ -1636,6 +2010,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cd9f9d828e5b34457ba54de8eb16b594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_62
       rect:
@@ -1658,6 +2038,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ab82143f8261b4c2097d0b0ee61acf2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_63
       rect:
@@ -1680,6 +2066,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e71b0e8a0fd3140b793524cd694ab178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_64
       rect:
@@ -1702,6 +2094,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d09e1fee34a5d4451bbe9634664642cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_65
       rect:
@@ -1724,6 +2122,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6534b7f4f0c1c48e896d8ec3a158a6e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_66
       rect:
@@ -1746,6 +2150,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e2b2024b9c594f13ad7a83acecbebeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_67
       rect:
@@ -1768,6 +2178,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ebcb3ff05662445f8b1e439c50196e8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_68
       rect:
@@ -1790,6 +2206,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 27f05d0599be344f3864a8ed910e3c22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_69
       rect:
@@ -1812,6 +2234,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 56bd4ebe12cda4f969bb7b6a144c53ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_70
       rect:
@@ -1834,6 +2262,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 91ea912f9e62c445599de93b140c4864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_71
       rect:
@@ -1856,6 +2290,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7930e0768f87f40deaa7da0774b85726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_72
       rect:
@@ -1878,6 +2318,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a3ed6ae4385f04f0eb1658917f665c3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_73
       rect:
@@ -1900,6 +2346,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 82a3003e949624c9fbc6bbb91f76e1a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_74
       rect:
@@ -1922,6 +2374,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ec0e638471d804d4bb95333177c578d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_75
       rect:
@@ -1944,6 +2402,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2bebc1b27b05942ad98fbaa80e9cf3ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_76
       rect:
@@ -1966,6 +2430,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 829849fe07365432b845bfb413edbc7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_77
       rect:
@@ -1988,6 +2458,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b081ba5573d84a21baa044148d5acdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_78
       rect:
@@ -2010,6 +2486,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b2d6f6cb0ea8429eaf91e2136124e5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_79
       rect:
@@ -2032,6 +2514,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f2994bd38e33f40758bd2bbd11c45363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_80
       rect:
@@ -2054,6 +2542,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a0532f1dcc7d449198d73da2cb9867e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_81
       rect:
@@ -2076,6 +2570,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f7d47c817b2fe44a9bc44d841a0e2992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_82
       rect:
@@ -2102,6 +2602,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: -2}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7a84f77a8d9ef4f89801d3413dc407ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_83
       rect:
@@ -2126,6 +2632,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 2}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7f46accef97b549c4aabf6764618c6cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_84
       rect:
@@ -2152,6 +2664,12 @@ TextureImporter:
         - {x: 8, y: 2}
         - {x: -8, y: 2}
       tessellationDetail: 1
+      bones: []
+      spriteID: 6c0f76782dc0d4ffd8dd5f65cadcd215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_85
       rect:
@@ -2176,6 +2694,12 @@ TextureImporter:
         - {x: 8, y: -2}
         - {x: -8, y: -2}
       tessellationDetail: 0
+      bones: []
+      spriteID: 13fe3eb04599f4f019dc34fa6d8925db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_86
       rect:
@@ -2204,6 +2728,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: -2}
       tessellationDetail: 1
+      bones: []
+      spriteID: 573bcc12d80d54d5ca6c6312216a594b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_87
       rect:
@@ -2233,6 +2763,12 @@ TextureImporter:
         - {x: 2, y: 1}
         - {x: 1, y: -2}
       tessellationDetail: 0
+      bones: []
+      spriteID: cf593282ab6664b4b9ba6a0c8db98a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_88
       rect:
@@ -2255,6 +2791,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f09974c9716e45a58b9d9492fb472b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_89
       rect:
@@ -2277,6 +2819,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 43d93c40af8544c16898d67118fa5ce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_90
       rect:
@@ -2299,6 +2847,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f91654342216145fc9b04c2898cd052a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_91
       rect:
@@ -2321,6 +2875,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 05ecc77f010eb4d578bbc3e0b771b3c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_92
       rect:
@@ -2343,6 +2903,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c83441bdebb134ad78f80a5988639af4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_93
       rect:
@@ -2365,6 +2931,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9b3344a21c8214474b8cdf067115677d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_94
       rect:
@@ -2387,6 +2959,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b022f9ab75265461ebc86d6f6b4fb22c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_95
       rect:
@@ -2409,6 +2987,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0ad891da3a667475d934c2fe4d89169f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_96
       rect:
@@ -2431,6 +3015,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 993fc66541c7a46dd845fc22f90155d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_97
       rect:
@@ -2453,6 +3043,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d2331f3d3a31d49a7b55651b09e0dafb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_98
       rect:
@@ -2475,6 +3071,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 267a959802b744b50a6684f640f908cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_99
       rect:
@@ -2497,6 +3099,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dd2ffde6d33be4f4181c32f1f011b87d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_100
       rect:
@@ -2519,6 +3127,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 014adfa351e26471196f987f04f6a84a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_101
       rect:
@@ -2541,6 +3155,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c82d331009c174ba7a86f90e85cd5498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_102
       rect:
@@ -2563,6 +3183,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 15b0e643148b24234a77372b98ef610a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_103
       rect:
@@ -2585,6 +3211,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ba0fd4efde6ed454a9b10f34464903ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_104
       rect:
@@ -2607,6 +3239,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 57fc692259e73439fb2bf84cdee57ae8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_105
       rect:
@@ -2629,6 +3267,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d7e7ecee864149c5aedefdf13663d24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_106
       rect:
@@ -2651,6 +3295,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: aaed678b6495f47c0bc2dab6c8104397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_107
       rect:
@@ -2673,6 +3323,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 40d2129d40cc64009b8bd9fd7c073519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_108
       rect:
@@ -2695,6 +3351,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 07042760c9ab7400e8f2a430449357a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_109
       rect:
@@ -2717,6 +3379,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b7f7d94d6a46403a84fb7811f688f49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_110
       rect:
@@ -2739,6 +3407,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cfc14e1aaf26d496f86636936fc9419d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_111
       rect:
@@ -2761,6 +3435,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 92d6d24036fd447d79c109173d33fe2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_112
       rect:
@@ -2783,6 +3463,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2690c69b63e594e428d7d835277c803b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_113
       rect:
@@ -2805,6 +3491,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ca62d284ee67249c2be7f2f1a7703378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_114
       rect:
@@ -2827,6 +3519,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: eaaa390ecf2c24b0093ad10e00aa20a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_115
       rect:
@@ -2849,6 +3547,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1e15ccbefdd0449e991c3573e13379e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_116
       rect:
@@ -2871,6 +3575,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c313eb473c5564b2ea9bc2e49cb99f60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_117
       rect:
@@ -2893,6 +3603,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: af4f496b22a0249c489416f05ec22196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_118
       rect:
@@ -2915,6 +3631,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c9ea1449d4e549d7b67f2aedb081ea8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_119
       rect:
@@ -2937,6 +3659,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e7ffa17017ec413093b48c66105db4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_120
       rect:
@@ -2959,6 +3687,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e0371fb92516147f6b8b1d18bee508b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_121
       rect:
@@ -2981,6 +3715,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e97af3d37406e4303ae3f4ae27c652b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_122
       rect:
@@ -3003,6 +3743,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e79ac85d5a544b09b681a31fc309e96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_123
       rect:
@@ -3025,6 +3771,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e1a1c74facb214059914c00842c8fd26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_124
       rect:
@@ -3047,6 +3799,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 01518ea937d2b4fcbbc41633bc445e6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_125
       rect:
@@ -3069,6 +3827,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: aaeb49588069f4acaa7afeea130df5bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_126
       rect:
@@ -3091,6 +3855,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9457112c3058f41f7bddb9b08f7d9866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_127
       rect:
@@ -3113,6 +3883,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f867363b9c6fc4e2399b6a58467fbd40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_128
       rect:
@@ -3135,6 +3911,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c8d688e9870924b61bb3c13cd0f33a96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_129
       rect:
@@ -3157,6 +3939,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e7bdf27569c86449dbabdaee24c761a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_130
       rect:
@@ -3179,6 +3967,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cae219e332088432a812ae3f39feb8c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_131
       rect:
@@ -3201,6 +3995,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 79862ee0c2d0c4ae7800dd79de8e3517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_132
       rect:
@@ -3223,6 +4023,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c25167d5b04c04c4f9c342ab73de63ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_133
       rect:
@@ -3245,6 +4051,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d7444ee5e6034338ad301dd14e72777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_134
       rect:
@@ -3267,6 +4079,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 75714a15b93ce464ea78fc2bff94019d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_135
       rect:
@@ -3289,6 +4107,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b57516332cb244b91966f77046e24de8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_136
       rect:
@@ -3311,6 +4135,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ff8de591bc804863a8dcc6a91e9306a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_137
       rect:
@@ -3333,6 +4163,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9ea968081a5644ef18236a76748ccd0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_138
       rect:
@@ -3355,6 +4191,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 24c9c84c0fcd342b794a02cee3ed84f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_139
       rect:
@@ -3377,6 +4219,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2896bbba6a68a4289a1b788af7e85b8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_140
       rect:
@@ -3399,6 +4247,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d52aa469fde0f4862ab4003d06608fba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_141
       rect:
@@ -3421,6 +4275,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc48b20de6743108d71dd96475f6a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_142
       rect:
@@ -3443,6 +4303,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: bf16b2401947d447ebebf3810d9762bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_143
       rect:
@@ -3465,6 +4331,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 79b9e3a0315c04ca9826f21d127c77ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_144
       rect:
@@ -3487,6 +4359,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b68f5fc0e39f8400a93ad44e3e1e1c08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_145
       rect:
@@ -3509,6 +4387,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8e964a0a4be0046279f6653aeaab15ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_146
       rect:
@@ -3531,6 +4415,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e3a977521a1244cd799b31bc8e4656e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_147
       rect:
@@ -3553,6 +4443,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 986f46f57bde742f186957a882c31efb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_148
       rect:
@@ -3575,6 +4471,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c20f1d5e417c408ca5ee9c35dc6728b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_149
       rect:
@@ -3597,6 +4499,12 @@ TextureImporter:
         - {x: 8, y: 1}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5b7f6cd7b67fb4db48d306c7b6352df1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_150
       rect:
@@ -3619,6 +4527,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b28282a8a3b2d4e1589c0a69bed73987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_151
       rect:
@@ -3641,6 +4555,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 40c682d3dc4a64d4380e3f24b6abd106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_152
       rect:
@@ -3663,6 +4583,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d79756a3b9caf4a24bcdb9abf60bc95e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_153
       rect:
@@ -3685,6 +4611,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f7b5b990702c74832839737ece4dac25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_154
       rect:
@@ -3707,6 +4639,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 32712f949aa874f34b9ea2e7e166f22e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_155
       rect:
@@ -3729,6 +4667,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 01eac0d28b3ba4a58a2d3bcb1aa6c0e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_156
       rect:
@@ -3751,6 +4695,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 363ab094074dd41a783c95c63fdd454d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_157
       rect:
@@ -3773,6 +4723,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 90a308bae022d477e8b0e86d6f3d5d92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_158
       rect:
@@ -3795,6 +4751,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 845c21e9ea9554855931d7ffcfb0d684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_159
       rect:
@@ -3817,6 +4779,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 305a25489a0d1441083573458b49d7b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_160
       rect:
@@ -3839,6 +4807,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5eba424fda57a4ad4b5e627724bea1a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: tiledemo1_161
       rect:
@@ -3862,8 +4836,20 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e3eee51debd7b448cace588b910b64e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
