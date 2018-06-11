@@ -1,0 +1,4 @@
+[submodule "wyte"]
+	path = Assets/Wyte
+	url = https://github.com/wyteengine/wyteengine.git
+
