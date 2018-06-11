@@ -1,25 +1,22 @@
 ﻿// Main
 
 #boot
-	+freeze on
+	+pfreeze on
 	+wait 2
-	+move "Field1"
-	+bgmplay "field"
-	+pshow 16, -72
-	+fadeasync in, 0.2
-	+freeze off
+	prologue_has_done+onflag field2
+	+goto field1
 +end
 
-#回想
+#prologue
 	+pfreeze on
 
 	:"そう。あのとき　ぼくは..."
 	+fade out, 0.5
 	+phide
 	+move "Home"
-	+pshow 96, -64
+	+pshow 72, -64
 	
-	+spset "catsguy", "entity.guy.walk", 144, -64
+	+spset "catsguy", "entity.guy.stay", 144, -64
 	// 左を向く
 	catsguy+spwalk -1, 0.01
 	+bgmstopasync 0.2
@@ -31,38 +28,22 @@
 	+wait 2
 	:"かえしてほしいってか？"
 	:"ふん。じゃあ　こうしようぜ。"
-	catsguy+spwalk 12, 1
+	catsguy+spchr "entity.guy.walk"
+	catsguy+spwalk -32, 1
 	catsguy+spwalk -1, 0.08
+	catsguy+spchr "entity.guy.stay"
+	+wait 0.3
 	:"おれを　おっかけて　ギャフンと　いわせたら"
+	+wait 0.05
 	:"おまえに　こいつを　かえしてやるよ。"
 	+wait 0.6
-	:"ノロマな　おまえじゃ　できるとは　おもえないけどな！"
-	catsguy+spwalk 64, 1.4
+	:"ノロマな　おまえには　むりだろうけどな。"
+	catsguy+spchr "entity.guy.walk"
+	catsguy+spwalk 128, 1.4
 	catsguy+spclr
 	+wait 1.2
 	+fade out, 0.5
 	+phide
-
-	+goto #wip
-
-	+pfreeze off
-+end
-
-#talk
-	+pfreeze on
-	:"いいもん　もってんじゃねえか．$nod;こいつは　おれに　もらわれて　よろこんでるぜ。"
-	:"......？$nod;かえせって？"
-	:"じゃあ　こうしようぜ。"
-	:"おれを　おっかけて　ギャフンと　いわせたら　$nod;おまえに　こいつを　かえしてやる。"
-	:"ノロマな　おまえじゃ　つかまりっこ　ないよ〜だ。"
-	+pfreeze off
-+end
-
-#wip
-	+bgmplay "field2"
-	:"とまあ　今回は　ここまでってことで。"
-	:"ここから　先の展開は　これから作るよ〜。"
-	:"というわけで　一番最初に　飛ぶねー。"
-	+bgmstop
-	+goto #boot
+	+flag on, "prologue_has_done"
+	+goto #field2
 +end

@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 114586839258663128}
   - component: {fileID: 82142883718534512}
   - component: {fileID: 114244664975831212}
+  - component: {fileID: 114371519277335488}
   m_Layer: 0
   m_Name: Wyte
   m_TagString: Untagged
@@ -161,6 +162,9 @@ MonoBehaviour:
   - id: field
     clip: {fileID: 8300000, guid: 3213953d5073d4ad3a68bc26b946fc5e, type: 3}
     loop: 1
+  - id: field2
+    clip: {fileID: 8300000, guid: 6a5aaf592f6054fc79354ab024574f7d, type: 3}
+    loop: 1
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: boot
+  bootstrapLabel: api_test
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
@@ -194,6 +198,26 @@ MonoBehaviour:
   fonts:
   - {fileID: 12800000, guid: 1f5d385315167b24098b7d691b843725, type: 3}
   - {fileID: 12800000, guid: 2b2757869448a49feb456f18e190e105, type: 3}
+--- !u!114 &114371519277335488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329395484811586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33ad39ed4e847dab75ed371e956f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - Id: barricade_left
+    Tile: {fileID: 11400000, guid: 71d548fe558e248a39a77a8838632ced, type: 2}
+  - Id: block
+    Tile: {fileID: 11400000, guid: 9e0b4a1b2836c4ab9a099614dfd5223f, type: 2}
+  - Id: mystery_box
+    Tile: {fileID: 11400000, guid: 949f9bafaf2db4d079c541708b8168dc, type: 2}
+  - Id: mystery_box_empty
+    Tile: {fileID: 11400000, guid: 00ff2d09785e549acad8a847a5f4af47, type: 2}
 --- !u!114 &114448794024417428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -227,6 +251,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8dca816fffa7c4f96859fe2a9f1c4718, type: 3}
   - id: entity.npc.saying
     clip: {fileID: 8300000, guid: 3f4e4b80147a18341bf01b4d0126cad8, type: 3}
+  - id: entity.player.damage
+    clip: {fileID: 8300000, guid: ac0febc4d29624061bc5dd61c45f07e0, type: 3}
+  - id: block.disappearing
+    clip: {fileID: 8300000, guid: ad70808f7459f46b9809b093bdf08e4b, type: 3}
 --- !u!114 &114544808759732222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,6 +269,7 @@ MonoBehaviour:
   Maps:
   - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
   - {fileID: 114795068844646096, guid: a355fe03b714447d1a4cc0bfc415e161, type: 2}
+  - {fileID: 114228748918297004, guid: 90b57bf66c7b64c23adf65f1d921395d, type: 2}
 --- !u!114 &114557818162750610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,7 +297,7 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: c82805ff30fd849e6a746df28f280d74, type: 2}
   - Key: entity.player.jump
     Value: {fileID: 11400000, guid: d5b20849407534cb9a6a8e1993d1aec7, type: 2}
-  - Key: entity.player.death
+  - Key: entity.player.drown
     Value: {fileID: 11400000, guid: a8721635119374936aa4b5806aecb01f, type: 2}
   - Key: entity.guy.walk
     Value: {fileID: 11400000, guid: 3921d05a81d764dd9a7043ac3d12db51, type: 2}
@@ -278,6 +307,20 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: fbb6d4f01391240d183cd1485e80c1af, type: 2}
   - Key: entity.goldfish
     Value: {fileID: 11400000, guid: ac6f253bbdf584f94b698f4b9484bbb4, type: 2}
+  - Key: entity.player.stay
+    Value: {fileID: 11400000, guid: fea2c4a257b5049b09d5c3b36f0563b4, type: 2}
+  - Key: entity.guy.stay
+    Value: {fileID: 11400000, guid: 1ef9de8c4960941adbea249753ade2ca, type: 2}
+  - Key: entity.enemy.snake.walk
+    Value: {fileID: 11400000, guid: e561e362757a8421283e1640d4f56b3c, type: 2}
+  - Key: entity.enemy.snake.stay
+    Value: {fileID: 11400000, guid: 054e99d72aadc4028802962f07c24492, type: 2}
+  - Key: entity.enemy.snake.stepped
+    Value: {fileID: 11400000, guid: 327f083a320ba482dacf00765239c15c, type: 2}
+  - Key: entity.logic.switch.on
+    Value: {fileID: 11400000, guid: 76d9e64f463c941ce879703001cccbec, type: 2}
+  - Key: entity.logic.switch.off
+    Value: {fileID: 11400000, guid: c01ffc16c2980440294bf5e0db99c739, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1

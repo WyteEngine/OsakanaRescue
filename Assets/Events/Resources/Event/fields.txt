@@ -1,0 +1,152 @@
+#field1
+	+fade out, 0.2
+	+phide
+	+move "Field1"
+	+bgmplay "field"
+	+pshow 16, -72
+	+fadeasync in, 0.2
+	+pfreeze off
++end
+
+#field2
+	+fade out, 0.2
+	+phide
+	+move "Field1"
+	+bgmplay "field2"
+	+pshow 1632, -112
+	+fadeasync in, 0.2
+	+pfreeze off
++end
+
+#place
+	placed+onflag #place_skip
+	+flag on, placed
+	+tileset block, 62, -31
+	+gosub wait
+	+tileset block, 63, -31
+	+gosub wait
+	+tileset block, 64, -31
+	+gosub wait
+	+tileset block, 65, -31
+	+gosub wait
+	+tileset block, 66, -31
+	+gosub wait
+	+tileset block, 67, -31
+	+gosub wait
+	+tileset block, 68, -31
+	+gosub wait
+
+	#place_skip
++end
+
+#wait
+	+sfx entity.player.damage
+	+wait 0.4
++return
+
+#switchA
+	+ontile mystery_box, 19, -21, goto, #switchAOff
+	+tileset mystery_box, 19, -21
+	+goto update_logic
++end
+
+#switchAOff
+	+tileset mystery_box_empty, 19, -21
+	+goto update_logic
++end
+
+#switchB
+	+ontile mystery_box, 22, -21, goto, #switchBOff
+	+tileset mystery_box, 22, -21
+	+goto update_logic
++end
+
+#switchBOff
+	+tileset mystery_box_empty, 22, -21
+	+goto update_logic
++end
+
+#switchC
+	+ontile mystery_box, 25, -21, goto, #switchCOff
+	+tileset mystery_box, 25, -21
+	+goto update_logic
++end
+
+#switchCOff
+	+tileset mystery_box_empty, 25, -21
+	+goto update_logic
++end
+
+#switchD
+	+ontile mystery_box, 28, -21, goto, #switchDOff
+	+tileset mystery_box, 28, -21
+	+goto update_logic
++end
+
+#switchDOff
+	+tileset mystery_box_empty, 28, -21
+	+goto update_logic
++end
+
+#update_logic
+	+gosub update_logic_left
+	+gosub update_logic_right
+	+gosub update_logic_top
++end
+
+// --- 左のAND回路
+#update_logic_left
+	+ontile mystery_box, 19, -21, goto, #logic_left_left_ok
+	+tileset mystery_box_empty, 21, -18
++return
+
+#logic_left_left_ok
+	+ontile mystery_box, 22, -21, goto, #logic_left_and_ok
+	+tileset mystery_box_empty, 21, -18
++return
+
+#logic_left_and_ok
+	+tileset mystery_box, 21, -18
++return
+// ------
+
+// 右のAND回路
+#update_logic_right
+	+ontile mystery_box, 25, -21, goto, #logic_right_left_ok
+	+tileset mystery_box_empty, 26, -18
++return
+
+#logic_right_left_ok
+	+ontile mystery_box, 28, -21, goto, #logic_right_and_ok
+	+tileset mystery_box_empty, 26, -18
++return
+
+#logic_right_and_ok
+	+tileset mystery_box, 26, -18
++return
+// ------
+
+// 左と右
+#update_logic_top
+	+ontile mystery_box, 21, -18, goto, #logic_top_left_ok
+	+tileset mystery_box_empty, 23, -16
+	+tileset mystery_box_empty, 24, -16
+	+tileset mystery_box_empty, 23, -15
+	+tileset mystery_box_empty, 24, -15
++return
+
+#logic_top_left_ok
+	+ontile mystery_box, 26, -18, goto, #logic_top_and_ok
+	+tileset mystery_box_empty, 23, -16
+	+tileset mystery_box_empty, 24, -16
+	+tileset mystery_box_empty, 23, -15
+	+tileset mystery_box_empty, 24, -15
++return
+
+#logic_top_and_ok
+	+tileset mystery_box, 23, -16
+	+tileset mystery_box, 24, -16
+	+tileset mystery_box, 23, -15
+	+tileset mystery_box, 24, -15
++return
+// ------
