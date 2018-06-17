@@ -1,29 +1,32 @@
-# OsakanaRescue
+# Osakana Rescue
 
-おさかなれすきゅーは，ねこの主人公が，盗まれてしまった大切な金の魚を奪い返すため冒険に出るゲームです．
+[日本語](readme-ja.md) ＊ English
 
-Wyte Engine で開発しています．
+Osakana Rescure is an action game. 
+This game is powered by Unity and Wyte Engine.
 
-# 動作環境
+
+# Requirement
 
 ## PC
 
-- SSE2 命令セットをサポートするCPU
-- DirectX 10 (シェーダーモデル4.0)をサポートするグラフィックカード
-- Windows 7以降, macOS 10.9以降，Ubuntu 12.04以降またはSteam OS
+- SSE2 supported CPU
+- Graphics Card which supports DirectX 10 (Shader Model 4.0)
+- Windows 7+, macOS 10.9+, Ubuntu 12.04+ or Steam OS.
 
 ## Android
-- Android 4.1 以降
-- NEON対応ARMv7 CPU または Atom CPU
-- OpenGL ES 2.0以降
+- Android 4.1+
+- NEON supported ARMv7 CPU or Atom CPU
+- OpenGL ES 2.0+
 
 ## iOS
-- iOS 7.0 以降
+- iOS 7.0+
 
-## ライセンス
+## LICENSE
 
-Wyte Engine とその他の私のコードはMITライセンスで提供されます．
+The Wyte Engine code base and my other source code is licensed under the MIT license.
 
-グラフィックやサウンドについては，すべての権利がXelticaに帰属します．
+About Graphics and sounds, I, Xeltica, have all copyrights.
 
-その他のプログラムについては[LICENSE(英語)](LICENSE) を確認．
+See [LICENSE](LICENSE) to check licenses of another programs.
+
