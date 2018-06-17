@@ -66,5 +66,5 @@ public abstract class FlyableEntity : LivableEntity
 	}
 
 	// 飛行可能なので重力影響はない
-	public override float GravityScale => 0;
+	public override float GravityScale => Dying ? base.GravityScale : 0;
 }
