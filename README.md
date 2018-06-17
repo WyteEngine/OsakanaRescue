@@ -5,6 +5,7 @@
 Osakana Rescure is an action game. 
 This game is powered by Unity and Wyte Engine.
 
+Now, this game is not localized to English because Wyte Engine doesn't have i18n support yet.
 
 # Requirement
 
