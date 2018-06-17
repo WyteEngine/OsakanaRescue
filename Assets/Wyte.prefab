@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: api_test
+  bootstrapLabel: boot
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Maps:
   - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
-  - {fileID: 114795068844646096, guid: a355fe03b714447d1a4cc0bfc415e161, type: 2}
+  - {fileID: 114725773721644906, guid: a355fe03b714447d1a4cc0bfc415e161, type: 2}
   - {fileID: 114228748918297004, guid: 90b57bf66c7b64c23adf65f1d921395d, type: 2}
 --- !u!114 &114557818162750610
 MonoBehaviour:
@@ -321,6 +321,10 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 76d9e64f463c941ce879703001cccbec, type: 2}
   - Key: entity.logic.switch.off
     Value: {fileID: 11400000, guid: c01ffc16c2980440294bf5e0db99c739, type: 2}
+  - Key: entity.enemy.bat.stay
+    Value: {fileID: 11400000, guid: fe6b648e49d07467a92d0e58f09e55f0, type: 2}
+  - Key: entity.enemy.bat.fly
+    Value: {fileID: 11400000, guid: 7ba501abb2f7c4cba9bce61267058458, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
