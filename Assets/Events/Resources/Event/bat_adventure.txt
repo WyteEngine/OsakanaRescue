@@ -1,0 +1,38 @@
+﻿#bat
+	+pfreeze on
+	
+	+move BatRace
+	+pshow -592, -48
+	+fadeasync in, 0.5
+	+bgmplay "field2"
+	player+spwalk 384, 1.8
+	+wait 0.2
+	:"コウモリレースへ　ようこそ！"
+	+freecamera -136, 8
+	:"コウモリレースは　このはこに　とじこめられている　コウモリにのって"
+	:"ひたすら　たかいところを　めざして　とんでいく　ゲームです！"
+	+playercamera
+	:"しょうがいぶつに　ぶつかるか　コウモリから　おちたら　ゲームオーバー！"
+	:"きょりに　おうじて　けいひんが　もらえます！"
+	:"じゅんびは　できましたか？"
+	:"ほんとうに？"
+	+bgmstop
+	:"それでは　ゲームスタート！"
+	+bgmplay "sky"
+	+pfreeze off
+	+tiledel -10, 1
+	+wait 0.05
+	+tiledel -9, 1
+	+wait 0.05
+	+tiledel -8, 1
+	+wait 0.05
+	+tiledel -10, 0
+	+wait 0.05
+	+tiledel -8, 0
+	+wait 0.05
+	+tiledel -10, -1
+	+wait 0.05
+	+tiledel -9, -1
+	+wait 0.05
+	+tiledel -8, -1
++end
