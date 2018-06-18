@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BatEntity : FlyableEntity
 {
-	public override string StayAnimationId => "entity.enemy.bat.stay";
+	public override string WaitingAnimationId => "entity.enemy.bat.stay";
 
 	public override string DeathSfxId => null;
 

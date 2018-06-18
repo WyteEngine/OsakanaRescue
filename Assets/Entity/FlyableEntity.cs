@@ -4,6 +4,8 @@ public abstract class FlyableEntity : LivableEntity
 {
 	public override string WalkAnimationId => FlyAnimationId;
 
+	public override string StayAnimationId => State == FlyableEntityState.Fly ? FlyAnimationId : WaitingAnimationId;
+
 	public override string JumpAnimationId => null;
 
 	public override string LandSfxId => null;
@@ -15,6 +17,8 @@ public abstract class FlyableEntity : LivableEntity
 	/// </summary>
 	/// <returns></returns>
 	public abstract string FlyAnimationId { get; }
+
+	public abstract string WaitingAnimationId { get; }
 
 	/// <summary>
 	/// このEntityの現在の飛行状態を取得または設定します．このプロパティに応じて，適切なアニメーションが行われます．
