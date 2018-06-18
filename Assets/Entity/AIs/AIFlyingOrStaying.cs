@@ -21,10 +21,8 @@ public class AIFlyingOrStaying : AIBaseBehaviour
 	}
 
 
-	// sqrt(128^2 + 128^2)の切り上げ
-	const float DistanceToTrack = 182f;
-	// sqrt(150^2 + 150^2)
-	const float DistanceToUntrack = 198f;
+	const float DistanceToTrack = 91;
+	const float DistanceToUntrack = 136;
 
 	State state = State.Stay;
 
