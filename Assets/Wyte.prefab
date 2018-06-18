@@ -165,6 +165,9 @@ MonoBehaviour:
   - id: field2
     clip: {fileID: 8300000, guid: 6a5aaf592f6054fc79354ab024574f7d, type: 3}
     loop: 1
+  - id: sky
+    clip: {fileID: 8300000, guid: 10ac5dfd79be24ec79596e4391f0a62a, type: 3}
+    loop: 1
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,9 +270,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maps:
-  - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
-  - {fileID: 114725773721644906, guid: a355fe03b714447d1a4cc0bfc415e161, type: 2}
+  - {fileID: 114433735224217462, guid: 1d09ed989acb644c390d090d6466926e, type: 2}
+  - {fileID: 114357096965981138, guid: a355fe03b714447d1a4cc0bfc415e161, type: 2}
   - {fileID: 114228748918297004, guid: 90b57bf66c7b64c23adf65f1d921395d, type: 2}
+  - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
+  - {fileID: 114732566923196864, guid: 9e257e52cfb1b4a0a9e5b405d3ae79fc, type: 2}
 --- !u!114 &114557818162750610
 MonoBehaviour:
   m_ObjectHideFlags: 1
