@@ -26,20 +26,24 @@
 	+wait 0.5
 	:"こいつは　おれに　もらわれて　よろこんでるぜ。"
 	+wait 2
-	:"かえしてほしいってか？"
-	:"ふん。じゃあ　こうしようぜ。"
+	:"......"
+	:"かえせってか？"
 	catsguy+spchr "entity.guy.walk"
 	catsguy+spwalk -32, 1
 	catsguy+spwalk -1, 0.08
 	catsguy+spchr "entity.guy.stay"
 	+wait 0.3
-	:"おれを　おっかけて　ギャフンと　いわせたら"
+	:"じゃあ　おれのこと　おっかけてこいよ。"
 	+wait 0.05
-	:"おまえに　こいつを　かえしてやるよ。"
-	+wait 0.6
+	:"おれを　おいつめて　たおせたら　おまえに　こいつを　かえしてやるよ。"
+
+	catsguy+spchr "entity.guy.walk"
+	catsguy+spwalk 32, 0.7
+	catsguy+spchr "entity.guy.stay"
+	catsguy+spwalk -1, 0.01
 	:"ノロマな　おまえには　むりだろうけどな。"
 	catsguy+spchr "entity.guy.walk"
-	catsguy+spwalk 128, 1.4
+	catsguy+spwalk 96, 0.7
 	catsguy+spclr
 	+wait 1.2
 	+fade out, 0.5
