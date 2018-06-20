@@ -1,0 +1,40 @@
+﻿#warukunai_snake
+	snake_thx+onflag #warukunai_snake_wtf
+	block1_done+onaflag #warukunai_snake_thx
+	talked_with_warukunai_snake+onaflag #warukunai_snake_2
+
+	+pfreeze on
+	+aflag on, talked_with_warukunai_snake
+	:"まって！　ぼくは　わるい　ヘビじゃ　ないよ！"
+	warukunai_snake+spwalk -1, 0.3
+	:"このさきに　ぼくの　すみかが　あるんだ。"
+	:"こうえんで　ひとやすみしててさ。"
+	+freecamera 2064, -176
+	+wait 0.5
+	:"それで　かえってきたら　あんなことに..."
+	+playercamera
+	+pfreeze off
++end
+
+#warukunai_snake_2
+	+pfreeze on
+	:"おうちに　かえれない..."
+	+pfreeze off
++end
+
+#warukunai_snake_thx
+	+pfreeze on
+	:"いま　おっきな　ばくはつがあってさ！"
+	:"え？　きみが　やってくれたの？"
+	:"ありがとう！　これで　やっと　おうちにかえれるよ..."
+	warukunai_snake+spwalk 320, 2
+	warukunai_snake+spclr
+	+flag on, snake_thx
+	+pfreeze off
++end
+
+#warukunai_snake_wtf
+	+pfreeze on
+	:"ありえない！　どうして　ここに　もどってきたのさ！"
+	+pfreeze off
++end

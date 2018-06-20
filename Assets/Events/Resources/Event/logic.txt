@@ -1,0 +1,23 @@
+﻿#block1
+	+pfreeze on
+
+	// 踏みつけ音使えばいいと思ったの天才だと思う
+	+sfx entity.player.step
+	+bgmstopasync 0.5
+	+freecamera 2064, -176
+	+wait 1
+	+sfx event.explosion
+	+tiledelrect 128, 0, 137, -1
+	+tiledelrect 128, -2, 137, -3
+	+tiledelrect 128, -4, 137, -5
+	+tiledelrect 128, -6, 137, -7
+	+tiledelrect 128, -8, 137, -9
+	+tiledelrect 128, -10, 137, -11
+	+wait 2
+	+bgmplay field2
+	+playercamera
+	+wait 0.08
+	warukunai_snake+spofs 2064, -168
+	+aflag on, block1_done
+	+pfreeze off
++end

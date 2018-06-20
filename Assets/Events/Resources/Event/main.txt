@@ -3,6 +3,7 @@
 #boot
 	+pfreeze on
 	+wait 2
+	snake_thx+onflag field2
 	prologue_has_done+onflag field2
 	+goto field1
 +end
