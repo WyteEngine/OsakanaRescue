@@ -29,11 +29,21 @@
 +end
 
 #field2
-	+fade out, 0.2
+	//+fade out, 0.2
 	+phide
 	+move "Field1"
 	+bgmplay "field2"
 	+pshow 1632, -112
+	+fadeasync in, 0.2
+	+pfreeze off
++end
+
+#field3
+	//+fade out, 0.2
+	+phide
+	+move "Field1"
+	+bgmplay "field2"
+	+pshow 2256, -160
 	+fadeasync in, 0.2
 	+pfreeze off
 +end
