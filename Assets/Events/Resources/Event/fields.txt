@@ -18,13 +18,37 @@
 	+goto #field1
 +end
 
+#tutorial
+	tutorial+onflag #tutorial_skip
+	+pfreeze on
+	+flag on, tutorial
+    :"はなしかけられそうな　いきものや\nしらべられそうな　ものをみつけたら"
+    // 分岐
+	+onplatform pc, gosub, #tutorial_pc, mobile, gosub, #tutorial_mobile
+    :"うまくいけば　おはなしできるよ。"
+	+pfreeze off
+#tutorial_skip
++return
+
+// モバイル
+#tutorial_mobile
+    :"がめんを　タップしてみよう！"
++return
+
+// PC
+#tutorial_pc
+	:"↑キーを　おしてみよう！"
++return
+
 #field1
 	//+fade out, 0.2
 	+phide
+	//+txtset -114, 72
 	+move "Field1"
 	+bgmplay "field"
 	+pshow 16, -72
 	+fadeasync in, 0.2
+	+gosub #tutorial
 	+pfreeze off
 +end
 
