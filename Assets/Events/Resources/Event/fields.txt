@@ -1,5 +1,25 @@
-#field1
+#title
 	+fade out, 0.2
+	+freecamera 0, 0
+	+phide
+	+move "Title"
+	//+bgmplay "title"
+	+pshow 0, 0
+	+fadeasync in, 0.2
+	+pfreeze off
++end
+
+#start
+	+pfreeze on
+	+bgmstopasync 0.1
+	+fade out, 0.1
+	+playercamera
+	+flag on, game_has_started
+	+goto #field1
++end
+
+#field1
+	//+fade out, 0.2
 	+phide
 	+move "Field1"
 	+bgmplay "field"

@@ -2,10 +2,11 @@
 
 #boot
 	+pfreeze on
-	+wait 2
-	snake_thx+onflag field2
+	+fade out, 0
+	snake_thx+onflag field3
 	prologue_has_done+onflag field2
-	+goto field1
+	game_has_started+onflag field
+	+goto title
 +end
 
 #prologue
