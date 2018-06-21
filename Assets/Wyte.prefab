@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 82142883718534512}
   - component: {fileID: 114244664975831212}
   - component: {fileID: 114371519277335488}
+  - component: {fileID: 114606749051177080}
   m_Layer: 0
   m_Name: Wyte
   m_TagString: Untagged
@@ -307,12 +308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: field2
+  bootstrapLabel: boot
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
   gamePad: {fileID: 0}
-  requestDebugMode: 1
+  requestDebugMode: 0
   guiEnabled: 1
 --- !u!114 &114244664975831212
 MonoBehaviour:
@@ -377,6 +378,7 @@ MonoBehaviour:
   - {fileID: 114228748918297004, guid: 90b57bf66c7b64c23adf65f1d921395d, type: 2}
   - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
   - {fileID: 114732566923196864, guid: 9e257e52cfb1b4a0a9e5b405d3ae79fc, type: 2}
+  - {fileID: 114564950249208794, guid: ddc7ce0dd2df54e69b8f0b913e0c21da, type: 2}
 --- !u!114 &114557818162750610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -449,6 +451,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 562c7b44165584ad8b1ab73f88571ce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114606749051177080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329395484811586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3385fba318c84c38b2b1a360361ff97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114831996196658056

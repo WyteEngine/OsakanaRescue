@@ -3,7 +3,7 @@
 	
 	+move BatRace
 	+pshow -592, -48
-	+fadeasync in, 0.5
+	//+fadeasync in, 0.5
 	+bgmplay "field2"
 	player+spwalk 384, 1.8
 	+wait 0.2
