@@ -26,7 +26,7 @@
 	+pfreeze on
 	:"いま　おっきな　ばくはつがあってさ！"
 	:"え？　きみが　やってくれたの？"
-	:"ありがとう！　これで　やっと　おうちにかえれるよ..."
+	:"ありがとう！　これで　やっと　おうちにかえれるよ。"
 	warukunai_snake+spwalk 320, 2
 	warukunai_snake+spclr
 	+flag on, snake_thx
