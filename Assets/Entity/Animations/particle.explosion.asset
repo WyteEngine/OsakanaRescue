@@ -9,10 +9,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcff902f88eec4895ac2ddf623f60c31, type: 3}
-  m_Name: particle.piece_of_container
+  m_Name: particle.explosion
   m_EditorClassIdentifier: 
   animationList:
-  - sprite: {fileID: 21300002, guid: 2cea2b0e6893a45028a7d712ceb41948, type: 3}
-    time: 0
+  - sprite: {fileID: 21300000, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300002, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300004, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300006, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300008, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300010, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
+  - sprite: {fileID: 21300012, guid: 2930944bcd46a44518e1e59ad3ff1000, type: 3}
+    time: 0.06
   useLoop: 0
   loopTimes: 0
