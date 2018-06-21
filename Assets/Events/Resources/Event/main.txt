@@ -5,7 +5,7 @@
 	+fade out, 0
 	snake_thx+onflag field3
 	prologue_has_done+onflag field2
-	game_has_started+onflag field
+	game_has_started+onflag field1
 	+goto title
 +end
 
