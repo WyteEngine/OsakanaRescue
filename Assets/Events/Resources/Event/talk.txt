@@ -38,3 +38,40 @@
 	:"ありえない！　どうして　ここに　もどってきたのさ！"
 	+pfreeze off
 +end
+
+#pre_final_battle
+	+pfreeze on
+	+freecamera 3488, -224
+	+bgmstop 1
+	:"まさか　ほんとうに　ここまで　くるとは...。"
+	:"コンテナも　コウモリも　ぜんぶ　むだだったか。"
+	:"おまえが　そこまで　ノロマじゃないってことは\nよくわかった。"
+	+wait 0.4
+	:"......　しかたないな。\nやくそくどおり..."
+	boss+spwalk 16, 0.4
+	fs1+spclr
+	+wait 0.05
+	fs2+spclr
+	+wait 0.05
+	fs3+spclr
+	+wait 0.05
+	boss+spwalk -30, 1.2
+	+wait 0.5
+	boss+spwalk -56, 0.8
+	:"かえしてやるとでも　いうとおもったか？"
+	boss+spwalk 128, 0.5
+	+wait 0.3
+	boss+spwalk -1, 0.001
+	:"いやだね！"
+	:"さかなは　おれのものだ！"
+	+playercamera
+	+pfreeze off
+	+wait 0.4
+
++end
+
+#post_final_battle
+	+pfreeze on
+	:死亡
+	+pfreeze off
++end
