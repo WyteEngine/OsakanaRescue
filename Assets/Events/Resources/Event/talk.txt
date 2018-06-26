@@ -44,26 +44,22 @@
 	+freecamera 3488, -224
 	+bgmstop 1
 	:"まさか　ほんとうに　ここまで　くるとは...。"
-	:"コンテナも　コウモリも　ぜんぶ　むだだったか。"
+	:"コンテナも...　コウモリも..."
+	:"おれの　しかけた　しかけは\nすべて　むだだったか..."
 	:"おまえが　そこまで　ノロマじゃないってことは\nよくわかった。"
 	+wait 0.4
-	:"......　しかたないな。\nやくそくどおり..."
+	:"......"
 	boss+spwalk 16, 0.4
 	fs1+spclr
 	+wait 0.05
 	fs2+spclr
 	+wait 0.05
 	fs3+spclr
-	+wait 0.05
-	boss+spwalk -30, 1.2
-	+wait 0.5
-	boss+spwalk -56, 0.8
-	:"かえしてやるとでも　いうとおもったか？"
-	boss+spwalk 128, 0.5
 	+wait 0.3
+	:"すこし　「おさんぽ」　しただけで"
+	boss+spwalk 64, 0.4
 	boss+spwalk -1, 0.001
-	:"いやだね！"
-	:"さかなは　おれのものだ！"
+	:"この　おれに　かてると　おもうなよ！"
 	+playercamera
 	+pfreeze off
 	+wait 0.4
@@ -72,6 +68,7 @@
 
 #post_final_battle
 	+pfreeze on
-	:死亡
+	:"しぼう　メッセージ"
+
 	+pfreeze off
 +end
