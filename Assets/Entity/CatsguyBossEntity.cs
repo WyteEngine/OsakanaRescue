@@ -105,6 +105,16 @@ public class CatsguyBossEntity : LivableEntity
 		set { timeToWait = value; }
 	}
 
+	[SerializeField]
+	private float distanceToPunch = 64;
+
+	public float DistanceToPunch
+	{
+		get { return distanceToPunch; }
+		set { distanceToPunch = value; }
+	}
+
+
 	[Header("Phase 3")]
 	[SerializeField]
 	private GameObject entityToThrow;
@@ -263,7 +273,47 @@ public class CatsguyBossEntity : LivableEntity
 	/// </summary>
 	IEnumerator DoPhase2()
 	{
-		return DoPhase1();
+		if (Wyte.CurrentPlayer == null) yield break;
+		// 追尾
+		SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+		while (Mathf.Abs(transform.position.x - Wyte.CurrentPlayer.transform.position.x) > distanceToPunch)
+		{
+			Move(Mathf.Sign(Wyte.CurrentPlayer.transform.position.x - transform.position.x) * DashSpeed);
+			yield return null;
+		}
+		// 待機
+		SetAnimations(AnimationPunchPrepare, AnimationPunchPrepare, AnimationPunchPrepare);
+		Move(0);
+		var time = Time.time;
+
+		while (Time.time - time < TimeToWait)
+		{
+			// 待機中は殴れる
+			if (HandleAttackFromThePlayer(1))
+			{
+				// 殴られたらプレイヤーを反動で飛ばす
+				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 128);
+				// そしてたおれこむ
+				SetAnimations(AnimationSliding);
+				yield return new WaitForSeconds(1);
+				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+				yield break;
+			}
+			direction = Mathf.Sign(Wyte.CurrentPlayer.transform.position.x - transform.position.x) < 0 ? SpriteDirection.Left : SpriteDirection.Right;
+			yield return null;
+		}
+
+		// パンチーコングって知ってる？
+		// パ　ン　チ　ー　コ　ン　グだ二度と間違えるなくそが
+		for (int i = 0; i < 3; i++)
+		{
+			SetAnimations(AnimationPunch);
+			yield return new WaitForSeconds(0.05f);
+
+			SetAnimations(AnimationStaying);
+			yield return new WaitForSeconds(0.05f);
+		}
+
 	}
 
 	/// <summary>
