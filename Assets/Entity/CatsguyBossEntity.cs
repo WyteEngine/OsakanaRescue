@@ -70,6 +70,18 @@ public class CatsguyBossEntity : LivableEntity
 	}
 
 	[SerializeField]
+	private float totalDistance = 240;
+
+	public float TotalDistance
+	{
+		get { return totalDistance; }
+		set { totalDistance = value; }
+	}
+
+	private float leftTarget, rightTarget;
+
+
+	[SerializeField]
 	private float dashSpeed = 48;
 
 	public float DashSpeed
@@ -126,6 +138,7 @@ public class CatsguyBossEntity : LivableEntity
 		// プレイヤーが然るべき距離に入ってきたら試合開始
 		if (Wyte.CurrentPlayer != null && Mathf.Abs(transform.position.x - Wyte.CurrentPlayer.transform.position.x) < DistanceToBegin && !battleStarted)
 		{
+			direction = SpriteDirection.Left;
 			StartCoroutine(Battle());
 		}
 	}
@@ -139,6 +152,11 @@ public class CatsguyBossEntity : LivableEntity
 			Novel.Run(PreEvent);
 			yield return new WaitWhile(() => Novel.Runtime.IsRunning);
 		}
+
+		float x = transform.position.x;
+		leftTarget = x - totalDistance;
+		rightTarget = x;
+
 		while (Health > 0)
 		{
 			if (Health <= 2)
@@ -161,9 +179,10 @@ public class CatsguyBossEntity : LivableEntity
 	/// </summary>
 	IEnumerator DoPhase1()
 	{
-		var target = Wyte.CurrentPlayer.transform.position.x;
+		var target = direction == SpriteDirection.Left ? leftTarget : rightTarget;
+
 		var vel = target < transform.position.x ? -dashSpeed : dashSpeed;
-		Debug.Log($"s{dashSpeed} t{target} v{vel}");
+
 		SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
 		Move(vel);
 		// 対象位置に達するまで繰り返す
@@ -179,6 +198,8 @@ public class CatsguyBossEntity : LivableEntity
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+				// 反対を向く
+				direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 				yield break;
 			}
 			if (Mathf.Abs(target - transform.position.x) < distanceToSlide)
@@ -201,6 +222,8 @@ public class CatsguyBossEntity : LivableEntity
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+				// 反対を向く
+				direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 				yield break;
 			}
 			// 判定
@@ -208,6 +231,9 @@ public class CatsguyBossEntity : LivableEntity
 			yield return null;
 		}
 		SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+		// 反対を向く
+		direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+
 		time = Time.time;
 		while (Time.time - time < 1f)
 		{
@@ -225,7 +251,6 @@ public class CatsguyBossEntity : LivableEntity
 			HandleAttackToThePlayer(1);
 			yield return null;
 		}
-
 	}
 
 	/// <summary>
