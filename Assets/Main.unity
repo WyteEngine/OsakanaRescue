@@ -371,6 +371,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.size
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4760318482431898, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -413,6 +418,36 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[8].id
+      value: entity.guy.scope
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[9].id
+      value: entity.guy.punch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[10].id
+      value: entity.guy.machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ca976bd0340b467d9392b53ef7dec77, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabParent: 0
