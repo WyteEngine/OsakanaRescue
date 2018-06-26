@@ -297,6 +297,9 @@ MonoBehaviour:
   - id: title
     clip: {fileID: 8300000, guid: 589f89d350ea845d6b52e37ee4c21c17, type: 3}
     loop: 1
+  - id: boss
+    clip: {fileID: 8300000, guid: 980d54c41cd6e4c3aab534fbb89322c0, type: 3}
+    loop: 1
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,6 +453,14 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 2b100dce4a5b54d4ba7440170cd68f94, type: 2}
   - Key: entity.guy.ufo
     Value: {fileID: 11400000, guid: 4aa0af2251e2d43b0a5b77558a53468f, type: 2}
+  - Key: entity.projectile.bullet
+    Value: {fileID: 11400000, guid: bb4570105300743e6979855cf65dc4c9, type: 2}
+  - Key: entity.ball.0
+    Value: {fileID: 11400000, guid: 17ba3a08089fd47ea85a21534a7b1db3, type: 2}
+  - Key: entity.ball.1
+    Value: {fileID: 11400000, guid: 5f06c9e5316a840e1a18fe052b5712a8, type: 2}
+  - Key: entity.ball.2
+    Value: {fileID: 11400000, guid: 9e0e0eda87c494b5d88066fe5d7bbf1e, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -511,6 +522,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ad70808f7459f46b9809b093bdf08e4b, type: 3}
   - id: event.explosion
     clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+  - id: entity.guy.scope
+    clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+  - id: entity.guy.punch
+    clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+  - id: entity.guy.machine
+    clip: {fileID: 8300000, guid: 7ca976bd0340b467d9392b53ef7dec77, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1
