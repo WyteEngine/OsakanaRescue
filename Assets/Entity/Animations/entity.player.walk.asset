@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: entity.player.walk
   m_EditorClassIdentifier: 
   animationList:
-  - sprite: {fileID: 21300000, guid: 172e684f7b27d47d590677b9e5f43e02, type: 3}
-    time: 0.25
   - sprite: {fileID: 21300002, guid: 172e684f7b27d47d590677b9e5f43e02, type: 3}
-    time: 0.25
+    time: 0.125
+  - sprite: {fileID: 21300000, guid: 172e684f7b27d47d590677b9e5f43e02, type: 3}
+    time: 0.125
   useLoop: 1
   loopTimes: 0

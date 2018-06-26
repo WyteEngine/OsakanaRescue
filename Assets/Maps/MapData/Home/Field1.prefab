@@ -3505,7 +3505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startWalkingFromLeft: 1
-  speed: 72
+  speed: 24
 --- !u!114 &114523301514451236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3583,8 +3583,10 @@ MonoBehaviour:
   postEvent: post_final_battle
   distanceToBegin: 128
   distanceToSlide: 96
+  totalDistance: 240
   dashSpeed: 48
   timeToWait: 1.2
+  distanceToPunch: 4
   entityToThrow: {fileID: 0}
 --- !u!114 &114630157362102464
 MonoBehaviour:
@@ -63392,24 +63394,6 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 8b9ac95ecc3e54f87af619ce95b4e2b9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 403b5cecba12e4c469e906e5c5b15e74, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 13
     m_Data: {fileID: 21300000, guid: 136fef665d8144b9794c8ad47d5613c8, type: 3}
@@ -63435,24 +63419,6 @@ Tilemap:
     m_Data: {fileID: 21300004, guid: ba019d887c41742af96d9a50bec7b945, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 21300042, guid: d563f2aca27515147ab858ce13ea6c2f, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 1496
     m_Data:
@@ -63477,8 +63443,8 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 10, y: -36, z: 0}
-  m_Size: {x: 166, y: 38, z: 1}
+  m_Origin: {x: 27, y: -36, z: 0}
+  m_Size: {x: 149, y: 38, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
