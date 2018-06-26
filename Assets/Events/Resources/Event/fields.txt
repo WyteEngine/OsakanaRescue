@@ -204,3 +204,13 @@
 	+tileset mystery_box, 24, -15
 +return
 // ------
+
+#debug_boss
+	+pfreeze on
+	+phide
+	+move "Field1"
+	+bgmplay "field2"
+	+pshow +3192, -88
+	+fadeasync in, 0.2
+	+pfreeze off
++end
