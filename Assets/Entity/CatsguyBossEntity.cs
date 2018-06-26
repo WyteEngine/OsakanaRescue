@@ -106,12 +106,32 @@ public class CatsguyBossEntity : LivableEntity
 	}
 
 	[SerializeField]
-	private float distanceToPunch = 64;
+	private float timeToPunch = 3;
 
-	public float DistanceToPunch
+	public float TimeToPunch
 	{
-		get { return distanceToPunch; }
-		set { distanceToPunch = value; }
+		get { return timeToPunch; }
+		set { timeToPunch = value; }
+	}
+
+	private float timeCacheForPunch;
+
+	[SerializeField]
+	private BulletEntity bulletEntity;
+
+	public BulletEntity BulletToShoot
+	{
+		get { return bulletEntity; }
+		set { bulletEntity = value; }
+	}
+
+	[SerializeField]
+	private float bulletSpeed = 64;
+
+	public float BulletSpeed
+	{
+		get { return bulletSpeed; }
+		set { bulletSpeed = value; }
 	}
 
 
@@ -210,6 +230,7 @@ public class CatsguyBossEntity : LivableEntity
 				// 殴られたらプレイヤーを反動で飛ばす
 				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 80);
 				// そしてたおれこむ
+				Move(0);
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
@@ -234,6 +255,7 @@ public class CatsguyBossEntity : LivableEntity
 				// 殴られたらプレイヤーを反動で飛ばす
 				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 128);
 				// そしてたおれこむ
+				Move(0);
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
@@ -257,6 +279,7 @@ public class CatsguyBossEntity : LivableEntity
 				// 殴られたらプレイヤーを反動で飛ばす
 				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 128);
 				// そしてたおれこむ
+				Move(0);
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
@@ -276,16 +299,30 @@ public class CatsguyBossEntity : LivableEntity
 		if (Wyte.CurrentPlayer == null) yield break;
 		// 追尾
 		SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
-		while (Mathf.Abs(transform.position.x - Wyte.CurrentPlayer.transform.position.x) > distanceToPunch)
+		while (timeCacheForPunch < timeToPunch)
 		{
 			Move(Mathf.Sign(Wyte.CurrentPlayer.transform.position.x - transform.position.x) * DashSpeed);
+			timeCacheForPunch += Time.deltaTime;
+			// 待機中は殴れる
+			if (HandleAttackFromThePlayer(1))
+			{
+				// 殴られたらプレイヤーを反動で飛ばす
+				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 128);
+				// そしてたおれこむ
+				Move(0);
+				SetAnimations(AnimationSliding);
+				yield return new WaitForSeconds(1);
+				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
+				yield break;
+			}
 			yield return null;
 		}
 		// 待機
+		timeCacheForPunch = 0;
 		SetAnimations(AnimationPunchPrepare, AnimationPunchPrepare, AnimationPunchPrepare);
 		Move(0);
 		var time = Time.time;
-
+		Sfx.Play("entity.guy.scope");
 		while (Time.time - time < TimeToWait)
 		{
 			// 待機中は殴れる
@@ -294,6 +331,7 @@ public class CatsguyBossEntity : LivableEntity
 				// 殴られたらプレイヤーを反動で飛ばす
 				Wyte.CurrentPlayer.Velocity = new Vector2(Wyte.CurrentPlayer.Velocity.x, 128);
 				// そしてたおれこむ
+				Move(0);
 				SetAnimations(AnimationSliding);
 				yield return new WaitForSeconds(1);
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
@@ -302,16 +340,18 @@ public class CatsguyBossEntity : LivableEntity
 			direction = Mathf.Sign(Wyte.CurrentPlayer.transform.position.x - transform.position.x) < 0 ? SpriteDirection.Left : SpriteDirection.Right;
 			yield return null;
 		}
-
+		const float wait = 0.1f;
 		// パンチーコングって知ってる？
 		// パ　ン　チ　ー　コ　ン　グだ二度と間違えるなくそが
 		for (int i = 0; i < 3; i++)
 		{
 			SetAnimations(AnimationPunch);
-			yield return new WaitForSeconds(0.05f);
-
+			Sfx.Play("entity.guy.punch");
+			yield return new WaitForSeconds(wait);
+			var bullet = Instantiate(BulletToShoot.gameObject, transform.position, default(Quaternion)).GetComponent<BulletEntity>();
+			bullet.Move(direction == SpriteDirection.Left ? -bulletSpeed : bulletSpeed);
 			SetAnimations(AnimationStaying);
-			yield return new WaitForSeconds(0.05f);
+			yield return new WaitForSeconds(wait);
 		}
 
 	}
