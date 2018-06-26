@@ -166,12 +166,17 @@ public class CatsguyBossEntity : LivableEntity
 			else
 				yield return DoPhase1();
 		}
+	}
+
+	protected override IEnumerator OnDeath(Object killer)
+	{
 		// 戦闘終了前のイベント実行(もし存在すれば)
 		if (!string.IsNullOrEmpty(PostEvent))
 		{
 			Novel.Run(PostEvent);
 			yield return new WaitWhile(() => Novel.Runtime.IsRunning);
 		}
+		yield return base.OnDeath(killer);
 	}
 
 	/// <summary>
