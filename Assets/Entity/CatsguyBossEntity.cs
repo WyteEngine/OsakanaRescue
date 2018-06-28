@@ -85,15 +85,6 @@ public class CatsguyBossEntity : BossEntity
 		set { bulletEntity = value; }
 	}
 
-	[SerializeField]
-	private BallEntity balltoShoot;
-
-	public BallEntity BallToShoot
-	{
-		get { return balltoShoot; }
-		set { balltoShoot = value; }
-	}
-
 
 	[SerializeField]
 	private float bulletSpeed = 64;
@@ -119,6 +110,46 @@ public class CatsguyBossEntity : BossEntity
 		get { return entityToThrow; }
 		set { entityToThrow = value; }
 	}
+
+	[SerializeField]
+	private GameObject healItem;
+
+	public GameObject HealItem
+	{
+		get { return healItem; }
+		set { healItem = value; }
+	}
+
+	[SerializeField]
+	private GameObject balltoShoot;
+
+	public GameObject BallToShoot
+	{
+		get { return balltoShoot; }
+		set { balltoShoot = value; }
+	}
+
+	[SerializeField]
+	private GameObject thunder;
+
+	public GameObject Thunder
+	{
+		get { return thunder; }
+		set { thunder = value; }
+	}
+
+	[SerializeField]
+	private GameObject ice;
+
+	public GameObject Ice
+	{
+		get { return ice; }
+		set { ice = value; }
+	}
+
+
+	float targetToDown;
+
 	#endregion
 
 	/// <summary>
@@ -339,6 +370,10 @@ public class CatsguyBossEntity : BossEntity
 	/// 氷を投げる
 	/// </summary>
 	const int PatternIce = 4;
+	/// <summary>
+	/// ただ左右に動く
+	/// </summary>
+	const int PatternMove = 5;
 
 
 
@@ -348,17 +383,51 @@ public class CatsguyBossEntity : BossEntity
 	/// <returns>The phase3.</returns>
 	IEnumerator DoPhase3()
 	{
-		useZeroGravity = true;
 		// 準備
 		if (!ridedOnTheUfo)
 		{
+			useZeroGravity = true;
 			yield return PrePhase3();
 
+			// UFOに乗っているフラグをオンにしておく(PrePhase3() を呼ばないために)
 			ridedOnTheUfo = true;
 			yield break;
 		}
 
 		// 行動の抽選
+
+		switch (Random.Range(0, 6))
+		{
+			case PatternBall:
+				Instantiate(BallToShoot);
+				break;
+			case PatternLife:
+
+				break;
+			case PatternLightning: 
+				yield return 
+				break;
+			case PatternEnemy: 
+
+				break;
+			case PatternIce:
+
+				break;
+			case PatternMove:
+				// 少し下よりの中央に移動し
+				yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
+				// 目的地に行く
+				yield return EaseOut(new Vector2(direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
+
+				yield return new WaitForSeconds(0.4f);
+
+				// 振り向く
+				direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+				break;
+		}
+
+		// 毎回少し休む
+		yield return new WaitForSeconds(1.5f);
 
 	}
 
@@ -372,16 +441,13 @@ public class CatsguyBossEntity : BossEntity
 		// 高くジャンプ
 		// Velocity プロパティはカメラ外に出ると機能しないので，自前で動かす
 		SetAnimations(AnimationJumping);
-		float targetToDown = transform.position.y + 32;
+		targetToDown = transform.position.y + 64;
 		Velocity = Vector2.zero;
 		float targetToUp = Camera.CameraRects.yMax - 24;
-		var velocity = new Vector2(0, 128);
-		while (targetToUp > transform.position.y)
-		{
-			transform.Translate(velocity * Time.deltaTime);
-			yield return null;
-		}
-		velocity = Vector2.zero;
+
+		Vector2 destination = new Vector2(transform.position.x, targetToUp);
+
+		yield return EaseIn(destination, 0.6f);
 
 		// 体力増強
 		Wyte.Player.MaxLife = 8;
@@ -392,13 +458,11 @@ public class CatsguyBossEntity : BossEntity
 		// UFOが降りてくる
 		Wyte.CanMove = true;
 		SetAnimations(AnimationUfo);
-		velocity = new Vector2(0, -128);
-		while (targetToDown < transform.position.y)
-		{
-			transform.Translate(velocity * Time.deltaTime);
-			yield return null;
-		}
-		velocity = Vector2.zero;
+
+		destination = new Vector2(rightTarget, targetToDown);
+
+		yield return EaseOut(destination, 1.5f);
+		direction = SpriteDirection.Left;
 	}
 
 	#region Helper
