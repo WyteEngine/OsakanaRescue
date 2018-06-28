@@ -450,8 +450,8 @@ public class CatsguyBossEntity : BossEntity
 		yield return EaseIn(destination, 0.6f);
 
 		// 体力増強
-		Wyte.Player.MaxLife = 8;
-		Wyte.Player.Life = 8;
+		Wyte.Player.MaxLife = 12;
+		Wyte.Player.Life = 12;
 		Wyte.CanMove = false;
 		yield return MessageContoller.Instance.Say(null, "ふしぎな　ちからが　みなぎる...\nさいだいHPが　おおきく　あがった！");
 
