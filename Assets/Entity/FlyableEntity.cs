@@ -55,6 +55,7 @@ public abstract class FlyableEntity : LivableEntity
 	public void Move(Vector2 speed)
 	{
 		Velocity = speed;
+		direction = (int)speed.x < 0 ? SpriteDirection.Left : (int)speed.x > 0 ? SpriteDirection.Right : direction;
 		if (speed != Vector2.zero)
 			State = FlyableEntityState.Fly;
 	}
