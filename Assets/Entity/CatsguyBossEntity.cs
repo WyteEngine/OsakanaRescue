@@ -289,10 +289,21 @@ public class CatsguyBossEntity : BossEntity
 			}
 			yield return null;
 		}
+		// 体力が6以下なら4回，違えば3回パンチ
+		yield return DoPunch(Health < 6 ? 4 : 3);
+		// 体力が6以下ならさらに4回パンチする
+		if (Health <= 6)
+		{
+			yield return new WaitForSeconds(0.5f);
+			yield return DoPunch(4);
+		}
+
+	}
+
+	IEnumerator DoPunch(int count)
+	{
 		const float wait = 0.1f;
-		// パンチーコングって知ってる？
-		// パ　ン　チ　ー　コ　ン　グだ二度と間違えるなくそが
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < count; i++)
 		{
 			// 手を前に
 			SetAnimations(AnimationPunch);
