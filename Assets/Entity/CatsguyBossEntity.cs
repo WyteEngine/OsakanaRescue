@@ -321,7 +321,7 @@ public class CatsguyBossEntity : BossEntity
 			yield return null;
 		}
 		// 体力が6以下なら4回，違えば3回パンチ
-		yield return DoPunch(Health < 6 ? 4 : 3);
+		yield return DoPunch(Health <= 6 ? 4 : 3);
 		// 体力が6以下ならさらに4回パンチする
 		if (Health <= 6)
 		{
