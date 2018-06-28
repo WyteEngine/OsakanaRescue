@@ -152,9 +152,8 @@ public class CatsguyBossEntity : LivableEntity
 	/// <summary>
 	/// 最大体力を取得します．
 	/// </summary>
-	/// <value>1フェーズにつき2，3フェーズあるので合計6．</value>
-	public override int MaxHealth => 2 * 3;
-
+	/// <value>1フェーズ毎に体力が4あり，フェーズは3つあるので，合計12．</value>
+	public override int MaxHealth => 4 * 3;
 
 
 	protected override void Start()
@@ -189,9 +188,9 @@ public class CatsguyBossEntity : LivableEntity
 
 		while (Health > 0)
 		{
-			if (Health <= 2)
+			if (Health <= 4)
 				yield return DoPhase3();
-			else if (Health <= 4)
+			else if (Health <= 8)
 				yield return DoPhase2();
 			else
 				yield return DoPhase1();
