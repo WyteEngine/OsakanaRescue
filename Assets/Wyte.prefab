@@ -461,6 +461,8 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 5f06c9e5316a840e1a18fe052b5712a8, type: 2}
   - Key: entity.ball.2
     Value: {fileID: 11400000, guid: 9e0e0eda87c494b5d88066fe5d7bbf1e, type: 2}
+  - Key: entity.heart
+    Value: {fileID: 11400000, guid: c4df674d0567e45c8959e24dd3527c94, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,9 +525,9 @@ MonoBehaviour:
   - id: event.explosion
     clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
   - id: entity.guy.scope
-    clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+    clip: {fileID: 8300000, guid: b45429f1c823547c8ad36e302ad3ce0e, type: 3}
   - id: entity.guy.punch
-    clip: {fileID: 8300000, guid: d1a458614ed9846d8a1dd6863c8f4ae0, type: 3}
+    clip: {fileID: 8300000, guid: da5e6c85be1d0426e9c8908c98d45907, type: 3}
   - id: entity.guy.machine
     clip: {fileID: 8300000, guid: 7ca976bd0340b467d9392b53ef7dec77, type: 3}
 --- !u!114 &114967134083319750

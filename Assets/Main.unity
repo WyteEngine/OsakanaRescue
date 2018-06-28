@@ -413,21 +413,6 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
-    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: bootstrapLabel
-      value: debug_boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: Effects.Array.data[8].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b45429f1c823547c8ad36e302ad3ce0e, type: 3}
-    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: Effects.Array.data[9].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: da5e6c85be1d0426e9c8908c98d45907, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabParent: 0
