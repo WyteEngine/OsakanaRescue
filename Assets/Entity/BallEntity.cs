@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// よく跳ねる柔らかいボール
+/// </summary>
 [RequireComponent(typeof(AISteppableEnemy))]
 public class BallEntity : LivableEntity
 {
@@ -40,7 +43,20 @@ public class BallEntity : LivableEntity
 
 	protected override IEnumerator OnDeath(Object killer)
 	{
+		// ボール破裂音
+		Sfx.Play("entity.ball.explosion");
+
+		if (!(killer is PlayerController) || Parent == null)
+			return base.OnDeath(killer);
+
+		// プレイヤーに踏まれるとUFOを攻撃する
+		while (Vector2.Distance(transform.position, Parent.transform.position) > 4)
+		{
+			transform.position = Vector2.Lerp(transform.position, Parent.transform.position, 5f * Time.deltaTime);
+		}
+		Sfx.Play("event.explosion");
+		Parent.Damage(this, 1);
+
 		return base.OnDeath(killer);
 	}
-
 }
