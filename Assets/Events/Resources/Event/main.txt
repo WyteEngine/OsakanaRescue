@@ -24,20 +24,21 @@
 	+bgmstopasync 0.2
 	+fade in, 0.2
 	+wait 1.2
-	:"いいもん　もってんじゃねえか．"
+	player+spwalk 32, 0.7
+	:"ねえ！　ぼくの　さかなだよ！？"
 	+wait 0.5
-	:"こいつは　おれに　もらわれて　よろこんでるぜ。"
-	+wait 2
-	:"......"
-	:"かえせってか？"
+
+	:"いつまでも　チンタラしてるから　こうなるんだ。"
+	+wait 0.25
+	:"ぼくの　たいせつな　きんの　さかな..."
+	+wait 0.25
 	catsguy+spchr "entity.guy.walk"
-	catsguy+spwalk -32, 1
-	catsguy+spwalk -1, 0.08
+	catsguy+spwalk -48, .7
 	catsguy+spchr "entity.guy.stay"
 	+wait 0.3
-	:"じゃあ　おれのこと　おっかけてこいよ。"
+	:"じゃあ　かけを　しようか。"
 	+wait 0.05
-	:"おれを　おいつめて　たおせたら\nおまえに　こいつを　かえしてやるよ。"
+	:"おれのことを　おっかけてこい。おれを　たおせたら　かえしてやる。"
 
 	catsguy+spchr "entity.guy.walk"
 	catsguy+spwalk 32, 0.7
