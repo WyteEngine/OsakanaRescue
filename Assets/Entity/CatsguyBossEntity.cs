@@ -126,6 +126,16 @@ public class CatsguyBossEntity : LivableEntity
 	}
 
 	[SerializeField]
+	private BallEntity balltoShoot;
+
+	public BallEntity BallToShoot
+	{
+		get { return balltoShoot; }
+		set { balltoShoot = value; }
+	}
+
+
+	[SerializeField]
 	private float bulletSpeed = 64;
 
 	public float BulletSpeed
@@ -155,6 +165,7 @@ public class CatsguyBossEntity : LivableEntity
 	/// <value>1フェーズ毎に体力が4あり，フェーズは3つあるので，合計12．</value>
 	public override int MaxHealth => 4 * 3;
 
+	bool ridedOnTheUfo = false;
 
 	protected override void Start()
 	{
@@ -361,12 +372,85 @@ public class CatsguyBossEntity : LivableEntity
 	}
 
 	/// <summary>
+	/// 雷を発射する
+	/// </summary>
+	const int PatternLightning = 0;
+	/// <summary>
+	/// ボールを発射する
+	/// </summary>
+	const int PatternBall = 1;
+	/// <summary>
+	/// ザコ敵を召喚する
+	/// </summary>
+	const int PatternEnemy = 2;
+	/// <summary>
+	/// 体力回復を投げる
+	/// </summary>
+	const int PatternLife = 3;
+	/// <summary>
+	/// 氷を投げる
+	/// </summary>
+	const int PatternIce = 4;
+
+
+
+	/// <summary>
 	/// UFOに騎乗し，電撃，回復アイテム，ザコ敵を投げます．
 	/// </summary>
 	/// <returns>The phase3.</returns>
 	IEnumerator DoPhase3()
 	{
-		return DoPhase1();
+		useZeroGravity = true;
+		// 準備
+		if (!ridedOnTheUfo)
+		{
+			yield return PrePhase3();
+
+			ridedOnTheUfo = true;
+			yield break;
+		}
+
+		// 行動の抽選
+
+	}
+
+	IEnumerator PrePhase3()
+	{
+		// 速度と無敵時間をリセット
+		Move(0);
+		GodTime = 0;
+		yield return new WaitForSeconds(2);
+
+		// 高くジャンプ
+		// Velocity プロパティはカメラ外に出ると機能しないので，自前で動かす
+		SetAnimations(AnimationJumping);
+		float targetToDown = transform.position.y + 32;
+		Velocity = Vector2.zero;
+		float targetToUp = Camera.CameraRects.yMax - 24;
+		var velocity = new Vector2(0, 128);
+		while (targetToUp > transform.position.y)
+		{
+			transform.Translate(velocity * Time.deltaTime);
+			yield return null;
+		}
+		velocity = Vector2.zero;
+
+		// 体力増強
+		Wyte.Player.MaxLife = 8;
+		Wyte.Player.Life = 8;
+		Wyte.CanMove = false;
+		yield return MessageContoller.Instance.Say(null, "ふしぎな　ちからが　みなぎる...\nさいだいHPが　おおきく　あがった！");
+
+		// UFOが降りてくる
+		Wyte.CanMove = true;
+		SetAnimations(AnimationUfo);
+		velocity = new Vector2(0, -128);
+		while (targetToDown < transform.position.y)
+		{
+			transform.Translate(velocity * Time.deltaTime);
+			yield return null;
+		}
+		velocity = Vector2.zero;
 	}
 
 	#region Helper
