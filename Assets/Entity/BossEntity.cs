@@ -74,4 +74,48 @@ public abstract class BossEntity : LivableEntity
 
 	protected abstract IEnumerator OnBattle();
 
+	protected IEnumerator Lerp(Vector2 dest, float time)
+	{
+		var t = 0f;
+		//初期値
+		var p0 = transform.position;
+		while (t < time)
+		{
+			transform.position = Vector2.Lerp(p0, dest, t / time);
+			t += Time.deltaTime;
+			yield return null;
+		}
+		// 念の為
+		transform.position = dest;
+	}
+
+	protected IEnumerator EaseIn(Vector2 dest, float time)
+	{
+		var t = 0f;
+		//初期値
+		var p0 = transform.position;
+		while (t < time)
+		{
+			transform.position = MathHelper.EaseIn(t / time, p0, dest);
+			t += Time.deltaTime;
+			yield return null;
+		}
+		// 念の為
+		transform.position = dest;
+	}
+
+	protected IEnumerator EaseOut(Vector2 dest, float time)
+	{
+		var t = 0f;
+		//初期値
+		var p0 = transform.position;
+		while (t < time)
+		{
+			transform.position = MathHelper.EaseOut(t / time, p0, dest);
+			t += Time.deltaTime;
+			yield return null;
+		}
+		// 念の為
+		transform.position = dest;
+	}
 }
