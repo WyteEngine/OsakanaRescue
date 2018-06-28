@@ -2,59 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatsguyBossEntity : LivableEntity
+public class CatsguyBossEntity : BossEntity
 {
-
 	public override string WalkAnimationId => walkAnim;
 
 	public override string StayAnimationId => stayAnim;
 
 	public override string JumpAnimationId => jumpAnim;
 
-	public override string LandSfxId => null;
-	public override string JumpSfxId => null;
-	public override string DeathSfxId => null;
-
 	public override float GravityScale => useZeroGravity ? 0 : base.GravityScale;
 
-	[Header("Events")]
-	[SerializeField]
-	private string preEvent;
-
-	/// <summary>
-	/// 戦闘開始前のイベントを取得または設定します．
-	/// </summary>
-	public string PreEvent
-	{
-		get { return preEvent; }
-		set { preEvent = value; }
-	}
-
-	[SerializeField]
-	private string postEvent;
-
-	/// <summary>
-	/// 戦闘開始前のイベントを取得または設定します．
-	/// </summary>
-	public string PostEvent
-	{
-		get { return postEvent; }
-		set { postEvent = value; }
-	}
-
-	[SerializeField]
-	private float distanceToBegin = 128;
-
-	/// <summary>
-	/// 戦闘が始まるためのプレイヤーとの距離．
-	/// </summary>
-	/// <value>The distance to begin.</value>
-	public float DistanceToBegin
-	{
-		get { return distanceToBegin; }
-		set { distanceToBegin = value; }
-	}
-
+	#region phase 1
 	[Header("Phase1")]
 	[SerializeField]
 	private float distanceToSlide = 48;
@@ -90,7 +48,9 @@ public class CatsguyBossEntity : LivableEntity
 		set { dashSpeed = value; }
 	}
 
+	#endregion
 
+	#region phase 2
 	[Header("Phase 2")]
 	[SerializeField]
 	private float timeToWait;
@@ -143,8 +103,9 @@ public class CatsguyBossEntity : LivableEntity
 		get { return bulletSpeed; }
 		set { bulletSpeed = value; }
 	}
+	#endregion
 
-
+	#region phase 3
 	[Header("Phase 3")]
 	[SerializeField]
 	private GameObject entityToThrow;
@@ -158,6 +119,7 @@ public class CatsguyBossEntity : LivableEntity
 		get { return entityToThrow; }
 		set { entityToThrow = value; }
 	}
+	#endregion
 
 	/// <summary>
 	/// 最大体力を取得します．
@@ -167,32 +129,8 @@ public class CatsguyBossEntity : LivableEntity
 
 	bool ridedOnTheUfo = false;
 
-	protected override void Start()
+	protected override IEnumerator OnBattle()
 	{
-		base.Start();
-	}
-
-	protected override void OnUpdate()
-	{
-		base.OnUpdate();
-		// プレイヤーが然るべき距離に入ってきたら試合開始
-		if (Wyte.CurrentPlayer != null && Mathf.Abs(transform.position.x - Wyte.CurrentPlayer.transform.position.x) < DistanceToBegin && !battleStarted)
-		{
-			direction = SpriteDirection.Left;
-			StartCoroutine(Battle());
-		}
-	}
-
-	IEnumerator Battle()
-	{
-		battleStarted = true;
-		// 戦闘開始前のイベント実行(もし存在すれば)
-		if (!string.IsNullOrEmpty(PreEvent))
-		{
-			Novel.Run(PreEvent);
-			yield return new WaitWhile(() => Novel.Runtime.IsRunning);
-		}
-
 		float x = transform.position.x;
 		leftTarget = x - totalDistance;
 		rightTarget = x;
@@ -368,7 +306,6 @@ public class CatsguyBossEntity : LivableEntity
 			SetAnimations(AnimationStaying);
 			yield return new WaitForSeconds(wait);
 		}
-
 	}
 
 	/// <summary>
@@ -507,7 +444,6 @@ public class CatsguyBossEntity : LivableEntity
 	string walkAnim = "entity.guy.walk";
 	string stayAnim = "entity.guy.stay";
 	string jumpAnim = "entity.guy.jump";
-	bool battleStarted;
 	bool useZeroGravity;
 	#endregion
 
