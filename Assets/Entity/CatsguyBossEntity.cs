@@ -338,7 +338,6 @@ public class CatsguyBossEntity : LivableEntity
 				SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
 				yield break;
 			}
-			direction = Mathf.Sign(Wyte.CurrentPlayer.transform.position.x - transform.position.x) < 0 ? SpriteDirection.Left : SpriteDirection.Right;
 			yield return null;
 		}
 		const float wait = 0.1f;
