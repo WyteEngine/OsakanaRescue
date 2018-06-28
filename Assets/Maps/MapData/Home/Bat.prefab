@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f42cfe521284436a08fa2af1d6219e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: -1
-  playerInteractable: 0
+  attack: 1
+  playerInteractable: 1
 --- !u!114 &114507621499933104
 MonoBehaviour:
   m_ObjectHideFlags: 1

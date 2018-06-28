@@ -3413,7 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 1
-  playerInteractable: 0
+  playerInteractable: 1
 --- !u!114 &114427188874425388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3528,7 +3528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 1
-  playerInteractable: 0
+  playerInteractable: 1
 --- !u!114 &114521022237313770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3584,7 +3584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 1
-  playerInteractable: 0
+  playerInteractable: 1
 --- !u!114 &114612774769940650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3625,6 +3625,7 @@ MonoBehaviour:
   timeToPunch: 3
   bulletEntity: {fileID: 114128798734263856, guid: 4f362e84e33bc4d0fa625c22cbac24a6,
     type: 2}
+  balltoShoot: {fileID: 0}
   bulletSpeed: 128
   entityToThrow: {fileID: 0}
 --- !u!114 &114630157362102464
@@ -3709,7 +3710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 1
-  playerInteractable: 0
+  playerInteractable: 1
 --- !u!114 &114750341332333562
 MonoBehaviour:
   m_ObjectHideFlags: 1
