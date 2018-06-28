@@ -19,7 +19,7 @@ public class BallEntity : LivableEntity
 
 	public override string DeathSfxId => null;
 
-	public BulletEntity Parent { get; set; }
+	public CatsguyBossEntity Parent { get; set; }
 
 	private string ballAnimationId;
 
@@ -32,13 +32,17 @@ public class BallEntity : LivableEntity
 
 	protected override void OnUpdate()
 	{
-		// はね続ける
-		Jump();
+		if (IsGrounded() && !prevIsGrounded)
+		{
+			Velocity = new Vector2(Velocity.x, 96);
+			Sfx.Play(JumpSfxId);
+		}
 
 		if (CanKickLeft() || CanKickRight())
 		{
 			Kill(this);
 		}
+		base.OnUpdate();
 	}
 
 	protected override IEnumerator OnDeath(Object killer)
