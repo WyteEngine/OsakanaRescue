@@ -130,12 +130,12 @@ public class CatsguyBossEntity : BossEntity
 	}
 
 	[SerializeField]
-	private GameObject thunder;
+	private GameObject lightning;
 
 	public GameObject Thunder
 	{
-		get { return thunder; }
-		set { thunder = value; }
+		get { return lightning; }
+		set { lightning = value; }
 	}
 
 	[SerializeField]
@@ -399,19 +399,46 @@ public class CatsguyBossEntity : BossEntity
 		switch (Random.Range(0, 6))
 		{
 			case PatternBall:
-				Instantiate(BallToShoot);
+				var ball = Instantiate(BallToShoot, transform.position, transform.rotation).GetComponent<BallEntity>();
+				ball.Parent = this;
 				break;
 			case PatternLife:
-
+				Instantiate(HealItem, transform.position, transform.rotation);
 				break;
-			case PatternLightning: 
-				yield return 
-				break;
-			case PatternEnemy: 
+			case PatternLightning:
+				var unit = (rightTarget - leftTarget) / 4;
+				var middleLeft = new Vector2((leftTarget + rightTarget - unit) / 2, transform.position.y);
+				var middleRight = new Vector2((leftTarget + rightTarget + unit) / 2, transform.position.y);
+				var left = new Vector2(leftTarget, transform.position.y);
+				var right = new Vector2(rightTarget, transform.position.y);
+				if (direction == SpriteDirection.Left)
+				{
+					Instantiate(lightning);
+					yield return EaseOut(middleRight, 0.5f);
+					Instantiate(lightning);
+					yield return EaseOut(middleLeft, 0.5f);
+					Instantiate(lightning);
+					yield return EaseOut(left, 0.5f);
 
+					direction = SpriteDirection.Right;
+				}
+				else
+				{
+					Instantiate(lightning);
+					yield return EaseOut(middleLeft, 0.5f);
+					Instantiate(lightning);
+					yield return EaseOut(middleRight, 0.5f);
+					Instantiate(lightning);
+					yield return EaseOut(right, 0.5f);
+
+					direction = SpriteDirection.Left;
+				}
+				break;
+			case PatternEnemy:
+				Instantiate(entityToThrow, transform.position, transform.rotation);
 				break;
 			case PatternIce:
-
+				Instantiate(ice, transform.position, transform.rotation);
 				break;
 			case PatternMove:
 				// 少し下よりの中央に移動し
