@@ -1,6 +1,6 @@
 ﻿#warukunai_snake
 	snake_thx+onflag #warukunai_snake_wtf
-	block1_done+onaflag #warukunai_snake_thx
+	block1_done+onflag #warukunai_snake_thx
 	talked_with_warukunai_snake+onaflag #warukunai_snake_2
 
 	+pfreeze on

@@ -18,6 +18,6 @@
 	+playercamera
 	+wait 0.08
 	warukunai_snake+spofs 2064, -168
-	+aflag on, block1_done
+	+flag on, block1_done
 	+pfreeze off
 +end
