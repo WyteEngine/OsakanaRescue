@@ -316,12 +316,14 @@ public class CatsguyBossEntity : LivableEntity
 			}
 			yield return null;
 		}
+
 		// 待機
 		timeCacheForPunch = 0;
 		SetAnimations(AnimationPunchPrepare, AnimationPunchPrepare, AnimationPunchPrepare);
 		Move(0);
 		var time = Time.time;
 		Sfx.Play("entity.guy.scope");
+
 		while (Time.time - time < TimeToWait)
 		{
 			// 待機中は殴れる
@@ -344,10 +346,14 @@ public class CatsguyBossEntity : LivableEntity
 		// パ　ン　チ　ー　コ　ン　グだ二度と間違えるなくそが
 		for (int i = 0; i < 3; i++)
 		{
+			// 手を前に
 			SetAnimations(AnimationPunch);
 			Sfx.Play("entity.guy.punch");
 			yield return new WaitForSeconds(wait);
+
 			var bullet = Instantiate(BulletToShoot.gameObject, transform.position, default(Quaternion)).GetComponent<BulletEntity>();
+
+			// 手を後ろに
 			bullet.Move(direction == SpriteDirection.Left ? -bulletSpeed : bulletSpeed);
 			SetAnimations(AnimationStaying);
 			yield return new WaitForSeconds(wait);
