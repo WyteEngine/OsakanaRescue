@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using WyteEngine.Entities;
 
 public class BulletEntity : FlyableEntity
 {

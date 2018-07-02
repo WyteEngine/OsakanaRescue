@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using WyteEngine.Entities;
+using WyteEngine.Entities.AI;
 
 /// <summary>
 /// よく跳ねる柔らかいボール

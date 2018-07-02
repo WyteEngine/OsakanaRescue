@@ -1,4 +1,5 @@
 using UnityEngine;
+using WyteEngine.Entities;
 
 public abstract class FlyableEntity : LivableEntity
 {

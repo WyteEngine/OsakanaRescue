@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using WyteEngine.Entities;
+using WyteEngine.Helper;
 
 public abstract class BossEntity : LivableEntity
 {

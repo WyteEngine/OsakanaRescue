@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using WyteEngine.Entities;
+using WyteEngine.Entities.AI;
 /// <summary>
 /// ヒーリングアイテム．
 /// </summary>

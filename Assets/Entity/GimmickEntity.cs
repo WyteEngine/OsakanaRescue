@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using WyteEngine.Entities;
 
 public class GimmickEntity : LivableEntity
 {
