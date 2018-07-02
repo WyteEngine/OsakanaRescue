@@ -41,10 +41,18 @@
 
 #pre_final_battle
 	+pfreeze on
-	+freecamera 3488, -224
+	+freecamera 3432, -272
 	+bgmstop 1
-
 	+bgmplay "boss"
+
+	pre_battle+onflag gosub, #simple_pre_battle, #pre_battle
+
+	+pfreeze off
+	+wait 0.4
+
++end
+
+#pre_battle
 	:"まさか　ほんとうに　ここまで　これるとはな。"
 	:"コンテナも...　コウモリも..."
 	:"おれの　しかけた　しかけは\nすべて　むだだったか..."
@@ -61,16 +69,19 @@
 	:"いいだろう。おれを　たおせたら\nやくそくどおり　かえしてやる。"
 	boss+spwalk 64, 0.4
 	boss+spwalk -1, 0.001
-	:"だが　こっちも　ゼンリョクを　だすぜ。　かくごしろ。"
-	+playercamera
-	+pfreeze off
-	+wait 0.4
+	:"だが　こっちも　ゼンリョクを　だすぜ。\nかくごしろ。"
+	+flag on, pre_battle
++return
 
-+end
+#simple_pre_battle
+	boss+spwalk 64, 0.4
+	boss+spwalk -1, 0.001
+	:"どうした？\nおまえの　じつりょくは　そのていどか？"
++return
 
 #post_final_battle
 	+pfreeze on
-	:"しぼう　メッセージ"
-
+	:"ここで　ラストイベントが　くるはず\nいまは　みじっそう。"
+	+goto #title
 	+pfreeze off
 +end
