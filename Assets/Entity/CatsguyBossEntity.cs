@@ -351,33 +351,6 @@ public class CatsguyBossEntity : BossEntity
 	}
 
 	/// <summary>
-	/// 雷を発射する
-	/// </summary>
-	const int PatternLightning = 0;
-	/// <summary>
-	/// ボールを発射する
-	/// </summary>
-	const int PatternBall = 1;
-	/// <summary>
-	/// ザコ敵を召喚する
-	/// </summary>
-	const int PatternEnemy = 2;
-	/// <summary>
-	/// 体力回復を投げる
-	/// </summary>
-	const int PatternLife = 3;
-	/// <summary>
-	/// 氷を投げる
-	/// </summary>
-	const int PatternIce = 4;
-	/// <summary>
-	/// ただ左右に動く
-	/// </summary>
-	const int PatternMove = 5;
-
-
-
-	/// <summary>
 	/// UFOに騎乗し，電撃，回復アイテム，ザコ敵を投げます．
 	/// </summary>
 	/// <returns>The phase3.</returns>
@@ -394,64 +367,32 @@ public class CatsguyBossEntity : BossEntity
 			yield break;
 		}
 
-		// 行動の抽選
+		yield return Move();
 
-		switch (Random.Range(0, 6))
+		var probability = Random.Range(0, 100);
+
+		// 28% lightning
+		// 21% ball
+		// 19% enemy
+		// 16% ice
+		// 16% heal
+
+
+		if (probability < 28)
 		{
-			case PatternBall:
-				var ball = Instantiate(BallToShoot, transform.position, transform.rotation).GetComponent<BallEntity>();
-				ball.Parent = this;
-				break;
-			case PatternLife:
-				Instantiate(HealItem, transform.position, transform.rotation);
-				break;
-			case PatternLightning:
-				var unit = (rightTarget - leftTarget) / 4;
-				var middleLeft = new Vector2((leftTarget + rightTarget - unit) / 2, transform.position.y);
-				var middleRight = new Vector2((leftTarget + rightTarget + unit) / 2, transform.position.y);
-				var left = new Vector2(leftTarget, transform.position.y);
-				var right = new Vector2(rightTarget, transform.position.y);
-				if (direction == SpriteDirection.Left)
-				{
-					Instantiate(lightning);
-					yield return EaseOut(middleRight, 0.5f);
-					Instantiate(lightning);
-					yield return EaseOut(middleLeft, 0.5f);
-					Instantiate(lightning);
-					yield return EaseOut(left, 0.5f);
+			// lightning
 
-					direction = SpriteDirection.Right;
-				}
-				else
-				{
-					Instantiate(lightning);
-					yield return EaseOut(middleLeft, 0.5f);
-					Instantiate(lightning);
-					yield return EaseOut(middleRight, 0.5f);
-					Instantiate(lightning);
-					yield return EaseOut(right, 0.5f);
-
-					direction = SpriteDirection.Left;
-				}
-				break;
-			case PatternEnemy:
-				Instantiate(entityToThrow, transform.position, transform.rotation);
-				break;
-			case PatternIce:
-				Instantiate(ice, transform.position, transform.rotation);
-				break;
-			case PatternMove:
-				// 少し下よりの中央に移動し
-				yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
-				// 目的地に行く
-				yield return EaseOut(new Vector2(direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
-
-				yield return new WaitForSeconds(0.4f);
-
-				// 振り向く
-				direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
-				break;
 		}
+		else if (probability < 49)
+		{
+			
+		}
+		else if (probability < 68)
+		{
+			
+		}
+		else if (probability < 84)
+
 
 		// 毎回少し休む
 		yield return new WaitForSeconds(1.5f);
@@ -490,6 +431,75 @@ public class CatsguyBossEntity : BossEntity
 
 		yield return EaseOut(destination, 1.5f);
 		direction = SpriteDirection.Left;
+	}
+
+	IEnumerator Move()
+	{
+		// 少し下よりの中央に移動し
+		yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
+		// 目的地に行く
+		yield return EaseOut(new Vector2(direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
+
+		yield return new WaitForSeconds(0.4f);
+
+		// 振り向く
+		direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+	}
+
+	IEnumerator ThrowIce() 
+	{
+		Instantiate(ice, transform.position, transform.rotation);
+		yield break;
+	}
+
+	IEnumerator SummonLightning()
+	{
+		var unit = (rightTarget - leftTarget) / 4;
+		var middleLeft = new Vector2((leftTarget + rightTarget - unit) / 2, transform.position.y);
+		var middleRight = new Vector2((leftTarget + rightTarget + unit) / 2, transform.position.y);
+		var left = new Vector2(leftTarget, transform.position.y);
+		var right = new Vector2(rightTarget, transform.position.y);
+		if (direction == SpriteDirection.Left)
+		{
+			Instantiate(lightning);
+			yield return EaseOut(middleRight, 0.5f);
+			Instantiate(lightning);
+			yield return EaseOut(middleLeft, 0.5f);
+			Instantiate(lightning);
+			yield return EaseOut(left, 0.5f);
+
+			direction = SpriteDirection.Right;
+		}
+		else
+		{
+			Instantiate(lightning);
+			yield return EaseOut(middleLeft, 0.5f);
+			Instantiate(lightning);
+			yield return EaseOut(middleRight, 0.5f);
+			Instantiate(lightning);
+			yield return EaseOut(right, 0.5f);
+
+			direction = SpriteDirection.Left;
+		}
+	}
+
+	IEnumerator ThrowEnemy()
+	{
+		Instantiate(entityToThrow, transform.position, transform.rotation);
+		yield break;
+	}
+
+	IEnumerator ThrowHeart()
+	{
+		Instantiate(HealItem, transform.position, transform.rotation);
+		yield break;
+	}
+
+	IEnumerator ThrowBall()
+	{
+		var ball = Instantiate(BallToShoot, transform.position, transform.rotation).GetComponent<BallEntity>();
+		ball.Parent = this;
+		yield break;
 	}
 
 	#region Helper
