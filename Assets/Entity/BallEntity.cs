@@ -51,16 +51,20 @@ public class BallEntity : LivableEntity
 		Sfx.Play("entity.ball.explosion");
 
 		if (!(killer is PlayerController) || Parent == null)
-			return base.OnDeath(killer);
+		{
+			yield return base.OnDeath(killer);
+			yield break;
+		}
 
 		// プレイヤーに踏まれるとUFOを攻撃する
 		while (Vector2.Distance(transform.position, Parent.transform.position) > 4)
 		{
-			transform.position = Vector2.Lerp(transform.position, Parent.transform.position, 5f * Time.deltaTime);
+			transform.position = Vector2.Lerp(transform.position, Parent.transform.position, .5f);
+			yield return null;
 		}
 		Sfx.Play("event.explosion");
 		Parent.Damage(this, 1);
 
-		return base.OnDeath(killer);
+		yield return base.OnDeath(killer);
 	}
 }
