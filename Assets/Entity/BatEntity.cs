@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BatEntity : FlyableEntity
+namespace Xeltica.Osakana
 {
-	public override string WaitingAnimationId => "entity.enemy.bat.stay";
+	public class BatEntity : FlyableEntity
+	{
+		public override string WaitingAnimationId => "entity.enemy.bat.stay";
 
-	public override string DeathSfxId => null;
+		public override string DeathSfxId => null;
 
-	public override string FlyAnimationId => "entity.enemy.bat.fly";
+		public override string FlyAnimationId => "entity.enemy.bat.fly";
+	}
 }
