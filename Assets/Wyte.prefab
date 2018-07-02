@@ -534,6 +534,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 60ba837714a114df999128d8c08f7c39, type: 3}
   - id: entity.player.heal
     clip: {fileID: 8300000, guid: 46fca5ab936c045c0935cb676f707157, type: 3}
+  - id: entity.guy.throw
+    clip: {fileID: 8300000, guid: dc055b5e0b4f941c285d9eed18004415, type: 3}
+  - id: entity.ball.explosion
+    clip: {fileID: 8300000, guid: 2e4755abbb67f44df83196ed97f1b048, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1
