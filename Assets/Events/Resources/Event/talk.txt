@@ -82,8 +82,14 @@
 
 #post_final_battle
 	+pfreeze on
-	:"ここで　ラストイベントが　くるはず\nいまは　みじっそう。"
-	+bossbarhide
-	+goto #title
+	+spclr boss
+	+bgmstopasync 0.4
+	+fade out, 0.4
+	:"また　おれには　さかな　くれないの？？"
+	:"......"
+	:"$spd=0.5;......どうして？"
+	:"$spd=0.2;どうして　あいつばかり？"
+	+fade in, 0.4
+	:"キャッツガイを　たおした。"
 	+pfreeze off
 +end
