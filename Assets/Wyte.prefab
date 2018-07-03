@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114244664975831212}
   - component: {fileID: 114371519277335488}
   - component: {fileID: 114606749051177080}
+  - component: {fileID: 114549298682737474}
   m_Layer: 0
   m_Name: Wyte
   m_TagString: Untagged
@@ -382,6 +383,18 @@ MonoBehaviour:
   - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
   - {fileID: 114732566923196864, guid: 9e257e52cfb1b4a0a9e5b405d3ae79fc, type: 2}
   - {fileID: 114564950249208794, guid: ddc7ce0dd2df54e69b8f0b913e0c21da, type: 2}
+--- !u!114 &114549298682737474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329395484811586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93549a09ecd21426680a742677a0e1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gauge: {fileID: 0}
 --- !u!114 &114557818162750610
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -46,7 +46,8 @@
 	+bgmplay "boss"
 
 	pre_battle+onflag gosub, #simple_pre_battle, #pre_battle
-
+	+bossbarshow
+	+bossbarbind boss
 	+pfreeze off
 	+wait 0.4
 
@@ -82,6 +83,7 @@
 #post_final_battle
 	+pfreeze on
 	:"ここで　ラストイベントが　くるはず\nいまは　みじっそう。"
+	+bossbarhide
 	+goto #title
 	+pfreeze off
 +end
