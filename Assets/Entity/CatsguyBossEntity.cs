@@ -181,6 +181,16 @@ namespace Xeltica.Osakana
 
 		protected override IEnumerator OnDeath(Object killer)
 		{
+			// アニメーション
+			var v = new Vector2(direction == SpriteDirection.Left ? -1 : 1, -4);
+			for (int i = 0; i < 12; i++)
+			{
+				transform.Translate(v);
+				Sfx.Play("entity.guy.blast");
+				yield return new WaitForSeconds(0.125f);
+			}
+			Sfx.Play("entity.guy.explosion");
+
 			// 戦闘終了前のイベント実行(もし存在すれば)
 			if (!string.IsNullOrEmpty(PostEvent))
 			{
