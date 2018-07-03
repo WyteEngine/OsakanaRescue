@@ -382,19 +382,24 @@ namespace Xeltica.Osakana
 
 			if (probability < 28)
 			{
-				// lightning
-
+				yield return SummonLightning();
 			}
-			else if (probability < 49)
+			else if (probability < 28 + 21)
 			{
-
+				yield return ThrowBall();
 			}
-			else if (probability < 68)
+			else if (probability < 28 + 21 + 19)
 			{
-
+				yield return ThrowEnemy();
 			}
-			else if (probability < 84)
-
+			else if (probability < 28 + 21 + 19 + 16)
+			{
+				yield return ThrowIce();
+			}
+			else
+			{
+				yield return ThrowHeart();
+			}
 
 				// 毎回少し休む
 				yield return new WaitForSeconds(1.5f);
