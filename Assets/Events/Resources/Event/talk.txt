@@ -68,7 +68,7 @@
 	fs3+spclr
 	+wait 0.3
 	:"いいだろう。おれを　たおせたら\nやくそくどおり　かえしてやる。"
-	boss+spwalk 64, 0.4
+	boss+spwalk 80, 0.4
 	boss+spwalk -1, 0.001
 	:"だが　こっちも　ゼンリョクを　だすぜ。\nかくごしろ。"
 	+flag on, pre_battle
