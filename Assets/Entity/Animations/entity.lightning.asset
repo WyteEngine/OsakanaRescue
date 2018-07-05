@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcff902f88eec4895ac2ddf623f60c31, type: 3}
-  m_Name: entity.player.death 1
+  m_Name: entity.lightning
   m_EditorClassIdentifier: 
   animationList:
-  - sprite: {fileID: 21300000, guid: 172e684f7b27d47d590677b9e5f43e02, type: 3}
+  - sprite: {fileID: 21300026, guid: fb9c20d772f7b427989cf5565cb00583, type: 3}
     time: 0
   useLoop: 0
   loopTimes: 0

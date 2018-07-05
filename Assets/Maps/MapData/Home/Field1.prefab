@@ -3595,7 +3595,7 @@ MonoBehaviour:
   healItem: {fileID: 1627771233334822, guid: 69cbe8513a4054011a620a01fe7d25fc, type: 2}
   balltoShoot: {fileID: 1395271602168630, guid: 78c3af24ded2f4951a0982790056c9e7,
     type: 2}
-  lightning: {fileID: 1502108992293806, guid: 5030a2a5bb76a45f4a619b36f342d973, type: 2}
+  lightning: {fileID: 1317596898192052, guid: 2740dd44cfe654fed98ac90decc40dc1, type: 2}
   ice: {fileID: 1502108992293806, guid: 5030a2a5bb76a45f4a619b36f342d973, type: 2}
 --- !u!114 &114630157362102464
 MonoBehaviour:

@@ -382,6 +382,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.size
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 4760318482431898, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -432,8 +437,28 @@ Prefab:
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: bootstrapLabel
-      value: boot
+      value: debug_boss
       objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[15].id
+      value: entity.lightning.shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 68352ca095ff245e5a90d74d34703782, type: 3}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[16].id
+      value: entity.lightning.fall
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952489655206004, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: Effects.Array.data[16].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c939bc3b437c4c27a12554e4992f085, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabParent: 0

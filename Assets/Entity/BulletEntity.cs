@@ -5,7 +5,7 @@ namespace Xeltica.Osakana
 	{
 		public override string FlyAnimationId => "entity.projectile.bullet";
 		public override string WaitingAnimationId => "entity.projectile.bullet";
-		public override string DeathSfxId => "entity.projectile.bullet";
+		public override string DeathSfxId => null;
 
 		protected override void OnUpdate()
 		{
@@ -26,7 +26,7 @@ namespace Xeltica.Osakana
 			Kill(interacter);
 			if (attackToThePlayer)
 				Wyte.CurrentPlayer.Damage(this, 1);
-			Sfx.Play("event.explosion");
+			Sfx.Play("entity.lightning.shoot");
 		}
 	}
 }

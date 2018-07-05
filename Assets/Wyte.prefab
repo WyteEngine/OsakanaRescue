@@ -476,6 +476,10 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 9e0e0eda87c494b5d88066fe5d7bbf1e, type: 2}
   - Key: entity.heart
     Value: {fileID: 11400000, guid: c4df674d0567e45c8959e24dd3527c94, type: 2}
+  - Key: entity.lightning
+    Value: {fileID: 11400000, guid: ebb53e033cebf4f8c8363dc3bb9f403e, type: 2}
+  - Key: entity.ice
+    Value: {fileID: 11400000, guid: f7622339c65134c91a8fbd012a7f29d6, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1

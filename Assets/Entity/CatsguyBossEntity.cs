@@ -383,26 +383,26 @@ namespace Xeltica.Osakana
 
 			var probability = Random.Range(0, 100);
 
-			// 28% lightning
-			// 21% ball
+			// 20% lightning
+			// 29% ball
 			// 19% enemy
 			// 16% ice
 			// 16% heal
 
 
-			if (probability < 28)
+			if (probability < 20)
 			{
 				yield return SummonLightning();
 			}
-			else if (probability < 28 + 21)
+			else if (probability < 20 + 29)
 			{
 				yield return ThrowBall();
 			}
-			else if (probability < 28 + 21 + 19)
+			else if (probability < 20 + 29 + 19)
 			{
 				yield return ThrowEnemy();
 			}
-			else if (probability < 28 + 21 + 19 + 16)
+			else if (probability < 20 + 29 + 19 + 16)
 			{
 				yield return ThrowIce();
 			}
@@ -465,6 +465,7 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowIce()
 		{
+			Sfx.Play("entity.guy.throw");
 			Instantiate(ice, transform.position, transform.rotation);
 			yield break;
 		}
@@ -478,22 +479,22 @@ namespace Xeltica.Osakana
 			var right = new Vector2(rightTarget, transform.position.y);
 			if (direction == SpriteDirection.Left)
 			{
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleRight, 0.5f);
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleLeft, 0.5f);
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(left, 0.5f);
 
 				direction = SpriteDirection.Right;
 			}
 			else
 			{
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleLeft, 0.5f);
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleRight, 0.5f);
-				Instantiate(lightning);
+				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(right, 0.5f);
 
 				direction = SpriteDirection.Left;
@@ -502,18 +503,21 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowEnemy()
 		{
+			Sfx.Play("entity.guy.throw");
 			Instantiate(entityToThrow, transform.position, transform.rotation);
 			yield break;
 		}
 
 		IEnumerator ThrowHeart()
 		{
+			Sfx.Play("entity.guy.throw");
 			Instantiate(HealItem, transform.position, transform.rotation);
 			yield break;
 		}
 
 		IEnumerator ThrowBall()
 		{
+			Sfx.Play("entity.guy.throw");
 			var ball = Instantiate(BallToShoot, transform.position, transform.rotation).GetComponent<BallEntity>();
 			ball.Parent = this;
 			yield break;
