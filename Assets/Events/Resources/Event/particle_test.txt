@@ -1,0 +1,19 @@
+﻿// 水滴の表示
+#particle_debug_waterdrop
+	waterdrop+particle 416, -464
++end
+
+// コンテナ破片の表示
+#particle_debug_piece_of_container
+	piece_of_container+particle 480, -496
++end
+
+// 爆発の表示
+#particle_debug_explosion
+	explosion+particle 544, -496
++end
+
+// 大爆発の表示
+#particle_debug_big_explosion
+	big_explosion+particle 608, -480
++end

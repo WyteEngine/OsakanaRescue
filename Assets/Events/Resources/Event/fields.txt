@@ -73,6 +73,15 @@
 	+pfreeze off
 +end
 
+#particle_test
+	+phide
+	+playercamera
+	+move "ParticleTest"
+	+pshow 336, -544
+	+fadeasync in, 0.2
+	+pfreeze off
++end
+
 #place
 	placed+onflag #place_skip
 	+flag on, placed
