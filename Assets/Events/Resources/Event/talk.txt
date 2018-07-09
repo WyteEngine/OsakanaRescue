@@ -43,9 +43,9 @@
 	+pfreeze on
 	+freecamera 3432, -272
 	+bgmstop 1
-	+bgmplay "boss"
 
 	pre_battle+onflag gosub, #simple_pre_battle, #pre_battle
+	+bgmplay "boss"
 	+bossbarshow
 	+bossbarbind boss
 	+pfreeze off
@@ -75,21 +75,163 @@
 +return
 
 #simple_pre_battle
-	boss+spwalk 64, 0.4
+	boss+spwalk 96, 0.4
 	boss+spwalk -1, 0.001
 	:"どうした？\nおまえの　じつりょくは　そのていどか？"
 +return
 
 #post_final_battle
 	+pfreeze on
+	+fade out, 0
 	+spclr boss
-	+bgmstopasync 0.4
-	+fade out, 0.4
+	+wait 4
+	:"ママ？"
 	:"また　おれには　さかな　くれないの？？"
 	:"......"
-	:"$spd=0.5;......どうして？"
-	:"$spd=0.2;どうして　あいつばかり？"
+	:"$spd=0.5;......なんで？"
+	:"$spd=0.2;どうして　あいつは..."
+	+wait 1.2
+	+spset fs, entity.goldfish, 3544, -296
+	+pshow 3304, -292
 	+fade in, 0.4
 	:"キャッツガイを　たおした。"
-	+pfreeze off
+	+spwalk player, 240, 2.5
+	:"ぼくの　おさかな。"
+	+spclr fs
+	+wait 0.8
+	+spwalk -1, 0.02
+	:"ほんとうは　いっしょに　たべたかった..."
+	+wait 1
+	+fade out, 1.2
+	+goto #ending
++end
+
+#ending
+	+fade out, 0
+	+freeze on
+	+gui off
+	+wait 1
+
+	+txtset t1, "しろい　ねこの　きょうだいを\nしっていますか？", "middle_center", 0, 0, center
+	+bgmplay "badend"
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "かれは　みずからを　キャッツガイと　よびます", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "むかしむかし　ふたりは　とても　なかよしでした", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "$c=red;そう　かれが　ひょうへんするまでは...", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+txtset t1, "$sz=26;おさかなれすきゅー", "middle_center", 0, 32, center
+	+txtset t2, "STAFF CREDIT", "middle_center", 0, -32, center
+	+bgmwait 3
+	+txtclr t1,t2
+	+bgmwait 0.429
+	+txtset t1, "++ Xeltica ++\n\nプログラミング\nさっきょく\nドット絵\nシナリオ", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "** かいはつツール **\n\nUnity\nAseprite\nLogic Pro X\nAudacity", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "** スペシャルサンクス **\n\n++ Amamizu Sui ++\n++Fueisu++", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	 
+	+txtset t1, "キャッツガイと　しろいねこは\nなかのいい　きょうだいでした", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "でも　おやは　キャッツガイを\nきにいりませんでした", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "ぜっぴんの　きんのさかなも\nいつも　キャッツガイには　あげず", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "しろいねこだけ　できあい　されました", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+txtset t1, "キャッツガイは　やがて　\nこのように　かんがえはじめました", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "「いつも　のろまな　おとうとだから」", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "「いつまでも　おやばなれ　できない」", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "「おれは　あいつよりも　かちぐみだ」", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+txtset t1, "なかよしだった　きょうだいに　\nいちど　はいった　きれつは", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "そうかんたんに　うまりません", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "ふたりは　むかしの　きおくを　わすれ", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "ころしあうほどに...", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+txtset t1, "あなたは　あにを　たおし", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, "みごと　$c=#ffff00;きんのさかな$!c;を", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429 
+	+txtset t1, "てにいれました。", "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+bgmwait 5.709
+	+txtset the_end, "$sz=32;THE END$c=gray;$sz=13;", "middle_center", 0, 0, center
+	+bgmwait 6
+	+txtset nod, "$c=#808080;[Z] をおしてください", middle_center, 0, -64, center
+	+nod
+	+sfx "entity.npc.saying"
+	+txtclr the_end, nod
+	+wait 0.8
+	+gui on
+	:"あのー！ちょっと　まってー！"
+	+wait 0.4
+	:"よかった...やっと　おいつけた..."
+	:"あ　さきほどは　しゅじんが　おせわになりました。"
+	:"わたくし　わるくないへびの　よめです。"
+	:"さいごに　ひとつだけ　いいたいことがあって\nいそいできました。"
+	:"$c=red;あのときのことを　おもいだしたら\nあのときのばしょに　もどってみてください。"
+	:"かこは　とりもどせないけど\nかこは　おもいだせますよ。"
+	+wait 0.6
+	:"それじゃあ　おげんきで..."
+	+wait 0.5
+
+	+goto title
 +end

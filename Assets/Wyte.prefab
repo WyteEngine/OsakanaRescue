@@ -301,6 +301,9 @@ MonoBehaviour:
   - id: boss
     clip: {fileID: 8300000, guid: 980d54c41cd6e4c3aab534fbb89322c0, type: 3}
     loop: 1
+  - id: badend
+    clip: {fileID: 8300000, guid: ed3df7494769849609dd3ad0e9b76a44, type: 3}
+    loop: 0
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: boot
+  bootstrapLabel: ending
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
@@ -555,6 +558,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: dc055b5e0b4f941c285d9eed18004415, type: 3}
   - id: entity.ball.explosion
     clip: {fileID: 8300000, guid: 2e4755abbb67f44df83196ed97f1b048, type: 3}
+  - id: entity.lightning.shoot
+    clip: {fileID: 8300000, guid: 68352ca095ff245e5a90d74d34703782, type: 3}
+  - id: entity.lightning.fall
+    clip: {fileID: 8300000, guid: 9c939bc3b437c4c27a12554e4992f085, type: 3}
+  - id: entity.guy.death
+    clip: {fileID: 8300000, guid: aa82f7e299f4e418b8313883b2819dfd, type: 3}
+  - id: entity.guy.blast
+    clip: {fileID: 8300000, guid: 04a5743aaf5ef4fa78eba8e3f937b30d, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1

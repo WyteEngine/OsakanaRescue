@@ -181,15 +181,23 @@ namespace Xeltica.Osakana
 
 		protected override IEnumerator OnDeath(Object killer)
 		{
+			
+			Bgm.Stop();
 			// アニメーション
+			Velocity = Vector2.zero;
+			direction = Wyte.CurrentPlayer != null ? (transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left) : direction;
 			var v = new Vector2(direction == SpriteDirection.Left ? -1 : 1, -4);
-			for (int i = 0; i < 12; i++)
+			for (int i = 0; i < 24; i++)
 			{
 				transform.Translate(v);
-				Sfx.Play("entity.guy.blast");
-				yield return new WaitForSeconds(0.125f);
+				if (i >= 8)
+				{
+					// blast
+					Sfx.Play("entity.guy.blast");
+				}
+				yield return new WaitForSeconds(i < 8 ? 0.22f : i < 13 ? 0.11f : 0.055f);
 			}
-			Sfx.Play("entity.guy.explosion");
+			Sfx.Play("entity.guy.death");
 
 			// 戦闘終了前のイベント実行(もし存在すれば)
 			if (!string.IsNullOrEmpty(PostEvent))

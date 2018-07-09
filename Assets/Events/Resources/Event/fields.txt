@@ -65,6 +65,7 @@
 #field3
 	//+fade out, 0.2
 	+phide
+	+playercamera
 	+move "Field1"
 	+bgmplay "field2"
 	+pshow 2256, -160
@@ -208,6 +209,7 @@
 #debug_boss
 	+pfreeze on
 	+phide
+	+playercamera
 	+move "Field1"
 	+bgmplay "field2"
 	+pshow +3192, -88

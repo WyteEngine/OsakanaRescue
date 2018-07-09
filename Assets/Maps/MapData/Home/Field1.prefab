@@ -3348,8 +3348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteTag: fs1
-  flagId: 
-  visiblity: 0
+  flagId: pre_battle
+  visiblity: 3
   animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
@@ -3609,8 +3609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteTag: fs3
-  flagId: 
-  visiblity: 0
+  flagId: pre_battle
+  visiblity: 3
   animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
@@ -3734,8 +3734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteTag: fs2
-  flagId: 
-  visiblity: 0
+  flagId: pre_battle
+  visiblity: 3
   animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
