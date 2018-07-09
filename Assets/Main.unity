@@ -489,11 +489,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
+    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
-      propertyPath: gauge
+      propertyPath: host
       value: 
-      objectReference: {fileID: 55079596}
+      objectReference: {fileID: 1544167300}
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: itemBar
@@ -504,16 +504,11 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
-    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
+    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
-      propertyPath: host
+      propertyPath: gauge
       value: 
-      objectReference: {fileID: 1544167300}
-    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: bootstrapLabel
-      value: ending
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 55079596}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabParent: 0

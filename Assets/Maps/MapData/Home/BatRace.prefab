@@ -379,7 +379,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280

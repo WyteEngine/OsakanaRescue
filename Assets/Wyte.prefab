@@ -33,6 +33,7 @@ GameObject:
   - component: {fileID: 114371519277335488}
   - component: {fileID: 114606749051177080}
   - component: {fileID: 114549298682737474}
+  - component: {fileID: 114255333607409634}
   m_Layer: 0
   m_Name: Wyte
   m_TagString: Untagged
@@ -315,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: ending
+  bootstrapLabel: particle_test
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
@@ -337,6 +338,26 @@ MonoBehaviour:
   fonts:
   - {fileID: 12800000, guid: 1f5d385315167b24098b7d691b843725, type: 3}
   - {fileID: 12800000, guid: 2b2757869448a49feb456f18e190e105, type: 3}
+--- !u!114 &114255333607409634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329395484811586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d82a4030e99f41d5ad6fd55d00d0b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles:
+  - Id: waterdrop
+    Entity: {fileID: 114118627686312744, guid: c341bff4decf3408d94571a34b67078a, type: 2}
+  - Id: piece_of_container
+    Entity: {fileID: 114414435703155530, guid: db5e33fa7430f4cfa9e9f620bb16c923, type: 2}
+  - Id: big_explosion
+    Entity: {fileID: 114113176550538962, guid: 99440514b07c04de3985069c267ab299, type: 2}
+  - Id: explosion
+    Entity: {fileID: 114044020513825814, guid: 38a237ba16dbc48199959ec179ba9396, type: 2}
 --- !u!114 &114371519277335488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,6 +407,7 @@ MonoBehaviour:
   - {fileID: 114216720429034326, guid: 06e41299204ca460cb8c57c8394d6f83, type: 2}
   - {fileID: 114732566923196864, guid: 9e257e52cfb1b4a0a9e5b405d3ae79fc, type: 2}
   - {fileID: 114564950249208794, guid: ddc7ce0dd2df54e69b8f0b913e0c21da, type: 2}
+  - {fileID: 114485428174632562, guid: ecfb5ef58aa57434d99b6d53072ee190, type: 2}
 --- !u!114 &114549298682737474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -483,6 +505,14 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: ebb53e033cebf4f8c8363dc3bb9f403e, type: 2}
   - Key: entity.ice
     Value: {fileID: 11400000, guid: f7622339c65134c91a8fbd012a7f29d6, type: 2}
+  - Key: particle.waterdrop
+    Value: {fileID: 11400000, guid: af8634110223f41c79bb36ff46d9ddee, type: 2}
+  - Key: particle.piece_of_container
+    Value: {fileID: 11400000, guid: 51cad92e23648412898ace2d57284937, type: 2}
+  - Key: particle.explosion
+    Value: {fileID: 11400000, guid: 847eddd2505a748788012d629a27f5f7, type: 2}
+  - Key: particle.big_explosion
+    Value: {fileID: 11400000, guid: e8ad82be04402430a98aebec2db5a25d, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
