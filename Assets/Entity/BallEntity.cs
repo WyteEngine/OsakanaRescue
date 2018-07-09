@@ -62,7 +62,7 @@ namespace Xeltica.Osakana
 			}
 
 			// プレイヤーに踏まれるとUFOを攻撃する
-			while (Vector2.Distance(transform.position, Parent.transform.position) > 4)
+			while (Vector2.Distance(transform.position, Parent.transform.position) > 8)
 			{
 				transform.position = Vector2.Lerp(transform.position, Parent.transform.position, .1f);
 				yield return null;
