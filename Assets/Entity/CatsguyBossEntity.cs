@@ -411,8 +411,13 @@ namespace Xeltica.Osakana
 				yield return ThrowHeart();
 			}
 
-				// 毎回少し休む
-				yield return new WaitForSeconds(1.5f);
+			var time = 0f;
+			while (time < 1.5f)
+			{
+				time += Time.deltaTime;
+				if (Dying) yield break;
+				yield return null;
+			}
 
 		}
 

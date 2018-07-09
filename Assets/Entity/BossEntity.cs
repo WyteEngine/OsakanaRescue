@@ -116,6 +116,7 @@ namespace Xeltica.Osakana
 			{
 				transform.position = MathHelper.EaseOut(t / time, p0, dest);
 				t += Time.deltaTime;
+				if (Dying) yield break;
 				yield return null;
 			}
 			// 念の為
