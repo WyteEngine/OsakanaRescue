@@ -7,12 +7,36 @@
 	+freecamera 2064, -176
 	+wait 1
 	+sfx event.explosion
-	+tiledelrect 128, 0, 137, -1
-	+tiledelrect 128, -2, 137, -3
-	+tiledelrect 128, -4, 137, -5
-	+tiledelrect 128, -6, 137, -7
-	+tiledelrect 128, -8, 137, -9
-	+tiledelrect 128, -10, 137, -11
+	+tiledelrect 128, 0, 137, -11
+	piece_of_container+particle 2048, -32
+	piece_of_container+particle 2080, -32
+	piece_of_container+particle 2112, -32
+	piece_of_container+particle 2144, -32
+	piece_of_container+particle 2176, -32
+
+	piece_of_container+particle 2048, -64
+	piece_of_container+particle 2080, -64
+	piece_of_container+particle 2112, -64
+	piece_of_container+particle 2144, -64
+	piece_of_container+particle 2176, -64
+
+	piece_of_container+particle 2048, -96
+	piece_of_container+particle 2080, -96
+	piece_of_container+particle 2112, -96
+	piece_of_container+particle 2144, -96
+	piece_of_container+particle 2176, -96
+
+	piece_of_container+particle 2048, -128
+	piece_of_container+particle 2080, -128
+	piece_of_container+particle 2112, -128
+	piece_of_container+particle 2144, -128
+	piece_of_container+particle 2176, -128
+
+	piece_of_container+particle 2048, -160
+	piece_of_container+particle 2080, -160
+	piece_of_container+particle 2112, -160
+	piece_of_container+particle 2144, -160
+	piece_of_container+particle 2176, -160
 	+wait 2
 	+bgmplay field2
 	+playercamera
