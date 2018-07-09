@@ -440,10 +440,9 @@ namespace Xeltica.Osakana
 			yield return EaseIn(destination, 0.6f);
 
 			// 体力増強
-			Wyte.Player.MaxLife = 12;
-			Wyte.Player.Life = 12;
-			Wyte.CanMove = false;
-			yield return MessageContoller.Instance.Say(null, "ふしぎな　ちからが　みなぎる...\nさいだいHPが　おおきく　あがった！");
+			Wyte.Player.Life = Wyte.Player.MaxLife;
+
+			Sfx.Play("entity.player.heal");
 
 			// UFOが降りてくる
 			Wyte.CanMove = true;
