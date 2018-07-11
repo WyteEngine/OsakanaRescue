@@ -37,6 +37,8 @@ namespace Xeltica.Osakana
 		protected override IEnumerator OnDeath(Object killer)
 		{
 			Sfx.Play("entity.lightning.fall");
+			for (int i = 0; i < Random.Range(3, 8); i++)
+				ParticleAPI.Instance.Summon("explosion", Random.insideUnitCircle * 12 + (Vector2)transform.position);
 			return base.OnDeath(killer);
 		}
 

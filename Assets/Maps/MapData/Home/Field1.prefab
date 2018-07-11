@@ -3113,7 +3113,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3142,7 +3141,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3171,7 +3169,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3213,7 +3210,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: prologue_has_done
   visiblity: 3
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -3242,7 +3238,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3273,7 +3268,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3322,7 +3316,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3351,7 +3344,6 @@ MonoBehaviour:
   spriteTag: warukunai_snake
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3380,7 +3372,6 @@ MonoBehaviour:
   spriteTag: fs1
   flagId: pre_battle
   visiblity: 3
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3453,7 +3444,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3471,7 +3461,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3500,7 +3489,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3580,7 +3568,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3623,7 +3610,6 @@ MonoBehaviour:
   spriteTag: boss
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3659,7 +3645,6 @@ MonoBehaviour:
   spriteTag: fs3
   flagId: pre_battle
   visiblity: 3
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3700,7 +3685,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3755,7 +3739,6 @@ MonoBehaviour:
   spriteTag: block1
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3784,7 +3767,6 @@ MonoBehaviour:
   spriteTag: fs2
   flagId: pre_battle
   visiblity: 3
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3813,7 +3795,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
@@ -3842,7 +3823,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3871,7 +3851,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3913,7 +3892,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3967,7 +3945,6 @@ MonoBehaviour:
   spriteTag: 
   flagId: 
   visiblity: 0
-  animation: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280

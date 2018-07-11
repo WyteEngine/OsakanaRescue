@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &55079595 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224916506696830366, guid: 28c5996144f45478ebc990cf08a79449,
-    type: 2}
-  m_PrefabInternal: {fileID: 1297274785}
 --- !u!114 &55079596 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114555780566826620, guid: 28c5996144f45478ebc990cf08a79449,
@@ -311,11 +306,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918719115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1544167300}
+  m_Father: {fileID: 2017740125}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -509,6 +504,16 @@ Prefab:
       propertyPath: gauge
       value: 
       objectReference: {fileID: 55079596}
+    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: bootstrapLabel
+      value: debug_boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: guiEnabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabParent: 0
@@ -563,7 +568,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1544167300}
+    m_TransformParent: {fileID: 2017740125}
     m_Modifications:
     - target: {fileID: 224916506696830366, guid: 28c5996144f45478ebc990cf08a79449,
         type: 2}
@@ -873,8 +878,6 @@ RectTransform:
   - {fileID: 1527817271}
   - {fileID: 2017740125}
   - {fileID: 1559599787}
-  - {fileID: 918719116}
-  - {fileID: 55079595}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1334,6 +1337,10 @@ Prefab:
     - target: {fileID: 1217389474164528, guid: e6449ca024a244f12ac0149eec9e23ad, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199594204562034, guid: e6449ca024a244f12ac0149eec9e23ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6449ca024a244f12ac0149eec9e23ad, type: 2}

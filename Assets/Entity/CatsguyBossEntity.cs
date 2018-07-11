@@ -190,12 +190,15 @@ namespace Xeltica.Osakana
 			for (int i = 0; i < 24; i++)
 			{
 				transform.Translate(v);
+				ParticleAPI.Instance.Summon("explosion", Random.insideUnitCircle * 64 + (Vector2)transform.position);
 				if (i >= 8)
 				{
 					// blast
 					Sfx.Play("entity.guy.blast");
+					ParticleAPI.Instance.Summon("big_explosion", Random.insideUnitCircle * 64 + (Vector2)transform.position);
+
 				}
-				yield return new WaitForSeconds(i < 8 ? 0.22f : i < 13 ? 0.11f : 0.055f);
+				yield return new WaitForSeconds(i < 8 ? 0.33f : i < 13 ? 0.165f : 0.0825f);
 			}
 			Sfx.Play("entity.guy.death");
 
@@ -466,9 +469,11 @@ namespace Xeltica.Osakana
 		{
 			// 少し下よりの中央に移動し
 			yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
+			if (Dying) yield break;
 			// 目的地に行く
 			yield return EaseOut(new Vector2(direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
 
+			if (Dying) yield break;
 			yield return new WaitForSeconds(0.4f);
 
 			// 振り向く
@@ -477,6 +482,7 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowIce()
 		{
+			if (Dying) yield break;
 			Sfx.Play("entity.guy.throw");
 			Instantiate(ice, transform.position, transform.rotation);
 			yield break;
@@ -489,25 +495,36 @@ namespace Xeltica.Osakana
 			var middleRight = new Vector2((leftTarget + rightTarget + unit) / 2, transform.position.y);
 			var left = new Vector2(leftTarget, transform.position.y);
 			var right = new Vector2(rightTarget, transform.position.y);
+
 			if (direction == SpriteDirection.Left)
 			{
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleRight, 0.5f);
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleLeft, 0.5f);
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(left, 0.5f);
+				if (Dying) yield break;
+				Instantiate(lightning, transform.position, default(Quaternion));
 
 				direction = SpriteDirection.Right;
 			}
 			else
 			{
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleLeft, 0.5f);
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(middleRight, 0.5f);
+				if (Dying) yield break;
 				Instantiate(lightning, transform.position, default(Quaternion));
 				yield return EaseOut(right, 0.5f);
+				if (Dying) yield break;
+				Instantiate(lightning, transform.position, default(Quaternion));
 
 				direction = SpriteDirection.Left;
 			}
@@ -515,6 +532,7 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowEnemy()
 		{
+			if (Dying) yield break;
 			Sfx.Play("entity.guy.throw");
 			Instantiate(entityToThrow, transform.position, transform.rotation);
 			yield break;
@@ -522,6 +540,7 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowHeart()
 		{
+			if (Dying) yield break;
 			Sfx.Play("entity.guy.throw");
 			Instantiate(HealItem, transform.position, transform.rotation);
 			yield break;
@@ -529,6 +548,7 @@ namespace Xeltica.Osakana
 
 		IEnumerator ThrowBall()
 		{
+			if (Dying) yield break;
 			Sfx.Play("entity.guy.throw");
 			var ball = Instantiate(BallToShoot, transform.position, transform.rotation).GetComponent<BallEntity>();
 			ball.Parent = this;
