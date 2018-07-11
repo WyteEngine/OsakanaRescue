@@ -28,6 +28,9 @@ namespace Xeltica.Osakana
 
 		private string ballAnimationId;
 
+		// 3回まで跳ね返りを許す
+		private int reflectionCount = 3;
+
 		protected override void Start()
 		{
 			base.Start();
@@ -45,7 +48,13 @@ namespace Xeltica.Osakana
 
 			if (CanKickLeft() || CanKickRight())
 			{
-				Kill(this);
+				reflectionCount--;
+				// 反転
+				Velocity *= Vector2.left;
+				if (reflectionCount <= 0)
+					Kill(this);
+				else
+					Sfx.Play(JumpSfxId);
 			}
 			base.OnUpdate();
 		}
@@ -62,7 +71,7 @@ namespace Xeltica.Osakana
 			}
 
 			// プレイヤーに踏まれるとUFOを攻撃する
-			while (Vector2.Distance(transform.position, Parent.transform.position) > 8)
+			while (Vector2.Distance(transform.position, Parent.transform.position) > 32)
 			{
 				transform.position = Vector2.Lerp(transform.position, Parent.transform.position, .1f);
 				yield return null;
