@@ -27,7 +27,7 @@ namespace Xeltica.Osakana
 			base.Start();
 			collider2D.enabled = false;
 
-			Velocity = new Vector2((Random.Range(-64, 64) / 4f), Random.Range(16, 32));
+			Velocity = new Vector2((Random.Range(-64, 64) / 4f), Random.Range(96, 128));
 		}
 	}
 

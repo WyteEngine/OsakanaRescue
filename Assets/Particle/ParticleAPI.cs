@@ -33,21 +33,32 @@ namespace Xeltica.Osakana
 			Novel.Runtime.Register("particle", Summon);
 		}
 
+		public void Summon(string id, Vector2 pos)
+		{
+			// 生成する
+			Instantiate(this[id], pos, transform.rotation);
+		}
+
+		public void Summon(string id, float x, float y)
+		{
+			Summon(id, new Vector2(x, y));
+		}
+
 		public IEnumerator Summon(string s, params string[] a)
 		{
-			Entity entity;
+			string entity;
 			float x, y;
 			switch (a.Length)
 			{
 				case 2:
 					// SpriteTagをパーティクルIDとする
-					entity = this[s];
+					entity = s;
 					NArgsAssert(float.TryParse(a[0], out x));
 					NArgsAssert(float.TryParse(a[1], out y));
 					break;
 				case 3:
 					// 3引数をID，x, yとする
-					entity = this[a[0]];
+					entity = a[0];
 					NArgsAssert(float.TryParse(a[1], out x));
 					NArgsAssert(float.TryParse(a[2], out y));
 					break;
@@ -56,8 +67,8 @@ namespace Xeltica.Osakana
 					NArgsAssert(false);
 					yield break;
 			}
-			// 生成する
-			Instantiate(entity, new Vector2(x, y), transform.rotation);
+
+			Summon(entity, x, y);
 		}
 
 	}
