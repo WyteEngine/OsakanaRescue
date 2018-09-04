@@ -7,7 +7,17 @@ This game is powered by Unity and Wyte Engine.
 
 Now, this game is not localized to English because Wyte Engine doesn't have i18n support yet.
 
+# Build
+1. Run `git clone --recursive https://github.com/WyteEngine/OsakanaRescue`
+2. Run `cd OsakanaRescue`
+3. Run `./checkout.sh`
+4. Open the project in Unity
+
 # Requirement
+
+## To Build
+- Unity 2018.2.6
+- bash (In Windows, you can use Git Bash to clone & build)
 
 ## PC
 
