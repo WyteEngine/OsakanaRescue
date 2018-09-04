@@ -22,28 +22,26 @@
 	tutorial+onflag #tutorial_skip
 	+pfreeze on
 	+flag on, tutorial
-    :"はなしかけられそうな　いきものや\nしらべられそうな　ものをみつけたら"
+    :event.tutorial.1
     // 分岐
 	+onplatform pc, gosub, #tutorial_pc, mobile, gosub, #tutorial_mobile
-    :"うまくいけば　おはなしできるよ。"
+    :event.tutorial.2
 	+pfreeze off
 #tutorial_skip
 +return
 
 // モバイル
 #tutorial_mobile
-    :"がめんを　タップしてみよう！"
+    :event.tutorial.3.mobile
 +return
 
 // PC
 #tutorial_pc
-	:"↑キーを　おしてみよう！"
+	:event.tutorial.3.pc
 +return
 
 #field1
-	//+fade out, 0.2
 	+phide
-	//+txtset -114, 72
 	+move "Field1"
 	+bgmplay "field"
 	+pshow 16, -72
@@ -53,7 +51,6 @@
 +end
 
 #field2
-	//+fade out, 0.2
 	+phide
 	+move "Field1"
 	+bgmplay "field2"
@@ -63,7 +60,6 @@
 +end
 
 #field3
-	//+fade out, 0.2
 	+phide
 	+playercamera
 	+move "Field1"

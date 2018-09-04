@@ -5,28 +5,28 @@
 
 	+pfreeze on
 	+aflag on, talked_with_warukunai_snake
-	:"まって！　ぼくは　わるい　ヘビじゃ　ないよ！"
+	:event.snake.1
 	warukunai_snake+spwalk -1, 0.3
-	:"このさきに　ぼくの　すみかが　あるんだ。"
-	:"こうえんで　ひとやすみしててさ。"
+	:event.snake.2
+	:event.snake.3
 	+freecamera 2064, -176
 	+wait 0.5
-	:"それで　かえってきたら　あんなことに..."
+	:event.snake.4
 	+playercamera
 	+pfreeze off
 +end
 
 #warukunai_snake_2
 	+pfreeze on
-	:"おうちに　かえれない..."
+	:event.snake.5
 	+pfreeze off
 +end
 
 #warukunai_snake_thx
 	+pfreeze on
-	:"いま　おっきな　ばくはつがあってさ！"
-	:"え？　きみが　やってくれたの？"
-	:"ありがとう！　これで　やっと　おうちにかえれるよ。"
+	:event.snake.6
+	:event.snake.7
+	:event.snake.8
 	warukunai_snake+spwalk 320, 2
 	warukunai_snake+spclr
 	+flag on, snake_thx
@@ -35,7 +35,7 @@
 
 #warukunai_snake_wtf
 	+pfreeze on
-	:"ありえない！　どうして　ここに　もどってきたのさ！"
+	:event.snake.glitch
 	+pfreeze off
 +end
 
@@ -54,12 +54,12 @@
 +end
 
 #pre_battle
-	:"まさか　ほんとうに　ここまで　これるとはな。"
-	:"コンテナも...　コウモリも..."
-	:"おれの　しかけた　しかけは\nすべて　むだだったか..."
-	:"おまえが　そこまで　ノロマじゃないってことは\nよくわかった。"
+	:event.pre_battle.1
+	:event.pre_battle.2
+	:event.pre_battle.3
+	:event.pre_battle.4
 	+wait 0.4
-	:"......"
+	:event.pre_battle.5
 	boss+spwalk 16, 0.4
 	fs1+spclr
 	+wait 0.05
@@ -67,17 +67,17 @@
 	+wait 0.05
 	fs3+spclr
 	+wait 0.3
-	:"いいだろう。おれを　たおせたら\nやくそくどおり　かえしてやる。"
+	:event.pre_battle.6
 	boss+spwalk 80, 0.4
 	boss+spwalk -1, 0.001
-	:"だが　こっちも　ゼンリョクを　だすぜ。\nかくごしろ。"
+	:event.pre_battle.7
 	+flag on, pre_battle
 +return
 
 #simple_pre_battle
 	boss+spwalk 96, 0.4
 	boss+spwalk -1, 0.001
-	:"どうした？\nおまえの　じつりょくは　そのていどか？"
+	:event.simple_pre_battle.1
 +return
 
 #post_final_battle
@@ -85,22 +85,22 @@
 	+fade out, 0
 	+spclr boss
 	+wait 4
-	:"ママ？"
-	:"また　おれには　さかな　くれないの？？"
-	:"......"
-	:"$spd=0.5;......なんで？"
-	:"$spd=0.2;どうして　あいつは..."
+	:event.post_battle.1
+	:event.post_battle.2
+	:event.post_battle.3
+	:event.post_battle.4
+	:event.post_battle.5
 	+wait 1.2
 	+spset fs, entity.goldfish, 3544, -296
 	+pshow 3304, -292
 	+fade in, 0.4
-	:"キャッツガイを　たおした。"
+	:event.post_battle.6
 	+spwalk player, 240, 2.5
-	:"ぼくの　おさかな。"
+	:event.post_battle.7
 	+spclr fs
 	+wait 0.8
 	+spwalk -1, 0.02
-	:"ほんとうは　いっしょに　たべたかった..."
+	:event.post_battle.8
 	+wait 1
 	+fade out, 1.2
 	+goto #ending
@@ -112,125 +112,125 @@
 	+gui off
 	+wait 1
 
-	+txtset t1, "しろい　ねこの　きょうだいを\nしっていますか？", "middle_center", 0, 0, center
+	+txtset t1, ending.1, "middle_center", 0, 0, center
 	+bgmplay "badend"
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "かれは　みずからを　キャッツガイと　よびます", "middle_center", 0, 0, center
+	+txtset t1, ending.2, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "むかしむかし　ふたりは　とても　なかよしでした", "middle_center", 0, 0, center
+	+txtset t1, ending.3, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "$c=red;そう　かれが　ひょうへんするまでは...", "middle_center", 0, 0, center
+	+txtset t1, ending.4, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
 
-	+txtset t1, "$sz=26;おさかなれすきゅー", "middle_center", 0, 32, center
-	+txtset t2, "STAFF CREDIT", "middle_center", 0, -32, center
+	+txtset t1, ending.title, "middle_center", 0, 32, center
+	+txtset t2, ending.staff_credit, "middle_center", 0, -32, center
 	+bgmwait 3
 	+txtclr t1,t2
 	+bgmwait 0.429
-	+txtset t1, "++ Xeltica ++\n\nプログラミング\nさっきょく\nドット絵\nシナリオ", "middle_center", 0, 0, center
+	+txtset t1, ending.xeltica, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "** かいはつツール **\n\nUnity\nAseprite\nLogic Pro X\nAudacity", "middle_center", 0, 0, center
+	+txtset t1, ending.tools, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "** スペシャルサンクス **\n\n++ Amamizu Sui ++\n++Fueisu++", "middle_center", 0, 0, center
+	+txtset t1, ending.ty, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
 	 
-	+txtset t1, "キャッツガイと　しろいねこは\nなかのいい　きょうだいでした", "middle_center", 0, 0, center
+	+txtset t1, ending.5, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "でも　おやは　キャッツガイを\nきにいりませんでした", "middle_center", 0, 0, center
+	+txtset t1, ending.6, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "ぜっぴんの　きんのさかなも\nいつも　キャッツガイには　あげず", "middle_center", 0, 0, center
+	+txtset t1, ending.7, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "しろいねこだけ　できあい　されました", "middle_center", 0, 0, center
-	+bgmwait 3
-	+txtclr t1
-	+bgmwait 0.429
-
-	+txtset t1, "キャッツガイは　やがて　\nこのように　かんがえはじめました", "middle_center", 0, 0, center
-	+bgmwait 3
-	+txtclr t1
-	+bgmwait 0.429
-	+txtset t1, "「いつも　のろまな　おとうとだから」", "middle_center", 0, 0, center
-	+bgmwait 3
-	+txtclr t1
-	+bgmwait 0.429
-	+txtset t1, "「いつまでも　おやばなれ　できない」", "middle_center", 0, 0, center
-	+bgmwait 3
-	+txtclr t1
-	+bgmwait 0.429
-	+txtset t1, "「おれは　あいつよりも　かちぐみだ」", "middle_center", 0, 0, center
+	+txtset t1, ending.8, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
 
-	+txtset t1, "なかよしだった　きょうだいに　\nいちど　はいった　きれつは", "middle_center", 0, 0, center
+	+txtset t1, ending.9, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "そうかんたんに　うまりません", "middle_center", 0, 0, center
+	+txtset t1, ending.10, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "ふたりは　むかしの　きおくを　わすれ", "middle_center", 0, 0, center
+	+txtset t1, ending.11, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "ころしあうほどに...", "middle_center", 0, 0, center
+	+txtset t1, ending.12, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
 
-	+txtset t1, "あなたは　あにを　たおし", "middle_center", 0, 0, center
+	+txtset t1, ending.13, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
-	+txtset t1, "みごと　$c=#ffff00;きんのさかな$!c;を", "middle_center", 0, 0, center
+	+txtset t1, ending.14, "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, ending.15, "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, ending.16, "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+
+	+txtset t1, ending.17, "middle_center", 0, 0, center
+	+bgmwait 3
+	+txtclr t1
+	+bgmwait 0.429
+	+txtset t1, ending.18, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429 
-	+txtset t1, "てにいれました。", "middle_center", 0, 0, center
+	+txtset t1, ending.19, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
 	+bgmwait 0.429
 
 	+bgmwait 5.709
-	+txtset the_end, "$sz=32;THE END$c=gray;$sz=13;", "middle_center", 0, 0, center
+	+txtset the_end, ending.the_end, "middle_center", 0, 0, center
 	+bgmwait 6
-	+txtset nod, "$c=#808080;[Z] をおしてください", middle_center, 0, -64, center
+	+txtset nod, prompt, middle_center, 0, -64, center
 	+nod
 	+sfx "entity.npc.saying"
 	+txtclr the_end, nod
 	+wait 0.8
 	+gui on
-	:"あのー！ちょっと　まってー！"
+	:ending.snake.1
 	+wait 0.4
-	:"よかった...やっと　おいつけた..."
-	:"あ　さきほどは　しゅじんが　おせわになりました。"
-	:"わたくし　わるくないへびの　よめです。"
-	:"さいごに　ひとつだけ　いいたいことがあって\nいそいできました。"
-	:"$c=red;あのときのことを　おもいだしたら\nあのときのばしょに　もどってみてください。"
-	:"かこは　とりもどせないけど\nかこは　おもいだせますよ。"
+	:ending.snake.2
+	:ending.snake.3
+	:ending.snake.4
+	:ending.snake.5
+	:ending.snake.6
+	:ending.snake.7
 	+wait 0.6
-	:"それじゃあ　おげんきで..."
+	:ending.snake.8
 	+wait 0.5
 
 	+goto title

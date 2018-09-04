@@ -1,0 +1,126 @@
+﻿lang.name = 日本語
+lang.name.inenglish = Japanese
+lang.name.author = Xeltica
+
+event.batrace.1 = コウモリレースへ　ようこそ！
+event.batrace.2 = コウモリレースは　このはこに　とじこめられている　コウモリにのって
+event.batrace.3 = ひたすら　たかいところを　めざして　とんでいく　ゲームです！
+event.batrace.4 = しょうがいぶつに　ぶつかるか　コウモリから　おちたら　ゲームオーバー！
+event.batrace.5 = きょりに　おうじて　けいひんが　もらえます！
+event.batrace.6 = じゅんびは　できましたか？
+event.batrace.7 = ほんとうに？
+event.batrace.8 = それでは　ゲームスタート！
+
+event.tutorial.1 = はなしかけられそうな　いきものや\
+しらべられそうな　ものをみつけたら
+event.tutorial.2 = うまくいけば　おはなしできるよ。
+event.tutorial.3.mobile = がめんを　タップしてみよう！
+event.tutorial.3.pc = ↑キーを　おしてみよう！
+
+event.prologue.1 = そう。あのとき　ぼくは...
+event.prologue.2 = ねえ！　ぼくの　さかなだよ！？
+event.prologue.3 = いつまでも　チンタラしてるから　こうなるんだ。
+event.prologue.4 = ぼくの　たいせつな　きんの　さかな...
+event.prologue.5 = じゃあ　かけを　しようか。
+event.prologue.6 = おれのことを　おっかけてこい。おれを　たおせたら　かえしてやる。
+event.prologue.7 = ノロマな　おまえには　むりだろうけどな。
+
+event.snake.1 = まって！　ぼくは　わるいヘビじゃないよ！
+event.snake.2 = このさきに　ぼくの　すみかが　あるんだ。
+event.snake.3 = こうえんで　ひとやすみしててさ。
+event.snake.4 = それで　かえってきたら　あんなことに...
+event.snake.5 = おうちに　かえれない...
+
+event.snake.6 = いま　おっきな　ばくはつがあってさ！
+event.snake.7 = え？　きみが　やってくれたの？
+event.snake.8 = ありがとう！　これで　やっと　おうちにかえれるよ。
+
+event.snake.glitch = ありえない！　どうして　ここに　もどってきたのさ！
+
+event.pre_battle.1 = まさか　ほんとうに　ここまで　これるとはな。
+event.pre_battle.2 = コンテナも...　コウモリも...
+event.pre_battle.3 = おれの　しかけた　しかけは\
+すべて　むだだったか...
+event.pre_battle.4 = おまえが　そこまで　ノロマじゃないってことは\
+よくわかった。
+event.pre_battle.5 = ......
+event.pre_battle.6 = いいだろう。おれを　たおせたら\
+やくそくどおり　かえしてやる。
+event.pre_battle.7 = だが　こっちも　ゼンリョクを　だすぜ。\
+かくごしろ。
+
+event.simple_pre_battle.1 = どうした？\
+おまえの　じつりょくは　そのていどか？
+
+event.post_battle.1 = ママ？
+event.post_battle.2 = また　おれには　さかな　くれないの？？
+event.post_battke.3 = ......
+event.post_battle.4 = $spd=0.5;......なんで？
+event.post_battle.5 = $spd=0.2;どうして　あいつは...
+
+event.post_battle.6 = キャッツガイを　たおした。
+event.post_battle.7 = ぼくの　おさかな。
+event.post_battle.8 = ほんとうは　いっしょに　たべたかった...
+
+ending.1 = しろい　ねこの　きょうだいを\
+しっていますか？
+ending.2 = かれは　みずからを　キャッツガイと　よびます
+ending.3 = むかしむかし　ふたりは　とても　なかよしでした
+ending.4 = $c=red;そう　かれが　ひょうへんするまでは...
+
+ending.title = $sz=26;おさかなれすきゅー
+ending.staff_credit = STAFF CREDIT
+ending.xeltica = ++ Xeltica ++\
+\
+プログラミング\
+さっきょく\
+ドット絵\
+シナリオ
+ending.tools = ** かいはつツール **\
+\
+Unity\
+Aseprite\
+Logic Pro X\
+Audacity
+ending.ty = ** スペシャルサンクス **\
+\
+++ Amamizu Sui ++\
+++ Fueice ++
+
+ending.5 = キャッツガイと　しろいねこは\
+なかのいい　きょうだいでした
+ending.6 = でも　おやは　キャッツガイを\
+きにいりませんでした
+ending.7 = ぜっぴんの　きんのさかなも\
+いつも　キャッツガイには　あげず
+ending.8 = しろいねこだけ　できあい　されました
+
+ending.9 = キャッツガイは　やがて　\
+このように　かんがえはじめました
+ending.10 = 「いつも　のろまな　おとうとだから」
+ending.11 = 「いつまでも　おやばなれ　できない」
+ending.12 = 「おれは　あいつよりも　かちぐみだ」
+
+ending.13 = なかよしだった　きょうだいに　\
+いちど　はいった　きれつは
+ending.14 = そうかんたんに　うまりません
+ending.15 = ふたりは　むかしの　きおくを　わすれ
+ending.16 = ころしあうほどに...
+
+ending.17 = あなたは　あにを　たおし
+ending.18 = みごと　$c=#ffff00;きんのさかな$!c;を
+ending.19 = てにいれました。
+ending.the_end = $sz=32;THE END$c=gray;$sz=13;?
+ending.prompt = $c=#808080;[Z] をおしてください
+
+ending.snake.1 = あのー！ちょっと　まってー！
+ending.snake.2 = よかった...やっと　おいつけた...
+ending.snake.3 = あ　さきほどは　うちの　むすこが　おせわになりました。
+ending.snake.4 = わたくし　わるくないへびの　ははです。
+ending.snake.5 = さいごに　ひとつだけ　いいたいことがあって\
+いそいできました。
+ending.snake.6 = $c=red;あのときのことを　おもいだしたら\
+あのときのばしょに　もどってみてください。
+ending.snake.7 = かこは　とりもどせないけど\
+かこは　おもいだせますよ。
+ending.snake.8 = それじゃあ　おげんきで...

@@ -149,6 +149,8 @@ namespace Xeltica.Osakana
 			set { ice = value; }
 		}
 
+		private float targetHeightToShootLightning;
+
 
 		float targetToDown;
 
@@ -167,6 +169,7 @@ namespace Xeltica.Osakana
 			float x = transform.position.x;
 			leftTarget = x - totalDistance;
 			rightTarget = x;
+			targetHeightToShootLightning = transform.position.y;
 
 			while (Health > 0)
 			{
@@ -390,30 +393,26 @@ namespace Xeltica.Osakana
 				yield break;
 			}
 
-			yield return Move();
+			// 50% shoot lightning ; 50% simply move
+			yield return Random.value < 0.5f ? SummonLightning() : Move();
 
 			var probability = Random.Range(0, 100);
 
-			// 20% lightning
-			// 29% ball
-			// 19% enemy
-			// 16% ice
-			// 16% heal
+			// 32% ball
+			// 22% enemy
+			// 28% ice
+			// 18% heal
 
 
-			if (probability < 20)
-			{
-				yield return SummonLightning();
-			}
-			else if (probability < 20 + 29)
+			if (probability < 32)
 			{
 				yield return ThrowBall();
 			}
-			else if (probability < 20 + 29 + 19)
+			else if (probability < 32 + 22)
 			{
 				yield return ThrowEnemy();
 			}
-			else if (probability < 20 + 29 + 19 + 16)
+			else if (probability < 32 + 22 + 28)
 			{
 				yield return ThrowIce();
 			}
@@ -448,7 +447,7 @@ namespace Xeltica.Osakana
 
 			Vector2 destination = new Vector2(transform.position.x, targetToUp);
 
-			yield return EaseIn(destination, 0.6f);
+			yield return Lerp(destination, 0.6f);
 
 			// 体力増強
 			Wyte.Player.Life = Wyte.Player.MaxLife;
@@ -458,10 +457,10 @@ namespace Xeltica.Osakana
 			// UFOが降りてくる
 			Wyte.CanMove = true;
 			SetAnimations(AnimationUfo);
-
+			targetHeightToShootLightning += 32;
 			destination = new Vector2(rightTarget, targetToDown);
 
-			yield return EaseOut(destination, 1.5f);
+			yield return EaseOut(destination, 2f);
 			direction = SpriteDirection.Left;
 		}
 
@@ -493,41 +492,25 @@ namespace Xeltica.Osakana
 			var unit = (rightTarget - leftTarget) / 4;
 			var middleLeft = new Vector2((leftTarget + rightTarget - unit) / 2, transform.position.y);
 			var middleRight = new Vector2((leftTarget + rightTarget + unit) / 2, transform.position.y);
-			var left = new Vector2(leftTarget, transform.position.y);
-			var right = new Vector2(rightTarget, transform.position.y);
+			var leftU = new Vector2(leftTarget, transform.position.y);
+			var rightU = new Vector2(rightTarget, transform.position.y);
 
-			if (direction == SpriteDirection.Left)
+			Vector2[] navs =
+				direction == SpriteDirection.Left ? new[] { middleRight, middleLeft, leftU } : new[] { middleLeft, middleRight, rightU };
+
+			yield return new WaitForSeconds(0.4f);
+
+			Instantiate(lightning, transform.position + Vector3.down * 32, default(Quaternion));
+			for (int i = 0; i < navs.Length; i++)
 			{
 				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(middleRight, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(middleLeft, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(left, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-
-				direction = SpriteDirection.Right;
+				yield return EaseOut(navs[i], 0.4f);Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
+				Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
 			}
-			else
-			{
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(middleLeft, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(middleRight, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
-				yield return EaseOut(right, 0.5f);
-				if (Dying) yield break;
-				Instantiate(lightning, transform.position, default(Quaternion));
 
-				direction = SpriteDirection.Left;
-			}
+			yield return new WaitForSeconds(0.4f);
+
+			direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 		}
 
 		IEnumerator ThrowEnemy()

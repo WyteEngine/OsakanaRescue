@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Name: entity.lightning
   m_EditorClassIdentifier: 
   animationList:
-  - sprite: {fileID: 21300026, guid: fb9c20d772f7b427989cf5565cb00583, type: 3}
-    time: 0
+  - sprite: {fileID: 21300000, guid: 7b182d084dd6749dfb67180bb5f865d2, type: 3}
+    time: 0.05
+  - sprite: {fileID: 21300002, guid: 7b182d084dd6749dfb67180bb5f865d2, type: 3}
+    time: 0.05
+  - sprite: {fileID: 21300004, guid: 7b182d084dd6749dfb67180bb5f865d2, type: 3}
+    time: 0.05
+  - sprite: {fileID: 21300006, guid: 7b182d084dd6749dfb67180bb5f865d2, type: 3}
+    time: 0.05
+  - sprite: {fileID: 21300008, guid: 7b182d084dd6749dfb67180bb5f865d2, type: 3}
+    time: 0.05
   useLoop: 0
   loopTimes: 0

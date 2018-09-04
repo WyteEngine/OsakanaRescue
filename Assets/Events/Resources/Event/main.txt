@@ -12,7 +12,7 @@
 #prologue
 	+pfreeze on
 
-	:"そう。あのとき　ぼくは..."
+	:event.prologue.1
 	+fade out, 0.5
 	+phide
 	+move "Home"
@@ -25,26 +25,26 @@
 	+fade in, 0.2
 	+wait 1.2
 	player+spwalk 32, 0.7
-	:"ねえ！　ぼくの　さかなだよ！？"
+	:event.prologue.2
 	+wait 0.5
 
-	:"いつまでも　チンタラしてるから　こうなるんだ。"
+	:event.prologue.3
 	+wait 0.25
-	:"ぼくの　たいせつな　きんの　さかな..."
+	:event.prologue.4
 	+wait 0.25
 	catsguy+spchr "entity.guy.walk"
 	catsguy+spwalk -48, .7
 	catsguy+spchr "entity.guy.stay"
 	+wait 0.3
-	:"じゃあ　かけを　しようか。"
+	:event.prologue.5
 	+wait 0.05
-	:"おれのことを　おっかけてこい。おれを　たおせたら　かえしてやる。"
+	:event.prologue.6
 
 	catsguy+spchr "entity.guy.walk"
 	catsguy+spwalk 32, 0.7
 	catsguy+spchr "entity.guy.stay"
 	catsguy+spwalk -1, 0.01
-	:"ノロマな　おまえには　むりだろうけどな。"
+	:event.prologue.7
 	catsguy+spchr "entity.guy.walk"
 	catsguy+spwalk 96, 0.7
 	catsguy+spclr

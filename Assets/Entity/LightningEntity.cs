@@ -1,20 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using WyteEngine.Entities;
 
 namespace Xeltica.Osakana
 {
 	public class LightningEntity : LivableEntity
 	{
-		[SerializeField]
-		private float speed;
-
-		public float Speed
-		{
-			get { return speed; }
-			set { speed = value; }
-		}
-
 		protected override void Start()
 		{
 			base.Start();
@@ -24,22 +14,12 @@ namespace Xeltica.Osakana
 		protected override void OnUpdate()
 		{
 			base.OnUpdate();
-			Velocity = new Vector2(0, -Speed);
 			if (IsCollidedWithPlayer())
 			{
 				Wyte.CurrentPlayer.Damage(this, 1);
-				Damage(this, 1);
 			}
-			if (IsGrounded())
-				Damage(this, 1);
-		}
 
-		protected override IEnumerator OnDeath(Object killer)
-		{
-			Sfx.Play("entity.lightning.fall");
-			for (int i = 0; i < Random.Range(3, 8); i++)
-				ParticleAPI.Instance.Summon("explosion", Random.insideUnitCircle * 12 + (Vector2)transform.position);
-			return base.OnDeath(killer);
+			if (!IsAnimating) Kill(this);
 		}
 
 		public override string WalkAnimationId => "entity.lightning";
@@ -49,5 +29,8 @@ namespace Xeltica.Osakana
 		public override string LandSfxId => null;
 		public override string JumpSfxId => null;
 		public override string DeathSfxId => null;
+
+		// Stay
+		public override float GravityScale => 0;
 	}
 }

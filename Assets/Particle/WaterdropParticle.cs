@@ -30,6 +30,10 @@ namespace Xeltica.Osakana
 		protected override void OnUpdate()
 		{
 			base.OnUpdate();
+			// 画面から出てたら殺す
+			if (!Camera.CameraRects.Contains(transform.position))
+				Kill(this);
+			// 地面についたら弾ける
 			if (IsGrounded())
 			{
 				Sfx.Play("particle.waterdrop.broken");

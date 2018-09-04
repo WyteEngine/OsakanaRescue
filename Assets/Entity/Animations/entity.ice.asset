@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationList:
   - sprite: {fileID: 21300028, guid: fb9c20d772f7b427989cf5565cb00583, type: 3}
-    time: 0.5
+    time: 1.2
   - sprite: {fileID: 21300030, guid: fb9c20d772f7b427989cf5565cb00583, type: 3}
-    time: 0.5
+    time: 1.2
   - sprite: {fileID: 21300032, guid: fb9c20d772f7b427989cf5565cb00583, type: 3}
-    time: 0.5
+    time: 1.2
   useLoop: 0
   loopTimes: 0
