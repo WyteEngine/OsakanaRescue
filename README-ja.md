@@ -6,7 +6,18 @@
 
 Wyte Engine で開発しています．
 
+# Build
+1. `git clone --recursive https://github.com/WyteEngine/OsakanaRescue` を実行
+2. `cd OsakanaRescue` を実行
+3. `./checkout.sh` を実行
+4. Unity でこのプロジェクトを開く
+
 # 動作環境
+
+
+## ビルド用
+- Unity 2018.2.6
+- bash (Windows 上では、クローンおよびビルドに、Git Bashを使うことができます)
 
 ## PC
 
@@ -24,8 +35,8 @@ Wyte Engine で開発しています．
 
 ## ライセンス
 
-Wyte Engine とその他の私のコードはMITライセンスで提供されます．
+Wyte Engine のコードベースおよび、その他の私のソースコードはMITライセンスで提供されます．
 
-グラフィックやサウンドについては，すべての権利がXelticaに帰属します．
+ソースコードではない、グラフィックやサウンドなどのアセットについては，すべての権利がXelticaに帰属します．
 
 その他のプログラムについては[LICENSE(英語)](LICENSE) を確認．

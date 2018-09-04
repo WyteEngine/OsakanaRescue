@@ -5,13 +5,15 @@
 Osakana Rescure is an action game. 
 This game is powered by Unity and Wyte Engine.
 
-Now, this game is not localized to English because Wyte Engine doesn't have i18n support yet.
+Osakana means "fish" in Japanese. The hero has to take back the **gold fish** from the cats-guy, a purple bad cat man.
+
+Now, this game is under implementing Internationalization and localization to English.
 
 # Build
 1. Run `git clone --recursive https://github.com/WyteEngine/OsakanaRescue`
 2. Run `cd OsakanaRescue`
 3. Run `./checkout.sh`
-4. Open the project in Unity
+4. Open this project in Unity
 
 # Requirement
 
@@ -37,7 +39,7 @@ Now, this game is not localized to English because Wyte Engine doesn't have i18n
 
 The Wyte Engine code base and my other source code is licensed under the MIT license.
 
-About Graphics and sounds, I, Xeltica, have all copyrights.
+About Graphics and sounds, I, Xeltica, have all rights.
 
 See [LICENSE](LICENSE) to check licenses of another programs.
 
