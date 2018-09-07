@@ -1,6 +1,6 @@
 # Osakana Rescue
 
-[日本語](readme-ja.md) ＊ English
+[日本語](README-ja.md) ＊ English
 
 Osakana Rescure is an action game. 
 This game is powered by Unity and Wyte Engine.
