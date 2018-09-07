@@ -323,12 +323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapLabel: title
+  bootstrapLabel: boot
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
   gamePad: {fileID: 0}
-  requestDebugMode: 0
+  requestDebugMode: 1
   guiEnabled: 1
 --- !u!114 &114244664975831212
 MonoBehaviour:
@@ -522,6 +522,8 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: e8ad82be04402430a98aebec2db5a25d, type: 2}
   - Key: entity.door
     Value: {fileID: 11400000, guid: 413530d6052fcfa4bac45fcd3f0e9278, type: 2}
+  - Key: item.photoframe
+    Value: {fileID: 11400000, guid: 8c784dc145983054590095de1374e55e, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -587,8 +589,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3f4e4b80147a18341bf01b4d0126cad8, type: 3}
   - id: entity.player.step
     clip: {fileID: 8300000, guid: 8dca816fffa7c4f96859fe2a9f1c4718, type: 3}
-  - id: entity.npc.saying
-    clip: {fileID: 8300000, guid: 3f4e4b80147a18341bf01b4d0126cad8, type: 3}
+  - id: system.saying
+    clip: {fileID: 8300000, guid: d9cb183e2fcef4447bd7b0b8af828d6e, type: 3}
   - id: entity.player.damage
     clip: {fileID: 8300000, guid: ac0febc4d29624061bc5dd61c45f07e0, type: 3}
   - id: block.disappearing
@@ -623,6 +625,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3ad740b732529cf4fb9a5cc3e4358530, type: 3}
   - id: event.go_out
     clip: {fileID: 8300000, guid: 9a45e5c0ecf756d48a336ceaa15d2449, type: 3}
+  - id: entity.player.saying
+    clip: {fileID: 8300000, guid: c0e73de4f61ab93449f75adba02fe166, type: 3}
+  - id: entity.snake.saying
+    clip: {fileID: 8300000, guid: 5513f76b4b46a09469351e0c5ca14e36, type: 3}
+  - id: entity.snake.mom.saying
+    clip: {fileID: 8300000, guid: f35a1efbe769b754dbc824f48826c039, type: 3}
+  - id: entity.guy.saying
+    clip: {fileID: 8300000, guid: d9cb183e2fcef4447bd7b0b8af828d6e, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1

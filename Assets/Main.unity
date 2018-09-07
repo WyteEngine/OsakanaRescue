@@ -510,16 +510,6 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
-    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: bootstrapLabel
-      value: boot
-      objectReference: {fileID: 0}
-    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: requestDebugMode
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabAsset: 0
