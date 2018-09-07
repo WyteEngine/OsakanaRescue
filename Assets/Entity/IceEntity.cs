@@ -13,6 +13,7 @@ namespace Xeltica.Osakana
 			base.Start();
 			Velocity = new Vector2(0, -24f);
 			direction = Wyte.CurrentPlayer != null && transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left;
+			
 		}
 
 		[SerializeField]

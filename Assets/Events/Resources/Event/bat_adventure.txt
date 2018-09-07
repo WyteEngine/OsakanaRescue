@@ -1,6 +1,6 @@
 ﻿#bat
 	+pfreeze on
-	
+	+phide
 	+move BatRace
 	+pshow -592, -48
 	//+fadeasync in, 0.5
