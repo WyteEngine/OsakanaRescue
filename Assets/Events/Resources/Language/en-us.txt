@@ -16,45 +16,45 @@ event.tutorial.2 = Then you can talk!
 event.tutorial.3.mobile = tap the screen!
 event.tutorial.3.pc = press the [↑] key!
 
-event.prologue.1 = Well. I was then......
-event.prologue.2 = Wait!!! It's my fish!!
-event.prologue.3 = you brought it on yourself because you're so lazy.
-event.prologue.4 = It's my valuable gold fish...
-event.prologue.5 = then why don't you make a bet?
-event.prologue.6 = chase me, and i give it back if you defeat me.
-event.prologue.7 = it's so difficult for the $b;lazy$!b; you,
+event.prologue.1 = $v=entity.player.saying;Well. I was then......
+event.prologue.2 = $v=entity.player.saying;Wait!!! It's my fish!!
+event.prologue.3 = $v=entity.guy.saying;you brought it on yourself because you're so lazy.
+event.prologue.4 = $v=entity.player.saying;It's my valuable gold fish...
+event.prologue.5 = $v=entity.guy.saying;then why don't you make a bet?
+event.prologue.6 = $v=entity.guy.saying;chase me, and i give it back if you defeat me.
+event.prologue.7 = $v=entity.guy.saying;it's so difficult for the $b;lazy$!b; you,
 
-event.snake.1 = Wait! I'm not a bad snake!
-event.snake.2 = I have my house there.
-event.snake.3 = I was resting at the park, and
-event.snake.4 = when I arrived here, there was...
-event.snake.5 = I can't go home...
+event.snake.1 = $v=entity.snake.saying;Wait! I'm not a bad snake!
+event.snake.2 = $v=entity.snake.saying;I have my house there.
+event.snake.3 = $v=entity.snake.saying;I was resting at the park, and
+event.snake.4 = $v=entity.snake.saying;when I arrived here, there was...
+event.snake.5 = $v=entity.snake.saying;I can't go home...
 
-event.snake.6 = There was a big explosion now, and
-event.snake.7 = Huh? You did it?
-event.snake.8 = Thanks! I can finally go home!
+event.snake.6 = $v=entity.snake.saying;There was a big explosion now, and
+event.snake.7 = $v=entity.snake.saying;Huh? You did it?
+event.snake.8 = $v=entity.snake.saying;Thanks! I can finally go home!
 
-event.snake.glitch = Impossible! Why do you come back!
+event.snake.glitch = $v=entity.snake.saying;No way! How do you come back!
 
-event.pre_battle.1 = no way. you could really come here...
-event.pre_battle.2 = containers and bats...
-event.pre_battle.3 = the traps were all useless...
-event.pre_battle.4 = i understood that you were not so lazy.
+event.pre_battle.1 = $v=entity.guy.saying;no way. you could really come here...
+event.pre_battle.2 = $v=entity.guy.saying;containers and bats...
+event.pre_battle.3 = t$v=entity.guy.saying;he traps were all useless...
+event.pre_battle.4 = $v=entity.guy.saying;i understood that you were not so lazy.
 event.pre_battle.5 = ......
-event.pre_battle.6 = well. i'll give back as promised.
-event.pre_battle.7 = however, i also do my best!
+event.pre_battle.6 = $v=entity.guy.saying;well. i'll give back as promised.
+event.pre_battle.7 = $v=entity.guy.saying;however, i also do my best!
 
-event.simple_pre_battle.1 = what's going on? is that all of your skill?
+event.simple_pre_battle.1 = $v=entity.guy.saying;what's going on? is that all of your skill?
 
-event.post_battle.1 = mom?
-event.post_battle.2 = don't you give me the fish again?
-event.post_battle.3 = ......
-event.post_battle.4 = $spd=0.5;......why?
-event.post_battle.5 = $spd=0.2;why is he only...
+event.post_battle.1 = $v=entity.player.saying; mom?
+event.post_battle.2 = $v=entity.player.saying;don't you give me the fish again?
+event.post_battle.3 = $v=entity.player.saying;......
+event.post_battle.4 = $v=entity.player.saying;$spd=0.5;......why?
+event.post_battle.5 = $v=entity.guy.saying;$spd=0.2;why is he only...
 
 event.post_battle.6 = You defeated the cats guy.
-event.post_battle.7 = My fish.
-event.post_battle.8 = I wanted to eat it with him...
+event.post_battle.7 = v=entity.player.saying;My fish.
+event.post_battle.8 = v=entity.player.saying;Actually, I wanted to eat it with him...
 
 ending.1 = Do you know a brother\
  of the white cat?
@@ -105,16 +105,16 @@ ending.19 = $c=#ffff00;gold fish.$!c;
 ending.the_end = $sz=32;THE END$c=gray;$sz=13;?
 ending.prompt = $c=#808080;Press [Z] key
 
-ending.snake.1 = Excuse meeeee!! Please wait!!
-ending.snake.2 = Ha... ha... I did it...
-ending.snake.3 = Well, thank you for helping my son.
-ending.snake.4 = I am a not bad snake's mother.
-ending.snake.5 = I want to tell you a thing, so I hurried up.
-ending.snake.6 = $c=red;If you remember something,\
+ending.snake.1 = $v=entity.snake.mom.saying;Excuse meeeee!! Please wait!!
+ending.snake.2 = $v=entity.snake.mom.saying;Ha... ha... I did it...
+ending.snake.3 = $v=entity.snake.mom.saying;Well, thank you for helping my son.
+ending.snake.4 = $v=entity.snake.mom.saying;I am a not-bad-snake's mother.
+ending.snake.5 = $v=entity.snake.mom.saying;I want to tell you a thing, so I hurried up.
+ending.snake.6 = $v=entity.snake.mom.saying;$c=red;If you remember something,\
 let's go back the place of it
-ending.snake.7 = "You can't get the past back but\
+ending.snake.7 = $v=entity.snake.mom.saying;You can't get the past back but\
 can remember the past.
-ending.snake.8 = Then, good luck.
+ending.snake.8 = $v=entity.snake.mom.saying;Then, good luck.
 
 system.initialize = The game will be initialized.
 system.key_help = [←][→]Move　[↑]Talk\
@@ -126,3 +126,9 @@ F4:Reset Flags F5: FTS Debug
 system.debug.true =✓
 system.debug.false =×
 prompt = Press [Z] key
+
+event.photoframe.1 = This is a photo frame.
+event.photoframe.2 = $v=entity.player.saying;This is a memorial picture with\
+my brother and me.
+event.photoframe.3 = $v=entity.player.saying;Well, bring it.
+event.photoframe.4 = $v=entity.player.saying;However, I don't need it anymore...

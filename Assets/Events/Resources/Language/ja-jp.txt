@@ -17,50 +17,50 @@ event.tutorial.2 = うまくいけば　おはなしできるよ。
 event.tutorial.3.mobile = がめんを　タップしてみよう！
 event.tutorial.3.pc = ↑キーを　おしてみよう！
 
-event.prologue.1 = そう。あのとき　ぼくは...
-event.prologue.2 = ねえ！　ぼくの　さかなだよ！？
-event.prologue.3 = いつまでも　チンタラしてるから　こうなるんだ。
-event.prologue.4 = ぼくの　たいせつな　きんの　さかな...
-event.prologue.5 = じゃあ　かけを　しようか。
-event.prologue.6 = おれのことを　おっかけてこい。おれを　たおせたら　かえしてやる。
-event.prologue.7 = ノロマな　おまえには　むりだろうけどな。
+event.prologue.1 = $v=entity.player.saying;そう。あのとき　ぼくは...
+event.prologue.2 = $v=entity.player.saying;ねえ！　ぼくの　さかなだよ！？
+event.prologue.3 = $v=entity.guy.saying;いつまでも　チンタラしてるから　こうなるんだ。
+event.prologue.4 = $v=entity.player.saying;ぼくの　たいせつな　きんの　さかな...
+event.prologue.5 = $v=entity.guy.saying;じゃあ　かけを　しようか。
+event.prologue.6 = $v=entity.guy.saying;おれのことを　おっかけてこい。おれを　たおせたら　かえしてやる。
+event.prologue.7 = $v=entity.guy.saying;ノロマな　おまえには　むりだろうけどな。
 
-event.snake.1 = まって！　ぼくは　わるいヘビじゃないよ！
-event.snake.2 = このさきに　ぼくの　すみかが　あるんだ。
-event.snake.3 = こうえんで　ひとやすみしててさ。
-event.snake.4 = それで　かえってきたら　あんなことに...
-event.snake.5 = おうちに　かえれない...
+event.snake.1 = $v=entity.snake.saying;まって！　ぼくは　わるいヘビじゃないよ！
+event.snake.2 = $v=entity.snake.saying;このさきに　ぼくの　すみかが　あるんだ。
+event.snake.3 = $v=entity.snake.saying;こうえんで　ひとやすみしててさ。
+event.snake.4 = $v=entity.snake.saying;それで　かえってきたら　あんなことに...
+event.snake.5 = $v=entity.snake.saying;おうちに　かえれない...
 
-event.snake.6 = いま　おっきな　ばくはつがあってさ！
-event.snake.7 = え？　きみが　やってくれたの？
-event.snake.8 = ありがとう！　これで　やっと　おうちにかえれるよ。
+event.snake.6 = $v=entity.snake.saying;いま　おっきな　ばくはつがあってさ！
+event.snake.7 = $v=entity.snake.saying;え？　きみが　やってくれたの？
+event.snake.8 = $v=entity.snake.saying;ありがとう！　これで　やっと　おうちにかえれるよ。
 
-event.snake.glitch = ありえない！　どうして　ここに　もどってきたのさ！
+event.snake.glitch = $v=entity.snake.saying;ありえない！　どうやって　ここに　もどってきたのさ！
 
-event.pre_battle.1 = まさか　ほんとうに　ここまで　これるとはな。
-event.pre_battle.2 = コンテナも...　コウモリも...
-event.pre_battle.3 = おれの　しかけた　しかけは\
+event.pre_battle.1 = $v=entity.guy.saying;まさか　ほんとうに　ここまで　これるとはな。
+event.pre_battle.2 = $v=entity.guy.saying;コンテナも...　コウモリも...
+event.pre_battle.3 = $v=entity.guy.saying;おれの　しかけた　しかけは\
 すべて　むだだったか...
-event.pre_battle.4 = おまえが　そこまで　ノロマじゃないってことは\
+event.pre_battle.4 = $v=entity.guy.saying;おまえが　そこまで　ノロマじゃないってことは\
 よくわかった。
-event.pre_battle.5 = ......
-event.pre_battle.6 = いいだろう。おれを　たおせたら\
+event.pre_battle.5 = $v=entity.guy.saying;......
+event.pre_battle.6 = $v=entity.guy.saying;いいだろう。おれを　たおせたら\
 やくそくどおり　かえしてやる。
-event.pre_battle.7 = だが　こっちも　ゼンリョクを　だすぜ。\
+event.pre_battle.7 = $v=entity.guy.saying;だが　こっちも　ゼンリョクを　だすぜ。\
 かくごしろ。
 
-event.simple_pre_battle.1 = どうした？\
+event.simple_pre_battle.1 = $v=entity.guy.saying;どうした？\
 おまえの　じつりょくは　そのていどか？
 
-event.post_battle.1 = ママ？
-event.post_battle.2 = また　おれには　さかな　くれないの？？
-event.post_battle.3 = ......
-event.post_battle.4 = $spd=0.5;......なんで？
-event.post_battle.5 = $spd=0.2;どうして　あいつは...
+event.post_battle.1 = $v=entity.player.saying;ママ？
+event.post_battle.2 = $v=entity.player.saying;また　おれには　さかな　くれないの？？
+event.post_battle.3 = $v=entity.player.saying;......
+event.post_battle.4 = $v=entity.player.saying;$spd=0.5;......なんで？
+event.post_battle.5 = $v=entity.guy.saying;$spd=0.2;どうして　あいつは...
 
 event.post_battle.6 = キャッツガイを　たおした。
-event.post_battle.7 = ぼくの　おさかな。
-event.post_battle.8 = ほんとうは　いっしょに　たべたかった...
+event.post_battle.7 = $v=entity.player.saying;ぼくの　おさかな。
+event.post_battle.8 = $v=entity.player.saying;ほんとうは　いっしょに　たべたかった...
 
 ending.1 = しろい　ねこの　きょうだいを\
 しっていますか？
@@ -113,17 +113,17 @@ ending.19 = てにいれました。
 ending.the_end = $sz=32;THE END$c=gray;$sz=13;?
 ending.prompt = $c=#808080;[Z] をおしてください
 
-ending.snake.1 = あのー！ちょっと　まってー！
-ending.snake.2 = よかった...やっと　おいつけた...
-ending.snake.3 = あ　さきほどは　うちの　むすこが　おせわになりました。
-ending.snake.4 = わたくし　わるくないへびの　ははです。
-ending.snake.5 = さいごに　ひとつだけ　いいたいことがあって\
+ending.snake.1 = $v=entity.snake.mom.saying;あのー！ちょっと　まってー！
+ending.snake.2 = $v=entity.snake.mom.saying;よかった...やっと　おいつけた...
+ending.snake.3 = $v=entity.snake.mom.saying;あ　さきほどは　うちの　むすこが　おせわになりました。
+ending.snake.4 = $v=entity.snake.mom.saying;わたくし　わるくないへびの　ははです。
+ending.snake.5 = $v=entity.snake.mom.saying;さいごに　ひとつだけ　いいたいことがあって\
 いそいできました。
-ending.snake.6 = $c=red;あのときのことを　おもいだしたら\
+ending.snake.6 = $v=entity.snake.mom.saying;$c=red;あのときのことを　おもいだしたら\
 あのときのばしょに　もどってみてください。
-ending.snake.7 = かこは　とりもどせないけど\
+ending.snake.7 = $v=entity.snake.mom.saying;かこは　とりもどせないけど\
 かこは　おもいだせますよ。
-ending.snake.8 = それじゃあ　おげんきで...
+ending.snake.8 = $v=entity.snake.mom.saying;それじゃあ　おげんきで...
 
 
 system.initialize = ゲームを　初期化します。
@@ -137,3 +137,9 @@ system.debug.true=○
 system.debug.false=×
 prompt = [Z]を　おしてください。
 fts.error = $c=red;書式エラー: {0}
+
+event.photoframe.1 = フォトフレームだ。
+event.photoframe.2 = $v=entity.player.saying;これは　ぼくと　にいちゃんの\
+おもいでの　しゃしんだ...
+event.photoframe.3 = $v=entity.player.saying;もっていこう。
+event.photoframe.4 = $v=entity.player.saying;でも　もういらない...
