@@ -41,7 +41,9 @@
 	+move "Home"
 	+pshow 208, -64
 	+wait 0.25
+	defeated_catsguy+onflag #open_the_door_skip
 	+bgmplay "076"
+#open_the_door_skip
 	+wait 0.25
 	+fadeasync in, 0.5
 	+pfreeze off
@@ -64,11 +66,16 @@
 +end
 
 #bgm1
+	defeated_catsguy+onflag #skip_subroutine
 	+bgmplay "field"
 +return
 
 #bgm2
+	defeated_catsguy+onflag #skip_subroutine
 	+bgmplay "field2"
++return
+
+#skip_subroutine
 +return
 
 // モバイル
@@ -86,7 +93,7 @@
 	+move "Field1"
 	+pshow 16, -72
 	+wait 0.2
-	+bgmplay "field"
+	+gosub #bgm1
 	+fadeasync in, 0.5
 	+gosub #tutorial
 	+pfreeze off
@@ -95,7 +102,7 @@
 #field2
 	+phide
 	+move "Field1"
-	+bgmplay "field2"
+	+gosub #bgm2
 	+pshow 1632, -112
 	+fadeasync in, 0.5
 	+pfreeze off
@@ -105,7 +112,7 @@
 	+phide
 	+playercamera
 	+move "Field1"
-	+bgmplay "field2"
+	+gosub #bgm2
 	+pshow 2256, -160
 	+fadeasync in, 0.2
 	+pfreeze off
@@ -258,8 +265,8 @@
 	+phide
 	+playercamera
 	+move "Field1"
-	+bgmplay "field2"
+	+gosub #bgm2
 	+pshow +3178, -341
-	+fadeasync in, 0.2
+	+fade in, 0.2
 	+pfreeze off
 +end

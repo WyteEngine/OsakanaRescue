@@ -122,27 +122,36 @@
 	:event.post_battle.4
 	:event.post_battle.5
 	+wait 1.2
+	+tiledelrect 205, -19, 205, -4
 	+spset fs, entity.goldfish, 3544, -296
 	+pshow 3304, -292
-	+fade in, 0.4
+	+playercamera
+	+wait 0.4
+	+fade in, 0.5
 	:event.post_battle.6
-	+spwalk player, 240, 2.5
+	fs+speve "#post_final_battle_fish"
+	+flag on, "defeated_catsguy"
++end
+
+#post_final_battle_fish
 	:event.post_battle.7
 	+spclr fs
-	+wait 0.8
+	+wait 0.7
 	+spwalk -1, 0.02
+	+wait 1.2
 	:event.post_battle.8
-	+wait 1
+	+wait 2
 	+fade out, 1.2
 	+bossbarhide
 	+goto #ending
 +end
 
 #ending
-	+fade out, 0
+	+fade out, 0.5
 	+freeze on
 	+gui off
-	+wait 1
+	+wait 0.5
+
 
 	+txtset t1, ending.1, "middle_center", 0, 0, center
 	+bgmplay "badend"
