@@ -2,10 +2,12 @@
 
 #boot
 	+pfreeze on
+	+clearallflag
 	+fade out, 0
 	block1_done+onflag field3
 	prologue_has_done+onflag field2
 	game_has_started+onflag field1
+	+bossbarhide
 	+goto title
 +end
 

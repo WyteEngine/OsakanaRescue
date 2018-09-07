@@ -44,6 +44,37 @@
 	+freecamera 3432, -272
 	+bgmstop 1
 
+	+tilesetrect mystery_box_empty, 205, -19, 205, -18
+	+sfx event.build
+	+wait 0.12
+	+tilesetrect mystery_box_empty, 205, -17, 205, -16
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -15, 205, -14
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -13, 205, -12
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -11, 205, -10
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -9, 205, -8
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -7, 205, -6
+	+sfx event.build
+	+wait 0.12
+
+	+tilesetrect mystery_box_empty, 205, -5, 205, -4
+	+sfx event.build
+	+wait 0.12
+
 	pre_battle+onflag gosub, #simple_pre_battle, #pre_battle
 	+bgmplay "boss"
 	+bossbarshow
@@ -103,6 +134,7 @@
 	:event.post_battle.8
 	+wait 1
 	+fade out, 1.2
+	+bossbarhide
 	+goto #ending
 +end
 
@@ -116,101 +148,101 @@
 	+bgmplay "badend"
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.2, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.3, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.4, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 
 	+txtset t1, ending.title, "middle_center", 0, 32, center
 	+txtset t2, ending.staff_credit, "middle_center", 0, -32, center
 	+bgmwait 3
 	+txtclr t1,t2
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.xeltica, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.tools, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.ty, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	 
 	+txtset t1, ending.5, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.6, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.7, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.8, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 
 	+txtset t1, ending.9, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.10, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.11, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.12, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 
 	+txtset t1, ending.13, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.14, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.15, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.16, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 
 	+txtset t1, ending.17, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 	+txtset t1, ending.18, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429 
+	+bgmwait 0.42857143 
 	+txtset t1, ending.19, "middle_center", 0, 0, center
 	+bgmwait 3
 	+txtclr t1
-	+bgmwait 0.429
+	+bgmwait 0.42857143
 
 	+bgmwait 5.709
 	+txtset the_end, ending.the_end, "middle_center", 0, 0, center

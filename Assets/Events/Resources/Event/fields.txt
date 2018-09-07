@@ -1,18 +1,19 @@
 #title
-	+fade out, 0.2
+	+fade out, 0.3
 	+freecamera 0, 0
 	+phide
 	+move "Title"
 	//+bgmplay "title"
 	+pshow 0, 0
-	+fadeasync in, 0.2
+	+fadeasync in, 0.5
 	+pfreeze off
 +end
 
 #start
 	+pfreeze on
 	+bgmstopasync 0.1
-	+fade out, 0.1
+	+fade out, 0.5
+	+wait 0.1
 	+playercamera
 	+flag on, game_has_started
 	+goto #field1
@@ -30,6 +31,46 @@
 #tutorial_skip
 +return
 
+#open_the_door
+	+pfreeze on
+	+spclr door
+	+sfx event.door.open
+	+bgmstopasync 0.6
+	+fade out, 0.6
+	+phide
+	+move "Home"
+	+pshow 208, -64
+	+wait 0.25
+	+bgmplay "076"
+	+wait 0.25
+	+fadeasync in, 0.5
+	+pfreeze off
++end
+
+#go_out
+	+pfreeze on
+	+sfx event.go_out
+	+fadeasync out, 0.05
+	+bgmstopasync 0.6
+	+wait 0.35
+	+phide
+	+move "Field1"
+	+pshow -72, -98
+	+wait 0.25
+	prologue_has_done+onflag gosub, #bgm2, #bgm1
+	+wait 0.25
+	+fadeasync in, 0.5
+	+pfreeze off
++end
+
+#bgm1
+	+bgmplay "field"
++return
+
+#bgm2
+	+bgmplay "field2"
++return
+
 // モバイル
 #tutorial_mobile
     :event.tutorial.3.mobile
@@ -43,9 +84,10 @@
 #field1
 	+phide
 	+move "Field1"
-	+bgmplay "field"
 	+pshow 16, -72
-	+fadeasync in, 0.2
+	+wait 0.2
+	+bgmplay "field"
+	+fadeasync in, 0.5
 	+gosub #tutorial
 	+pfreeze off
 +end
@@ -55,7 +97,7 @@
 	+move "Field1"
 	+bgmplay "field2"
 	+pshow 1632, -112
-	+fadeasync in, 0.2
+	+fadeasync in, 0.5
 	+pfreeze off
 +end
 
@@ -217,7 +259,7 @@
 	+playercamera
 	+move "Field1"
 	+bgmplay "field2"
-	+pshow +3192, -88
+	+pshow +3178, -341
 	+fadeasync in, 0.2
 	+pfreeze off
 +end
