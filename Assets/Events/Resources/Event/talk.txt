@@ -276,3 +276,21 @@
 
 	+goto title
 +end
+
+#look_at_photoframe
+	:event.photoframe.1
+	defeated_catsguy+onflag #photoframe_is_no_longer_needed
+	prologue_has_done+onflag #get_photoframe
++end
+
+#get_photoframe
+	:event.photoframe.2
+	+spclr photoframe
+	+flag on, got_the_photoframe
+	:event.photoframe.3
++end
+
+#photoframe_is_no_longer_needed
+	:event.photoframe.2
+	:event.photoframe.4
++end
