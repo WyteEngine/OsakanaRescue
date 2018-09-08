@@ -498,20 +498,31 @@ namespace Xeltica.Osakana
 			Vector2[] navs =
 				Direction == SpriteDirection.Left ? new[] { middleRight, middleLeft, leftU } : new[] { middleLeft, middleRight, rightU };
 
-			yield return new WaitForSeconds(0.4f);
+			yield return Charge();
 
 			Instantiate(lightning, transform.position + Vector3.down * 32, default(Quaternion));
 			for (int i = 0; i < navs.Length; i++)
 			{
 				if (Dying) yield break;
 				yield return EaseOut(navs[i], 0.4f);
-				yield return new WaitForSeconds(0.4f);
+				yield return Charge();
 				Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
 			}
 
 			yield return new WaitForSeconds(0.8f);
 
 			Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+		}
+
+		IEnumerator Charge()
+		{
+			Sfx.Play("entity.lightning.fall");
+			foreach (var x in new[] { 2, -2, 2, -2 })
+			{
+				transform.Translate(x, 0, 0);
+				yield return new WaitForSeconds(0.1f);
+			}
+			yield return new WaitForSeconds(0.2f);
 		}
 
 		IEnumerator ThrowEnemy()
