@@ -41,5 +41,5 @@ The Wyte Engine code base and my other source code is licensed under the MIT lic
 
 About Graphics and sounds, I, Xeltica, have all rights.
 
-See [LICENSE](LICENSE) to check licenses of another programs.
+See [LICENSE](Assets/LICENSE) to check licenses of another programs.
 
