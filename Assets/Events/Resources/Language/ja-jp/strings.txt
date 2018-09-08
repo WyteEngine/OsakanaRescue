@@ -110,8 +110,9 @@ ending.16 = ころしあうほどに...
 ending.17 = あなたは　あにを　たおし
 ending.18 = みごと　$c=#ffff00;きんのさかな$!c;を
 ending.19 = てにいれました。
-ending.the_end = $sz=32;THE END$c=gray;$sz=13;?
-ending.prompt = $c=#808080;[Z] をおしてください
+ending.the_end = $sz=26;THE END$c=gray;$sz=13;?
+ending.prompt.pc = $c=#808080;[$var=key_jump;] を　おしてください
+ending.prompt.mobile = $c=#808080;がめんを　タップしてください
 
 ending.snake.1 = $v=entity.snake.mom.saying;あのー！ちょっと　まってー！
 ending.snake.2 = $v=entity.snake.mom.saying;よかった...やっと　おいつけた...
@@ -129,13 +130,10 @@ ending.snake.8 = $v=entity.snake.mom.saying;それじゃあ　おげんきで...
 system.initialize = ゲームを　初期化します。
 system.key_help = [←][→]いどう　[↑]はなしかける\
 [SHIFT]ダッシュ　[Z]ジャンプ
-system.warning.debug = デバッグモードが　オンになりました。 \
-ちゅうい！　これは　デベロッパーむけの　モードです！
 system.debug.help = F1: 高速テキスト{0} F2:イベント再読込 F3:情報\
 F4:フラグのリセット F5: FTS デバッグ
 system.debug.true=○
 system.debug.false=×
-prompt = [Z]を　おしてください。
 fts.error = $c=red;書式エラー: {0}
 
 event.photoframe.1 = フォトフレームだ。
@@ -143,3 +141,12 @@ event.photoframe.2 = $v=entity.player.saying;これは　ぼくと　にいち�
 おもいでの　しゃしんだ...
 event.photoframe.3 = $v=entity.player.saying;もっていこう。
 event.photoframe.4 = $v=entity.player.saying;でも　もういらない...
+
+system.config.title = メニュー
+system.config.language.title = げんご　せってい 
+system.config.key.title = キー　せってい
+system.config.license.title = けんり　ひょうき
+system.config.reset.title = ゲーム　リセット
+system.config.reset.really = ほんとうに？
+system.config.reset.yes = はい
+system.config.reset.no = いいえ

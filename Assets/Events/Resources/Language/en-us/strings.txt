@@ -102,8 +102,9 @@ ending.16 = now they're killing each other...
 ending.17 = You defeated the brother and
 ending.18 = you got back a your best treasure, 
 ending.19 = $c=#ffff00;gold fish.$!c;
-ending.the_end = $sz=32;THE END$c=gray;$sz=13;?
-ending.prompt = $c=#808080;Press [Z] key
+ending.the_end = $sz=26;THE END$c=gray;$sz=13;?
+ending.prompt.pc = $c=#808080;Press [$var=key_jump;] key
+ending.prompt.mobile = $c=#808080;Tap the screen
 
 ending.snake.1 = $v=entity.snake.mom.saying;Excuse meeeee!! Please wait!!
 ending.snake.2 = $v=entity.snake.mom.saying;Ha... ha... I did it...
@@ -119,16 +120,23 @@ ending.snake.8 = $v=entity.snake.mom.saying;Then, good luck.
 system.initialize = The game will be initialized.
 system.key_help = [←][→]Move　[↑]Talk\
 [SHIFT]Dash　[Z]Jump
-system.warning.debug = Debug mode is turned on. \
-WARNING! this function is for the developer!
 system.debug.help = F1: Fast Text{0} F2:Reload scripts F3:Infomations\
 F4:Reset Flags F5: FTS Debug
 system.debug.true =✓
 system.debug.false =×
-prompt = Press [Z] key
+fts.error = $c=red;Format Error: {0}
 
 event.photoframe.1 = This is a photo frame.
 event.photoframe.2 = $v=entity.player.saying;This is a memorial picture with\
 my brother and me.
 event.photoframe.3 = $v=entity.player.saying;Well, bring it.
 event.photoframe.4 = $v=entity.player.saying;However, I don't need it anymore...
+
+system.config.title = Menu
+system.config.language.title = Language... 
+system.config.key.title = Key Setting...
+system.config.license.title = Licenses...
+system.config.reset.title = Reset the game
+system.config.reset.really = Really?
+system.config.reset.yes = Yes
+system.config.reset.no = No
