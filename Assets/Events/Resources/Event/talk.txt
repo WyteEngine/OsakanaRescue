@@ -276,7 +276,7 @@
 	:ending.snake.8
 	+wait 0.5
 	
-	+clearallflags
+	+clearallflag
 	+goto boot
 +end
 
