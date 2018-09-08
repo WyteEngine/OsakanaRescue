@@ -57,7 +57,7 @@ namespace Xeltica.Osakana
 
 			if (Wyte.CurrentPlayer != null && Mathf.Abs(transform.position.x - Wyte.CurrentPlayer.transform.position.x) < DistanceToBegin && !battleStarted)
 			{
-				direction = SpriteDirection.Left;
+				Direction = SpriteDirection.Left;
 				StartCoroutine(BeginBattle());
 			}
 		}

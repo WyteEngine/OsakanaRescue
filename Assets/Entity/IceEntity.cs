@@ -12,7 +12,7 @@ namespace Xeltica.Osakana
 		{
 			base.Start();
 			Velocity = new Vector2(0, -24f);
-			direction = Wyte.CurrentPlayer != null && transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left;
+			Direction = Wyte.CurrentPlayer != null && transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left;
 			
 		}
 
@@ -31,9 +31,9 @@ namespace Xeltica.Osakana
 		{
 			// 反射
 			if (CanKickLeft())
-				direction = SpriteDirection.Right;
+				Direction = SpriteDirection.Right;
 			if (CanKickRight())
-				direction = SpriteDirection.Left;
+				Direction = SpriteDirection.Left;
 
 			Velocity = new Vector2(Speed * SpeedMultiplier, Velocity.y);
 

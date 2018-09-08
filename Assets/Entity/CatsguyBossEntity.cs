@@ -188,8 +188,8 @@ namespace Xeltica.Osakana
 			Bgm.Stop();
 			// アニメーション
 			Velocity = Vector2.zero;
-			direction = Wyte.CurrentPlayer != null ? (transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left) : direction;
-			var v = new Vector2(direction == SpriteDirection.Left ? -1 : 1, -4);
+			Direction = Wyte.CurrentPlayer != null ? (transform.position.x < Wyte.CurrentPlayer.transform.position.x ? SpriteDirection.Right : SpriteDirection.Left) : Direction;
+			var v = new Vector2(Direction == SpriteDirection.Left ? -1 : 1, -4);
 			for (int i = 0; i < 24; i++)
 			{
 				transform.Translate(v);
@@ -219,7 +219,7 @@ namespace Xeltica.Osakana
 		/// </summary>
 		IEnumerator DoPhase1()
 		{
-			var target = direction == SpriteDirection.Left ? leftTarget : rightTarget;
+			var target = Direction == SpriteDirection.Left ? leftTarget : rightTarget;
 
 			var vel = target < transform.position.x ? -dashSpeed : dashSpeed;
 
@@ -240,7 +240,7 @@ namespace Xeltica.Osakana
 					yield return new WaitForSeconds(1);
 					SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
 					// 反対を向く
-					direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+					Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 					yield break;
 				}
 				if (Mathf.Abs(target - transform.position.x) < distanceToSlide)
@@ -265,7 +265,7 @@ namespace Xeltica.Osakana
 					yield return new WaitForSeconds(1);
 					SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
 					// 反対を向く
-					direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+					Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 					yield break;
 				}
 				// 判定
@@ -274,7 +274,7 @@ namespace Xeltica.Osakana
 			}
 			SetAnimations(AnimationStaying, AnimationWalking, AnimationJumping);
 			// 反対を向く
-			direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+			Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 
 			time = Time.time;
 			while (Time.time - time < 1f)
@@ -370,7 +370,7 @@ namespace Xeltica.Osakana
 				var bullet = Instantiate(BulletToShoot.gameObject, transform.position, default(Quaternion)).GetComponent<BulletEntity>();
 
 				// 手を後ろに
-				bullet.Move(direction == SpriteDirection.Left ? -bulletSpeed : bulletSpeed);
+				bullet.Move(Direction == SpriteDirection.Left ? -bulletSpeed : bulletSpeed);
 				SetAnimations(AnimationStaying);
 				yield return new WaitForSeconds(wait);
 			}
@@ -461,7 +461,7 @@ namespace Xeltica.Osakana
 			destination = new Vector2(rightTarget, targetToDown);
 
 			yield return EaseOut(destination, 2f);
-			direction = SpriteDirection.Left;
+			Direction = SpriteDirection.Left;
 		}
 
 		IEnumerator Move()
@@ -470,13 +470,13 @@ namespace Xeltica.Osakana
 			yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
 			if (Dying) yield break;
 			// 目的地に行く
-			yield return EaseOut(new Vector2(direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
+			yield return EaseOut(new Vector2(Direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
 
 			if (Dying) yield break;
 			yield return new WaitForSeconds(0.4f);
 
 			// 振り向く
-			direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+			Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 		}
 
 		IEnumerator ThrowIce()
@@ -496,7 +496,7 @@ namespace Xeltica.Osakana
 			var rightU = new Vector2(rightTarget, transform.position.y);
 
 			Vector2[] navs =
-				direction == SpriteDirection.Left ? new[] { middleRight, middleLeft, leftU } : new[] { middleLeft, middleRight, rightU };
+				Direction == SpriteDirection.Left ? new[] { middleRight, middleLeft, leftU } : new[] { middleLeft, middleRight, rightU };
 
 			yield return new WaitForSeconds(0.4f);
 
@@ -504,13 +504,14 @@ namespace Xeltica.Osakana
 			for (int i = 0; i < navs.Length; i++)
 			{
 				if (Dying) yield break;
-				yield return EaseOut(navs[i], 0.4f);Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
+				yield return EaseOut(navs[i], 0.4f);
+				yield return new WaitForSeconds(0.4f);
 				Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
 			}
 
-			yield return new WaitForSeconds(0.4f);
+			yield return new WaitForSeconds(0.8f);
 
-			direction = direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
+			Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
 		}
 
 		IEnumerator ThrowEnemy()

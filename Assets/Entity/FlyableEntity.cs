@@ -57,7 +57,7 @@ namespace Xeltica.Osakana
 		public void Move(Vector2 speed)
 		{
 			Velocity = speed;
-			direction = (int)speed.x < 0 ? SpriteDirection.Left : (int)speed.x > 0 ? SpriteDirection.Right : direction;
+			Direction = (int)speed.x < 0 ? SpriteDirection.Left : (int)speed.x > 0 ? SpriteDirection.Right : Direction;
 			if (speed != Vector2.zero)
 				State = FlyableEntityState.Fly;
 		}
