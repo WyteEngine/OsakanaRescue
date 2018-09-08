@@ -323,13 +323,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameVersion: 1.0.0beta2
+  gameVersion: 1.0.0beta3
   bootstrapLabel: boot
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
   gamePad: {fileID: 0}
-  requestDebugMode: 0
+  requestDebugMode: 1
   guiEnabled: 1
 --- !u!114 &114244664975831212
 MonoBehaviour:
@@ -525,6 +525,10 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 413530d6052fcfa4bac45fcd3f0e9278, type: 2}
   - Key: item.photoframe
     Value: {fileID: 11400000, guid: 8c784dc145983054590095de1374e55e, type: 2}
+  - Key: entity.rock
+    Value: {fileID: 11400000, guid: 3712e9d41eaeffa4dbba4de33a0859cd, type: 2}
+  - Key: entity.rock.pane
+    Value: {fileID: 11400000, guid: fcaadc0d571fd974aa72eaa3bb3d1c4a, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -638,6 +642,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: aa02bae5ec929be44ba24b32dbec8c7e, type: 3}
   - id: system.menu.close
     clip: {fileID: 8300000, guid: 1f59f9d72043c354f9df43516ed64733, type: 3}
+  - id: entity.rock.destroy
+    clip: {fileID: 8300000, guid: e06a6a68534385843a19dcb54595bbf6, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1
