@@ -149,6 +149,15 @@ namespace Xeltica.Osakana
 			set { ice = value; }
 		}
 
+		[SerializeField]
+		private GameObject rock;
+
+		public GameObject Rock
+		{
+			get { return rock; }
+			set { rock = value; }
+		}
+
 		private float targetHeightToShootLightning;
 
 
@@ -398,23 +407,23 @@ namespace Xeltica.Osakana
 
 			var probability = Random.Range(0, 100);
 
-			// 32% ball
-			// 22% enemy
-			// 28% ice
+			// 24% ball
+			// 16% snake
+			// 50% rock
 			// 18% heal
 
 
-			if (probability < 32)
+			if (probability < 24)
 			{
 				yield return ThrowBall();
 			}
-			else if (probability < 32 + 22)
+			else if (probability < 24 + 16)
 			{
 				yield return ThrowEnemy();
 			}
-			else if (probability < 32 + 22 + 28)
+			else if (probability < 24 + 16 + 50)
 			{
-				yield return ThrowIce();
+				yield return ThrowRock();
 			}
 			else
 			{
@@ -484,6 +493,14 @@ namespace Xeltica.Osakana
 			if (Dying) yield break;
 			Sfx.Play("entity.guy.throw");
 			Instantiate(ice, transform.position, transform.rotation);
+			yield break;
+		}
+
+		IEnumerator ThrowRock()
+		{
+			if (Dying) yield break;
+			Sfx.Play("entity.guy.throw");
+			Instantiate(rock, transform.position, transform.rotation);
 			yield break;
 		}
 
