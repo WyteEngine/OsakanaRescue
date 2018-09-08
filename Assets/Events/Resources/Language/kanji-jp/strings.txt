@@ -1,0 +1,151 @@
+﻿lang.name = 日本語(漢字)
+lang.name.inenglish = Japanese Kanji
+lang.name.author = Xeltica
+
+event.batrace.1 = コウモリレースへようこそ！
+event.batrace.2 = コウモリレースは、この箱に閉じ込められているコウモリに乗って
+event.batrace.3 = ひたすら高いところを目指して飛んでいくゲームです！
+event.batrace.4 = 障害物にぶつかるか、コウモリから落ちたらゲームオーバー！
+event.batrace.5 = 距離に応じて、景品が貰えます！
+event.batrace.6 = 準備はできましたか？
+event.batrace.7 = 本当に？
+event.batrace.8 = それでは、ゲームスタート！
+
+event.tutorial.1 = 話しかけられそうな生き物や、\
+調べられそうな物を見つけたら、
+event.tutorial.2 = うまくいけば、お話できるよ！
+event.tutorial.3.mobile = 画面をタップしてみよう！
+event.tutorial.3.pc = ↑キーを押してみよう！
+
+event.prologue.1 = $v=entity.player.saying;そう。あのとき、僕は...
+event.prologue.2 = $v=entity.player.saying;ねえ！僕のお魚だよ！？
+event.prologue.3 = $v=entity.guy.saying;いつまでもチンタラしてるから、こうなるんだ。
+event.prologue.4 = $v=entity.player.saying;僕の大切な、金の魚...
+event.prologue.5 = $v=entity.guy.saying;じゃあ、賭けをしようか。
+event.prologue.6 = $v=entity.guy.saying;俺のことを追っかけてこい。俺を倒したら、返してやる。
+event.prologue.7 = $v=entity.guy.saying;ノロマなお前には無理だろうけどな。
+
+event.snake.1 = $v=entity.snake.saying;待って！僕は、悪いヘビじゃないよ！
+event.snake.2 = $v=entity.snake.saying;この先に、僕の住処があるんだ。
+event.snake.3 = $v=entity.snake.saying;公園で一休みしててさ。
+event.snake.4 = $v=entity.snake.saying;それで、帰ってきたらあんなことに...
+event.snake.5 = $v=entity.snake.saying;お家に帰れない...
+
+event.snake.6 = $v=entity.snake.saying;今、おっきな爆発があってさ！
+event.snake.7 = $v=entity.snake.saying;え？君がやってくれたの？
+event.snake.8 = $v=entity.snake.saying;ありがとう！これでやっとお家に帰れるよ！
+
+event.snake.glitch = $v=entity.snake.saying;ありえない！どうやってここに戻ってきたのさ！
+
+event.pre_battle.1 = $v=entity.guy.saying;まさか、本当にここまで来れるとはな...
+event.pre_battle.2 = $v=entity.guy.saying;コンテナも、コウモリも...
+event.pre_battle.3 = $v=entity.guy.saying;俺の仕掛けは、全て無駄だったか...
+event.pre_battle.4 = $v=entity.guy.saying;お前がそこまでノロマじゃないってことは、\
+よくわかった。
+event.pre_battle.5 = $v=entity.guy.saying;......
+event.pre_battle.6 = $v=entity.guy.saying;いいだろう。俺を倒せたら、\
+約束通り、返してやる。
+event.pre_battle.7 = $v=entity.guy.saying;だが、こっちも全力を出すぜ。\
+覚悟しろ。
+
+event.simple_pre_battle.1 = $v=entity.guy.saying;どうした？\
+お前の実力はその程度か？
+
+event.post_battle.1 = $v=entity.player.saying;ママ？
+event.post_battle.2 = $v=entity.player.saying;また、俺にはお魚くれないの？？
+event.post_battle.3 = $v=entity.player.saying;......
+event.post_battle.4 = $v=entity.player.saying;$spd=0.5;......なんで？
+event.post_battle.5 = $v=entity.guy.saying;$spd=0.2;どうして、あいつは...
+
+event.post_battle.6 = キャッツガイを倒した。
+event.post_battle.7 = $v=entity.player.saying;ぼくのお魚。
+event.post_battle.8 = $v=entity.player.saying;本当は、一緒に食べたかった...。
+
+ending.1 = 白いねこの、兄弟を\
+知っていますか？
+ending.2 = 彼は、自らをキャッツガイと呼びます
+ending.3 = 昔々、二人はとても仲良しでした
+ending.4 = $c=red;そう、彼が豹変するまでは...
+
+ending.title = $sz=26;おさかなれすきゅー
+ending.staff_credit = STAFF CREDIT
+ending.xeltica = ++ Xeltica ++\
+\
+プログラミング\
+作曲\
+ドット絵\
+シナリオ
+ending.tools = ** かいはつツール **\
+\
+Unity\
+Aseprite\
+Logic Pro X\
+Audacity
+ending.ty = ** スペシャルサンクス **\
+\
+++ Amamizu Sui ++\
+++ Fueice ++
+
+ending.5 = キャッツガイと　白いねこは\
+仲の良い兄弟でした
+ending.6 = でも、親はキャッツガイを\
+気に入りませんでした
+ending.7 = 絶品の、金の魚も\
+いつもキャッツガイにはあげず
+ending.8 = 白いねこだけ、溺愛されました
+
+ending.9 = キャッツガイは、やがて\
+このように考え始めました
+ending.10 = 「いつもノロマな弟だから」
+ending.11 = 「いつまでも親離れできない」
+ending.12 = 「おれはアイツよりも大人なんだ」
+
+ending.13 = 仲良しだった兄弟に\
+一度入った亀裂は
+ending.14 = そう簡単には埋まりません
+ending.15 = 二人は昔の記憶を忘れ
+ending.16 = 殺し合うほどに...
+
+ending.17 = あなたは兄を倒し
+ending.18 = 見事$c=#ffff00;金の魚$!c;を
+ending.19 = 手に入れました
+ending.the_end = $sz=26;THE END$c=gray;$sz=13;?
+ending.prompt.pc = $c=#808080;[$var=key_jump;] を押してください
+ending.prompt.mobile = $c=#808080;画面をタップしてください
+
+ending.snake.1 = $v=entity.snake.mom.saying;あのー！ちょっと、待ってー！
+ending.snake.2 = $v=entity.snake.mom.saying;よかった...やっと、追いつけた...
+ending.snake.3 = $v=entity.snake.mom.saying;あ、先程はうちの息子がお世話になりました。
+ending.snake.4 = $v=entity.snake.mom.saying;私、悪くないヘビの母です。
+ending.snake.5 = $v=entity.snake.mom.saying;最後に一つだけ言いたいことがあって\
+急いできました。
+ending.snake.6 = $v=entity.snake.mom.saying;$c=red;あのときのことを、思い出したら、\
+あのときの場所に、戻ってみてください。
+ending.snake.7 = $v=entity.snake.mom.saying;過去は、取り戻せないけど\
+過去は、思い出せますよ。
+ending.snake.8 = $v=entity.snake.mom.saying;それじゃあ、お元気で...
+
+
+system.initialize = ゲームを初期化します。
+system.key_help = [←][→]移動　[↑]話しかける\
+[SHIFT]ダッシュ　[Z]ジャンプ
+system.debug.help = F1: 高速テキスト{0} F2:イベント再読込 F3:情報\
+F4:フラグのリセット F5: FTS デバッグ
+system.debug.true=○
+system.debug.false=×
+fts.error = $c=red;書式エラー: {0}
+
+event.photoframe.1 = フォトフレームだ。
+event.photoframe.2 = $v=entity.player.saying;これは　ぼくと　にいちゃんの\
+おもいでの　しゃしんだ...
+event.photoframe.3 = $v=entity.player.saying;もっていこう。
+event.photoframe.4 = $v=entity.player.saying;でも　もういらない...
+
+system.config.title = メニュー
+system.config.language.title = 言語設定... 
+system.config.key.title = キー設定...
+system.config.license.title = 権利表記...
+system.config.reset.title = ゲーム　リセット
+system.config.reset.really = 本当に？
+system.config.reset.yes = はい
+system.config.reset.no = いいえ
