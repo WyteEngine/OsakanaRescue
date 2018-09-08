@@ -257,7 +257,7 @@
 
 	+bgmwait 5.709
 	+txtset the_end, ending.the_end, "middle_center", 0, 0, center
-	+bgmwait 6
+	+wait 4
 	+onplatform pc, gosub, #prompt_pc, mobile, gosub, #prompt_mobile
 	+nod
 	+sfx "entity.npc.saying"
