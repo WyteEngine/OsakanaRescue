@@ -258,7 +258,7 @@
 	+bgmwait 5.709
 	+txtset the_end, ending.the_end, "middle_center", 0, 0, center
 	+bgmwait 6
-	+txtset nod, prompt, middle_center, 0, -64, center
+	+onplatform pc, gosub, #prompt_pc, mobile, gosub, #prompt_mobile
 	+nod
 	+sfx "entity.npc.saying"
 	+txtclr the_end, nod
@@ -278,6 +278,14 @@
 
 	+goto title
 +end
+
+#prompt_pc
+	+txtset prompt, ending.prompt.pc, "middle_center", 0, 0, center
++return
+
+#prompt_mobile
+	+txtset prompt, ending.prompt.mobile, "middle_center", 0, 0, center
++return
 
 #look_at_photoframe
 	:event.photoframe.1
