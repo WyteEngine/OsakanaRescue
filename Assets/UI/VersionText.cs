@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using WyteEngine;
 
-namespace WyteEngine.UI
+namespace Xeltica.Osakana
 {
 	[RequireComponent(typeof(Text))]
 	public class VersionText : BaseBehaviour

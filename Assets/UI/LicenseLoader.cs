@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
-[RequireComponent(typeof(Text))]
-public class LicenseLoader : MonoBehaviour
+namespace Xeltica.Osakana
 {
-	[SerializeField]
-	TextAsset licenseText;
-
-	Text ui;
-
-	// Use this for initialization
-	void Start()
+	[ExecuteInEditMode]
+	[RequireComponent(typeof(Text))]
+	public class LicenseLoader : MonoBehaviour
 	{
-		ui = GetComponent<Text>();
-	}
+		[SerializeField]
+		TextAsset licenseText;
 
-	private void Update()
-	{
-		if (ui == null)
+		Text ui;
+
+		// Use this for initialization
+		void Start()
+		{
 			ui = GetComponent<Text>();
-		if (licenseText != null && ui.text != licenseText.text)
-			ui.text = licenseText.text;
+		}
+
+		private void Update()
+		{
+			if (ui == null)
+				ui = GetComponent<Text>();
+			if (licenseText != null && ui.text != licenseText.text)
+				ui.text = licenseText.text;
+		}
 	}
 }
