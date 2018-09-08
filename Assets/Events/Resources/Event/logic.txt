@@ -38,7 +38,7 @@
 	piece_of_container+particle 2144, -160
 	piece_of_container+particle 2176, -160
 	+wait 2
-	+bgmplay field2
+	+bgmreplay
 	+playercamera
 	+wait 0.08
 	warukunai_snake+spofs 2064, -168
