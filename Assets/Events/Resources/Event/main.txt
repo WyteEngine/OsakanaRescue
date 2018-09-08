@@ -2,18 +2,15 @@
 
 #boot
 	+pfreeze on
+	+bossbarhide
 	+fade out, 0
-	game_has_started+onflag gosub, clear
 	block1_done+onflag field3
 	prologue_has_done+onflag field2
 	game_has_started+onflag field1
-	+bossbarhide
 	+goto title
 +end
 
-#clear
-	+clearallflags
-+return
+
 
 #prologue
 	+pfreeze on
@@ -26,7 +23,7 @@
 	
 	+spset "catsguy", "entity.guy.stay", 144, -64
 	// 左を向く
-	catsguy+spwalk -1, 0.01
+	catsguy+spdir left
 	+bgmstopasync 0.2
 	+fade in, 0.2
 	+wait 1.2

@@ -6,7 +6,9 @@
 	+pfreeze on
 	+aflag on, talked_with_warukunai_snake
 	:event.snake.1
-	warukunai_snake+spwalk -1, 0.3
+	player+spwalkto 1872, 0.6
+	player+spdir right
+	warukunai_snake+spdir left
 	:event.snake.2
 	:event.snake.3
 	+freecamera 2064, -176
@@ -91,7 +93,7 @@
 	:event.pre_battle.4
 	+wait 0.4
 	:event.pre_battle.5
-	boss+spwalk 16, 0.4
+	boss+spwalk 60, 0.4
 	fs1+spclr
 	+wait 0.05
 	fs2+spclr
@@ -99,8 +101,8 @@
 	fs3+spclr
 	+wait 0.3
 	:event.pre_battle.6
-	boss+spwalk 80, 0.4
-	boss+spwalk -1, 0.001
+	boss+spwalk 52, 0.4
+	boss+spdir left
 	:event.pre_battle.7
 	+flag on, pre_battle
 +return
