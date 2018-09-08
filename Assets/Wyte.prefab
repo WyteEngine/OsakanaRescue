@@ -329,7 +329,7 @@ MonoBehaviour:
     type: 2}
   itemBar: {fileID: 0}
   gamePad: {fileID: 0}
-  requestDebugMode: 1
+  requestDebugMode: 0
   guiEnabled: 1
 --- !u!114 &114244664975831212
 MonoBehaviour:
@@ -633,7 +633,11 @@ MonoBehaviour:
   - id: entity.snake.mom.saying
     clip: {fileID: 8300000, guid: f35a1efbe769b754dbc824f48826c039, type: 3}
   - id: entity.guy.saying
-    clip: {fileID: 8300000, guid: d9cb183e2fcef4447bd7b0b8af828d6e, type: 3}
+    clip: {fileID: 8300000, guid: 5fdbefaabc8228b4d9361a039f04637e, type: 3}
+  - id: system.menu.open
+    clip: {fileID: 8300000, guid: aa02bae5ec929be44ba24b32dbec8c7e, type: 3}
+  - id: system.menu.close
+    clip: {fileID: 8300000, guid: 1f59f9d72043c354f9df43516ed64733, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1

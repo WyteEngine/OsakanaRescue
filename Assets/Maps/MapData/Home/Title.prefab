@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4069430327601192}
   - component: {fileID: 212886507262518184}
+  - component: {fileID: 114696260007059050}
   m_Layer: 0
   m_Name: Logo
   m_TagString: Untagged
@@ -357,6 +358,18 @@ MonoBehaviour:
     Image: {fileID: 0}
     ScrollSpeed: 0
     AutoScroll: 0
+--- !u!114 &114696260007059050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949195337138826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed078480fcb42c24796463ecbae7dfef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: logo
 --- !u!212 &212208708968113568
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -400,7 +413,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212819849694736788

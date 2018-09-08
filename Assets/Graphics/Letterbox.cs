@@ -39,9 +39,7 @@ namespace Xeltica.Osakana
 			var cr = Camera.CameraRects;
 
 			var horizontalSize = (cr.width - 320) / 2;
-
-			//			top.transform.localPosition = new Vector2(-cr.width / 2, cr.height / 2);
-			//			top.transform.localScale = new Vector2(cr.width, Mathf.Max(0, cr.height - 180));
+			
 			top.transform.localScale = new Vector3();
 			left.transform.localPosition = new Vector2(-cr.width / 2, cr.height / 2);
 			left.transform.localScale = new Vector2(horizontalSize, cr.height);
