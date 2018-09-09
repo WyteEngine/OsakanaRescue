@@ -150,3 +150,11 @@ system.config.reset.title = ゲーム　リセット
 system.config.reset.really = ほんとうに？
 system.config.reset.yes = はい
 system.config.reset.no = いいえ
+system.config.key.header = わりあてる　キーを　おしてください
+
+system.config.key.left = ひだり
+system.config.key.right = みぎ
+system.config.key.talk = かいわ
+system.config.key.dash = ダッシュ
+system.config.key.jump = ジャンプ
+system.config.key.menu = メニュー
