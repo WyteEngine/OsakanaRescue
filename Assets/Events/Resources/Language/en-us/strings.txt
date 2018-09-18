@@ -53,8 +53,8 @@ event.post_battle.4 = $v=entity.player.saying;$spd=0.5;......why?
 event.post_battle.5 = $v=entity.guy.saying;$spd=0.2;why is he only...
 
 event.post_battle.6 = You defeated the cats guy.
-event.post_battle.7 = v=entity.player.saying;My fish.
-event.post_battle.8 = v=entity.player.saying;Actually, I wanted to eat it with him...
+event.post_battle.7 = $v=entity.player.saying;My fish.
+event.post_battle.8 = $v=entity.player.saying;Actually, I wanted to eat it with him...
 
 ending.1 = Do you know a brother\
  of the white cat?
@@ -83,20 +83,20 @@ ending.ty = ** Special Thanks **\
 ++ Fueice ++
 
 ending.5 = Cats-guy and the white cat were\
-a good brothers.
+good brothers.
 ending.6 = However, their parents don't like cats-guy.
 ending.7 = They didn't give the rarity gold fish\
 for him.
-ending.8 = They only dote on the white cat.
+ending.8 = They only doted on the white cat.
 ending.9 = After that, catsguy thought
 ending.10 = "he's lazy"
 ending.11 = "so he's still a mama's boy"
 ending.12 = "i'm greater than him."
 
-ending.13 = It's very difficult to
+ending.13 = It's very difficult to\
 fix a bad friendship of
 ending.14 = the good brothers.
-ending.15 = They forgot a good brotherhood and
+ending.15 = They forgot a good relationship and
 ending.16 = now they're killing each other...
 
 ending.17 = You defeated the brother and
