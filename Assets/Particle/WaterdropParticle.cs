@@ -31,7 +31,7 @@ namespace Xeltica.Osakana
 		{
 			base.OnUpdate();
 			// 画面から出てたら殺す
-			if (!Camera.CameraRects.Contains(transform.position))
+			if (!Camera.IsVisible(transform.position))
 				Kill(this);
 			// 地面についたら弾ける
 			if (IsGrounded())
