@@ -270,3 +270,8 @@
 	+fade in, 0.2
 	+pfreeze off
 +end
+
+#debug_boss_trueend
+	+flag on, got_the_photoframe
+	+goto debug_boss
++end

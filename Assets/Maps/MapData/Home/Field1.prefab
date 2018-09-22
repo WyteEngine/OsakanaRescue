@@ -2770,6 +2770,8 @@ MonoBehaviour:
   preEvent: pre_final_battle
   postEvent: post_final_battle
   distanceToBegin: 128
+  eventOfTrueEnd: true_ending
+  flagOfTrueEnd: got_the_photoframe
   distanceToSlide: 96
   totalDistance: 240
   dashSpeed: 48

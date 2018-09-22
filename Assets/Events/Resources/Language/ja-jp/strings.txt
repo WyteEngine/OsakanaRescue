@@ -158,3 +158,28 @@ system.config.key.talk = かいわ
 system.config.key.dash = ダッシュ
 system.config.key.jump = ジャンプ
 system.config.key.menu = メニュー
+
+ending.true.1 = $v=entity.player.saying;もうやめて！
+ending.true.2 = $v=entity.player.saying;ぼくには　むりだよ...
+ending.true.3 = $v=entity.player.saying;じつの　にいちゃんを　たおすことなんて！
+ending.true.4 = $v=entity.guy.saying;じつの　にいちゃん？
+ending.true.5 = $v=entity.guy.saying;ハハハハハハハ！
+ending.true.6 = $v=entity.guy.saying;わらわせんな。
+ending.true.7 = $v=entity.guy.saying;おまえはもう　おれの　おとうとじゃ　ない。
+ending.true.8 = $v=entity.player.saying;...!!
+ending.true.9 = $v=entity.guy.saying;そうだろう？
+ending.true.10 = $v=entity.guy.saying;どうした？　もう　たたかわないのか？
+ending.true.11 = $v=entity.guy.saying;それじゃあ　トドメだ！！
+ending.true.12 = $v=entity.guy.saying;へっ　ノロマのくせに...
+ending.true.13 = $v=entity.guy.saying;あ？$nod;　なんだ　その　しゃしん...
+ending.true.14 = $v=entity.guy.saying;！
+ending.true.15 = $v=entity.guy.saying;おれは　もうしわけないことを\
+してしまった。
+ending.true.16 = $v=entity.player.saying;にいちゃん？
+ending.true.17 = $v=entity.guy.saying;おれはもう　おまえの　おにいちゃんでは\
+いられない。
+ending.true.18 = $v=entity.guy.saying;じぶんは　じつの　おとうとに\
+ありえない　しうちを　してしまった。
+
+ending.true.credit.1 = ねこの　きょうだいは　ぶじ　なかなおりし
+ending.true.credit.2 = おうちへと　かえるので　ありました

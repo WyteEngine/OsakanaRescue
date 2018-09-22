@@ -312,6 +312,9 @@ MonoBehaviour:
   - id: ending
     clip: {fileID: 8300000, guid: 95514f4978b7d4d1799baf6ad9eeb78e, type: 3}
     loop: 0
+  - id: 056
+    clip: {fileID: 8300000, guid: 86416276d8f82264e9de58befe1b307a, type: 3}
+    loop: 0
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,8 +326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameVersion: 1.0.0beta5
-  bootstrapLabel: boot
+  gameVersion: 1.0.0beta6
+  bootstrapLabel: true_ending_memory
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
   itemBar: {fileID: 0}
@@ -416,6 +419,7 @@ MonoBehaviour:
   - {fileID: 114732566923196864, guid: 9e257e52cfb1b4a0a9e5b405d3ae79fc, type: 2}
   - {fileID: 114564950249208794, guid: ddc7ce0dd2df54e69b8f0b913e0c21da, type: 2}
   - {fileID: 114485428174632562, guid: ecfb5ef58aa57434d99b6d53072ee190, type: 2}
+  - {fileID: 114652954652502574, guid: b2264262be1b31b449ff472fe3b0d809, type: 2}
 --- !u!114 &114549298682737474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -457,6 +461,8 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: d5b20849407534cb9a6a8e1993d1aec7, type: 2}
   - Key: entity.player.drown
     Value: {fileID: 11400000, guid: a8721635119374936aa4b5806aecb01f, type: 2}
+  - Key: entity.player.slide
+    Value: {fileID: 11400000, guid: 2f456fc46b977494d81bbe8bd6a91bf9, type: 2}
   - Key: entity.guy.walk
     Value: {fileID: 11400000, guid: 3921d05a81d764dd9a7043ac3d12db51, type: 2}
   - Key: entity.guy.jump
@@ -529,6 +535,26 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: 3712e9d41eaeffa4dbba4de33a0859cd, type: 2}
   - Key: entity.rock.pane
     Value: {fileID: 11400000, guid: fcaadc0d571fd974aa72eaa3bb3d1c4a, type: 2}
+  - Key: entity.guy.noglasses.death
+    Value: {fileID: 11400000, guid: ed0f57d4fbedb0346ae492a5f764386a, type: 2}
+  - Key: entity.guy.noglasses.jump
+    Value: {fileID: 11400000, guid: b51ec42f1b5485445af7d246ad57a7a7, type: 2}
+  - Key: entity.guy.noglasses.stay
+    Value: {fileID: 11400000, guid: e4e9484adb836f345b2dfb4a0327ae3c, type: 2}
+  - Key: entity.guy.noglasses.walk
+    Value: {fileID: 11400000, guid: 7366fed2ad8922942ba0e9bb4489f515, type: 2}
+  - Key: entity.guy.smile
+    Value: {fileID: 11400000, guid: 2e0694232b77c5947a4939f8331dbec9, type: 2}
+  - Key: entity.player.smile
+    Value: {fileID: 11400000, guid: b570bc74f338e904285d5fbc28551cbc, type: 2}
+  - Key: entity.guy.cry
+    Value: {fileID: 11400000, guid: 3c59fdaf547b5a64894a607b91ccb41c, type: 2}
+  - Key: entity.catsguy.noglasses.slide
+    Value: {fileID: 11400000, guid: dac15d1f840f7734e99fb4e021c06f35, type: 2}
+  - Key: entity.goldfish.part.1
+    Value: {fileID: 11400000, guid: de79eda03bde0f540ab396bc35719722, type: 2}
+  - Key: entity.goldfish.part.2
+    Value: {fileID: 11400000, guid: 9c4681487225f204cb4f3a47ebedb2b5, type: 2}
 --- !u!114 &114586839258663128
 MonoBehaviour:
   m_ObjectHideFlags: 1

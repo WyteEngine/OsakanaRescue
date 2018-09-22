@@ -56,3 +56,178 @@
 	+flag on, "prologue_has_done"
 	+goto #field2
 +end
+
+#true_ending
+	:event.simple_pre_battle.1
+	player+spwalkto 3320, 1
+	player+spdir right
+	+bossbarhide
+	+wait 0.3
+	:ending.true.1
+	+wait 0.1
+	:ending.true.2
+	+wait 0.1
+	:ending.true.3
+	+wait 0.1
+	:ending.true.4
+	+wait 0.1
+	:ending.true.5
+	+wait 0.1
+	:ending.true.6
+	+wait 0.1
+	:ending.true.7
+	+wait 0.1
+	:ending.true.8
+	+wait 0.1
+	:ending.true.9
+	+wait 0.5
+	:ending.true.10
+	// トドメをさす
+	boss+spwalkto 3320, 1
+	+wait 0.1
+	:ending.true.11
+	+fade out, 0
+	+sfx "entity.guy.death"
+	+spwalk 48, 0
+	+phide
+	+spset p, entity.player.slide, 3312, -296
+	+spset frame, item.photoframe, 3352, -296
+	+wait 4
+	// さしおわる
+	+fade in, 0.4
+	+wait 1
+	:ending.true.12
+	+wait 0.5
+	guy+spdir right
+	+wait 0.5
+	:ending.true.13
+	+wait 0.1
+	:ending.true.14
+	// 回想
+
+#true_ending_memory	
+	+freecamera 50, -70
+	+phide
+	+wait 0.5
+	//// 机の上で魚を眺める二人
+	+move "Home"
+	+spset p, entity.player.stay, 24, -64
+	+spset g, entity.guy.noglasses.stay, 72,-64
+	+spset fish, entity.goldfish, 48, -61
+	+fade in, 0.8
+	+bgmplay 056
+	p+spdir right
+	g+spdir left
+	+wait 3
+	p+spchr entity.player.smile
+	g+spchr entity.guy.smile
+	+wait 2
+	+fade out, 1.5
+
+	//// 鬼ごっこして転んだcatsguyをたすけるcat
+	+move "SimpleField"
+	+freecamera 1536, -112
+	+spset p, entity.player.walk, 1320, -112
+	+spset g, entity.guy.noglasses.walk, 1320, -112
+	+fadeasync in, 0.3
+	+wait 0.5
+	g+spwalktoasync 1448, 1.4
+	g+spchr entity.guy.noglasses.slide
+	g+spwalktoasync 1480, 0.8
+	p+spwalkto 1584, 3
+	p+spchr entity.player.stay
+	+wait 0.9
+	p+spdir left
+	+wait 0.4
+	+spwalkto 1496, 0.8
+	+wait 0.5
+	g+spwalk 4, 0
+	+wait 0.2
+	g+spwalk -8, 0
+	+wait 0.2
+	g+spwalk 8, 0
+	+wait 0.2
+	g+spwalk -4, 0
+	+wait 0.5
+	g+spchr entity.guy.noglasses.stay
+	+wait 0.4
+	p+spchr entity.player.smile
+	g+spchr entity.guy.smile
+	+wait 4
+	+fade out, 0.5
+	+spclr g, p
+	// 回想から現実に戻る
+	+freecamera 3432, -272
+	+spset g, entity.guy.stay, 3512, -288
+	g+spdir left
+	+spset p, entity.player.stay, 3448, -288
+	p+spdir right
+	+wait 1
+	+fade in, 0.5
+	+wait 0.8
+	:ending.true.15
+	g+spchr entity.guy.walk
+	g+spwalkto 3480, 0.8
+	g+spchr entity.guy.stay
+	+spset fish, entity.goldfish, 3464, -288
+	:ending.true.16
+	+wait 0.5
+	:ending.true.17
+	+wait 0.2
+	:ending.true.18
+	+wait 0.5
+	g+spchr entity.guy.walk
+	g+spwalktoasync 3400, 1.5
+	g+spchr entity.guy.stay
+	+wait 0.6
+	g+spdir right
+	+wait 0.2
+	p+spdir right
+	fish+spclr
+	+wait 0.4
+	p+spdir left
+	+wait 0.3
+	+spset fish1, entity.goldfish.part.1, 3416
+	+wait 0.3
+	+spset fish2, entity.goldfish.part.1, 3432
+	+wait 0.6
+	g+spchr entity.guy.cry
+	+fadeasync out, 1.5
+	+bgmstop 1.5
+	+wait 2
+	// door -72, -96 entity.door
+
+	#credit_true
+	+freeze on
+	+gui off
+	+wait 0.5
+
+	+txtset t1, ending.1, "middle_center", 0, 0, center
+	+bgmplay "ending"
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+
+	+txtset t1, ending.2, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+
+	+txtset t1, ending.title, "middle_center", 0, 32, center
+	+txtset t2, ending.staff_credit, "middle_center", 0, -32, center
+	+bgmwait 3.5
+	+txtclr t1,t2
+	+bgmwait 0.5
+	+txtset t1, ending.xeltica, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+	+txtset t1, ending.tools, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+	+txtset t1, ending.ty, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+	+end
