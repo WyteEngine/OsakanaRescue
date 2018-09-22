@@ -314,7 +314,7 @@ MonoBehaviour:
     loop: 0
   - id: 056
     clip: {fileID: 8300000, guid: 86416276d8f82264e9de58befe1b307a, type: 3}
-    loop: 0
+    loop: 1
 --- !u!114 &114218272860490524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,7 +549,7 @@ MonoBehaviour:
     Value: {fileID: 11400000, guid: b570bc74f338e904285d5fbc28551cbc, type: 2}
   - Key: entity.guy.cry
     Value: {fileID: 11400000, guid: 3c59fdaf547b5a64894a607b91ccb41c, type: 2}
-  - Key: entity.catsguy.noglasses.slide
+  - Key: entity.guy.noglasses.slide
     Value: {fileID: 11400000, guid: dac15d1f840f7734e99fb4e021c06f35, type: 2}
   - Key: entity.goldfish.part.1
     Value: {fileID: 11400000, guid: de79eda03bde0f540ab396bc35719722, type: 2}

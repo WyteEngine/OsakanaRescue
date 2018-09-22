@@ -147,3 +147,26 @@ system.config.key.talk = Talk
 system.config.key.dash = Dash
 system.config.key.jump = Jump
 system.config.key.menu = Menu
+
+ending.true.1 = $v=entity.player.saying;Stop, stop!!
+ending.true.2 = $v=entity.player.saying;I can't do it.
+ending.true.3 = $v=entity.player.saying;Defeat my brother by blood!
+ending.true.4 = $v=entity.guy.saying;brother by blood?
+ending.true.5 = $v=entity.guy.saying;hahahahaha!!!
+ending.true.6 = $v=entity.guy.saying;don't be silly.
+ending.true.7 = $v=entity.guy.saying;you're no longer my brother.
+ending.true.8 = $v=entity.player.saying;...!!
+ending.true.9 = $v=entity.guy.saying;aren't ya?
+ending.true.10 = $v=entity.guy.saying;what's wrong? have you lost your fighting spirit?
+ending.true.11 = $v=entity.guy.saying;well, take that!
+ending.true.12 = $v=entity.guy.saying;huh! even though you're lazy.
+ending.true.13 = $v=entity.guy.saying;huh? $nod;what's that picture...?
+ending.true.14 = $v=entity.guy.saying;!
+ending.true.15 = $v=entity.guy.saying;i'm sorry, you.
+ending.true.16 = $v=entity.player.saying;Bro?
+ending.true.17 = $v=entity.guy.saying;i can no longer your brother.
+ending.true.18 = $v=entity.guy.saying;i did terrible things to my actual brother. 
+ending.true.19 = $v=entity.player.saying;Bro!!!!!
+
+ending.true.credit.1 = The cat brothers successfully reconciled.
+ending.true.credit.2 = So they are going home...

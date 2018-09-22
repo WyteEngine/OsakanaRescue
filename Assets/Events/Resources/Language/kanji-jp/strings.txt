@@ -156,3 +156,27 @@ system.config.key.talk = 会話
 system.config.key.dash = ダッシュ
 system.config.key.jump = ジャンプ
 system.config.key.menu = メニュー
+
+ending.true.1 = $v=entity.player.saying;もうやめて！
+ending.true.2 = $v=entity.player.saying;ぼくには無理だよ...
+ending.true.3 = $v=entity.player.saying;実の兄ちゃんを倒すことなんて！
+ending.true.4 = $v=entity.guy.saying;実の兄ちゃん？
+ending.true.5 = $v=entity.guy.saying;ハハハハハハハ！
+ending.true.6 = $v=entity.guy.saying;笑わせんな。
+ending.true.7 = $v=entity.guy.saying;お前はもう俺の弟じゃない。
+ending.true.8 = $v=entity.player.saying;...!!
+ending.true.9 = $v=entity.guy.saying;そうだろう？
+ending.true.10 = $v=entity.guy.saying;どうした？もう戦意喪失したのか？
+ending.true.11 = $v=entity.guy.saying;それじゃあ、トドメだ！！
+ending.true.12 = $v=entity.guy.saying;へっ、ノロマのくせに...
+ending.true.13 = $v=entity.guy.saying;あ？$nod;なんだ、あの写真...
+ending.true.14 = $v=entity.guy.saying;！
+ending.true.15 = $v=entity.guy.saying;俺は申し訳ないことをしてしまった。
+ending.true.16 = $v=entity.player.saying;兄ちゃん？
+ending.true.17 = $v=entity.guy.saying;俺はもう、お前の兄ちゃんではいられない。
+ending.true.18 = $v=entity.guy.saying;自分は、実の弟に\
+ありえない仕打ちをしてしまった。
+ending.true.19 = $v=entity.player.saying;兄ちゃん！
+
+ending.true.credit.1 = ねこの兄弟は無事仲直りし、
+ending.true.credit.2 = お家へと帰るのでありました。

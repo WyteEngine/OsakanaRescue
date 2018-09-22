@@ -180,6 +180,7 @@ ending.true.17 = $v=entity.guy.saying;おれはもう　おまえの　おにい
 いられない。
 ending.true.18 = $v=entity.guy.saying;じぶんは　じつの　おとうとに\
 ありえない　しうちを　してしまった。
+ending.true.19 = $v=entity.player.saying;にいちゃん！
 
 ending.true.credit.1 = ねこの　きょうだいは　ぶじ　なかなおりし
 ending.true.credit.2 = おうちへと　かえるので　ありました
