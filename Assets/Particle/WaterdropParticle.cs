@@ -36,7 +36,7 @@ namespace Xeltica.Osakana
 			// 地面についたら弾ける
 			if (IsGrounded())
 			{
-				Sfx.Play("particle.waterdrop.broken");
+				Sfx.Play("particle.waterdrop");
 				Kill(this);
 			}
 		}
