@@ -1,6 +1,7 @@
 ﻿lang.name = 日本語
 lang.name.inenglish = Japanese
 lang.name.author = Xeltica
+lang.name.inunity = Japanese
 
 event.batrace.1 = コウモリレースへ　ようこそ！
 event.batrace.2 = コウモリレースは　このはこに　とじこめられている　コウモリにのって

@@ -1,6 +1,7 @@
 ﻿lang.name = English
 lang.name.inenglish = English
 lang.name.author = "Xeltica"
+lang.name.inunity = English
 
 event.batrace.1 = Welcome to the bat race!
 event.batrace.2 = The bat race is a game that you ride on

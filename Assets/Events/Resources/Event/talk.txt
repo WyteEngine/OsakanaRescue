@@ -261,7 +261,7 @@
 	+onplatform pc, gosub, #prompt_pc, mobile, gosub, #prompt_mobile
 	+nod
 	+sfx "entity.npc.saying"
-	+txtclr the_end, nod
+	+txtclr the_end, prompt
 	+wait 0.8
 	+gui on
 	:ending.snake.1
@@ -277,15 +277,16 @@
 	+wait 0.5
 	
 	+clearallflag
+	+freeze off
 	+goto boot
 +end
 
 #prompt_pc
-	+txtset prompt, ending.prompt.pc, "middle_center", 0, 0, center
+	+txtset prompt, ending.prompt.pc, "middle_center", 0, -32, center
 +return
 
 #prompt_mobile
-	+txtset prompt, ending.prompt.mobile, "middle_center", 0, 0, center
+	+txtset prompt, ending.prompt.mobile, "middle_center", 0, -32, center
 +return
 
 #look_at_photoframe

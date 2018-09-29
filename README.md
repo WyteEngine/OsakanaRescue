@@ -5,9 +5,9 @@
 Osakana Rescure is an action game. 
 This game is powered by Unity and Wyte Engine.
 
-Osakana means "fish" in Japanese. The hero has to take back the **gold fish** from the cats-guy, a purple bad cat man.
+Osakana means "fish" in Japanese. The hero has to take back the **gold fish** from cats-guy, a purple bad cat man.
 
-Now, this game is under implementing Internationalization and localization to English.
+This game supports 2 languages, Japanese and English.
 
 # Build
 1. Run `git clone --recursive https://github.com/WyteEngine/OsakanaRescue`
