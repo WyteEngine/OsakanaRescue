@@ -6,6 +6,8 @@
 
 Wyte Engine で開発しています．
 
+このゲームは、現在日本語および英語の、2つの言語に対応している他、日本語は「ひらがなのみ」設定と「漢字有り」設定の切り替えが可能です。
+
 # Build
 1. `git clone --recursive https://github.com/WyteEngine/OsakanaRescue` を実行
 2. `cd OsakanaRescue` を実行
