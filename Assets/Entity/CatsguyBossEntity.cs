@@ -187,7 +187,6 @@ namespace Xeltica.Osakana
 			leftTarget = x - totalDistance;
 			rightTarget = x;
 			targetHeightToShootLightning = transform.position.y;
-			Health = 4;
 			while (Health > 0)
 			{
 				if (isDoingEvent)
