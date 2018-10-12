@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c79f6f2f24add5438c91bcf60fdf2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameVersion: 1.0.0beta6
+  gameVersion: 1.0.0pre1
   bootstrapLabel: true_ending_memory
   playerPrefab: {fileID: 1168604540035812, guid: c4d66b37ecaf53c44bf9351039088a9c,
     type: 2}
@@ -420,6 +420,7 @@ MonoBehaviour:
   - {fileID: 114564950249208794, guid: ddc7ce0dd2df54e69b8f0b913e0c21da, type: 2}
   - {fileID: 114485428174632562, guid: ecfb5ef58aa57434d99b6d53072ee190, type: 2}
   - {fileID: 114652954652502574, guid: b2264262be1b31b449ff472fe3b0d809, type: 2}
+  - {fileID: 114318299995988788, guid: a27539885303821489e082e250b279a2, type: 2}
 --- !u!114 &114549298682737474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -670,6 +671,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1f59f9d72043c354f9df43516ed64733, type: 3}
   - id: entity.rock.destroy
     clip: {fileID: 8300000, guid: e06a6a68534385843a19dcb54595bbf6, type: 3}
+  - id: particle.waterdrop
+    clip: {fileID: 8300000, guid: 7817e40f12bedad42afc6f2ab07b106b, type: 3}
 --- !u!114 &114967134083319750
 MonoBehaviour:
   m_ObjectHideFlags: 1

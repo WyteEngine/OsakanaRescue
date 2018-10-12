@@ -913,6 +913,7 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1006,6 +1007,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayArea: {x: 320, y: 180}
   referencePixelsPerUnit: 1
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78209551e6239340bd1e01cd67954fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sepia: {fileID: 2100000, guid: e7173667ffdb74f4e8ddbdfb084d5ad9, type: 2}
 --- !u!1 &563655156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,16 +2058,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: gauge
-      value: 
-      objectReference: {fileID: 55079596}
-    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: host
-      value: 
-      objectReference: {fileID: 1544167300}
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: itemBar
@@ -2065,11 +2068,16 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
-    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
+    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
-      propertyPath: bootstrapLabel
-      value: boot
-      objectReference: {fileID: 0}
+      propertyPath: host
+      value: 
+      objectReference: {fileID: 1544167300}
+    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: gauge
+      value: 
+      objectReference: {fileID: 55079596}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
   m_IsPrefabAsset: 0

@@ -417,7 +417,7 @@ namespace Xeltica.Osakana
 				// 手を後ろに
 				bullet.Move(Direction == SpriteDirection.Left ? -bulletSpeed : bulletSpeed);
 				SetAnimations(AnimationStaying);
-				yield return new WaitForSeconds(wait);
+				yield return new WaitForSeconds(Health > 6 ? wait : wait * .7f);
 			}
 		}
 
