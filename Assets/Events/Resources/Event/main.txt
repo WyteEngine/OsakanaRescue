@@ -97,22 +97,24 @@
 	+fade in, 0.4
 	+wait 1
 	:ending.true.12
-	+wait 0.5
-	guy+spdir right
-	+wait 0.5
+	+wait 1
+	boss+spdir right
 	:ending.true.13
 	+wait 0.1
 	:ending.true.14
 	// 回想
-	+fade out, 0.4
-	+wait 0.7
+	+fadeasync out, 0.4
 
 #true_ending_memory	
+	+gui off
+	+sepia on
+	+wait 1.3
+
 	+freecamera 50, -70
 	+phide
 	+wait 0.5
 	//// 机の上で魚を眺める二人
-	+move "Home"
+	+move "TrueMap"
 	+spset p, entity.player.stay, 24, -64
 	+spset g, entity.guy.noglasses.stay, 72,-64
 	+spsetf fish, entity.goldfish, 48, -61
@@ -125,10 +127,10 @@
 	g+spchr entity.guy.smile
 	+wait 2
 	+fade out, 0.5
-
+	p+spclr
+	g+spclr
 	//// 鬼ごっこして転んだcatsguyをたすけるcat
 	+freecamera 1536, -112
-	+move "SimpleField"
 	+spset p, entity.player.walk, 1708, -116
 	+spset g, entity.guy.noglasses.walk, 1708, -112
 	+wait 0.8
@@ -162,6 +164,10 @@
 	+fade out, 0.5
 	g+spclr
 	p+spclr
+	+move "SimpleField"
+	+gui on
+	+sepia off
+
 	// 回想から現実に戻る
 	+freecamera 3432, -272
 	+spset g, entity.guy.stay, 3512, -234
