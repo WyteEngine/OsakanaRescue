@@ -13,7 +13,7 @@
 	+pfreeze on
 	+bgmstopasync 0.1
 	+fade out, 0.5
-	+wait 0.1
+	+wait 0.2
 	+playercamera
 	+flag on, game_has_started
 	+goto #field1

@@ -186,7 +186,7 @@ namespace Xeltica.Osakana
 			float x = transform.position.x;
 			leftTarget = x - totalDistance;
 			rightTarget = x;
-			targetHeightToShootLightning = transform.position.y;
+			targetHeightToShootLightning = transform.position.y - 16;
 			while (Health > 0)
 			{
 				if (isDoingEvent)
@@ -205,14 +205,13 @@ namespace Xeltica.Osakana
 
 		protected override IEnumerator OnDamaged(Object interacter)
 		{
-			Debug.Log($"Damaged isTrueEnd:{Flag.Flags[flagOfTrueEnd]} {interacter.GetType().Name} {Health}");
 			if (Flag.Flags[flagOfTrueEnd] && interacter is BallEntity && Health <= 2)
 			{
-				Debug.Log($"flag is set, interacter is a {nameof(BallEntity)} and health is {Health}");
 				if (string.IsNullOrEmpty(eventOfTrueEnd))
 					yield break;
-				Debug.Log("eventOfTrueEnd isn't null or empty");
 				isDoingEvent = true;
+
+				Wyte.CanMove = false;
 
 				yield return Bgm.Stop(2);
 				yield return new WaitForSeconds(.5f);
@@ -486,7 +485,7 @@ namespace Xeltica.Osakana
 			while (time < 1.5f)
 			{
 				time += Time.deltaTime;
-				if (Dying) yield break;
+				if (isDoingEvent) yield break;
 				yield return null;
 			}
 
@@ -528,13 +527,13 @@ namespace Xeltica.Osakana
 		IEnumerator Move()
 		{
 			// 少し下よりの中央に移動し
-			yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), 0.7f);
+			yield return EaseOut(new Vector2((leftTarget + rightTarget) / 2, targetToDown - 18), !Hard ? 0.7f : 0.5f);
 			if (Dying) yield break;
 			// 目的地に行く
-			yield return EaseOut(new Vector2(Direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.8f);
+			yield return EaseOut(new Vector2(Direction == SpriteDirection.Left ? leftTarget : rightTarget, targetToDown), 0.5f);
 
-			if (Dying) yield break;
-			yield return new WaitForSeconds(0.4f);
+			if (isDoingEvent) yield break;
+			yield return new WaitForSeconds(!Hard ? 0.4f : 0.2f);
 
 			// 振り向く
 			Direction = Direction == SpriteDirection.Left ? SpriteDirection.Right : SpriteDirection.Left;
@@ -553,7 +552,17 @@ namespace Xeltica.Osakana
 			if (isDoingEvent) yield break;
 			Sfx.Play("entity.guy.throw");
 			Instantiate(rock, transform.position, transform.rotation);
-			yield break;
+
+			if (Hard)
+			{
+				for (int i = 0; i < 3; i++)
+				{
+					if (isDoingEvent) yield break;
+					yield return new WaitForSeconds(0.4f);
+					Sfx.Play("entity.guy.throw");
+					Instantiate(rock, transform.position, transform.rotation);
+				}
+			}
 		}
 
 		IEnumerator SummonLightning()
@@ -574,7 +583,7 @@ namespace Xeltica.Osakana
 			for (int i = 0; i < navs.Length; i++)
 			{
 				if (isDoingEvent) yield break;
-				yield return EaseOut(navs[i], 0.4f);
+				yield return EaseOut(navs[i], Hard ? 0.2f : 0.4f);
 				yield return Charge();
 				Instantiate(lightning, new Vector2(transform.position.x, targetHeightToShootLightning), default(Quaternion));
 			}
@@ -590,9 +599,9 @@ namespace Xeltica.Osakana
 			foreach (var x in new[] { 2, -2, 2, -2 })
 			{
 				transform.Translate(x, 0, 0);
-				yield return new WaitForSeconds(0.1f);
+				yield return new WaitForSeconds(0.08f);
 			}
-			yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.1f);
 		}
 
 		IEnumerator ThrowEnemy()
@@ -621,6 +630,8 @@ namespace Xeltica.Osakana
 		}
 
 		#region Helper
+
+		protected bool Hard => Health <= 2;
 
 		protected void SetAnimations(string stay, string walk, string jump)
 		{
