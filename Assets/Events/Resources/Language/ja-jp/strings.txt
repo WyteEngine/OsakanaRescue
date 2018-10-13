@@ -185,3 +185,60 @@ ending.true.19 = $v=entity.player.saying;にいちゃん！
 
 ending.true.credit.1 = ねこの　きょうだいは　ぶじ　なかなおりし
 ending.true.credit.2 = おうちへと　かえるので　ありました
+
+ending.true.bat.name = コウモリ
+ending.true.bat.desc = ごく　ふつうの　コウモリ。\
+そらを　とぶことが　できる。
+
+ending.true.snake.name = ヘビ
+ending.true.snake.desc = ごく　ふつうの　ヘビ。\
+まっすぐ　はいつづける。
+
+ending.true.nbs.name = わるくないヘビ
+ending.true.nbs.desc = ことばを　はなせる　ヘビ。\
+ほかのヘビのせいで　ふうひょうひがいを　うけている。
+
+ending.true.nbsmom.name = わるくないヘビの　ママ
+ending.true.nbsmom.desc = ひとに　すかれるため　ことばをおぼえた。\
+しっかりもので　ほうにんしゅぎ。
+
+
+ending.true.switch.name = スイッチ
+ending.true.switch.desc = どうやって　つながっているかは\
+だれも　しらない。
+
+ending.true.bat.desc2 = えものを　みつけると　おそってくるが\
+みうしなうと　すぐに　あきらめる。
+ending.true.snake.desc2 =じつは　あたまがよいが\
+たいていの　ヘビ　はそのことを\
+わかっていない。
+
+ending.true.using = せいさくに　つかった　ソフトウェア
+
+ending.true.using.unity = Unity\
+\
+ゲームを　つくるための　ソフト。\
+
+ending.true.using.logic = Logic Pro X\
+macOSの　おんがく　さくせいソフト。\
+\
+ほんさくの　BGMは　すべて　これで　つくった。\
+
+ending.true.using.aseprite = Aseprite\
+Steamで　はいしんされている
+ドットえエディター。\
+\
+やすいのに　いろんな　きのうが　ある。
+
+ending.true.using.ptn = VisualPTN\
+こうかおん　さくせいツール。\
+\
+ほとんど　すべての　こうかおんは\
+これでつくられた。
+
+ending.true.xeltica = ++ Xeltica ++\
+プログラミング\
+さっきょく\
+ドットえ\
+シナリオ\
+ねこの　ちゅうさい

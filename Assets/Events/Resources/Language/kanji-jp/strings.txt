@@ -80,7 +80,7 @@ ending.tools = ** かいはつツール **\
 Unity\
 Aseprite\
 Logic Pro X\
-Audacity
+VisualPTN
 ending.ty = ** スペシャルサンクス **\
 \
 ++ Amamizu Sui ++\
@@ -180,3 +180,56 @@ ending.true.19 = $v=entity.player.saying;兄ちゃん！
 
 ending.true.credit.1 = ねこの兄弟は無事仲直りし、
 ending.true.credit.2 = お家へと帰るのでありました。
+
+ending.true.bat.name = コウモリ
+ending.true.bat.desc = ごく普通のコウモリ。\
+空を飛ぶ能力がある。
+
+
+ending.true.snake.name = ヘビ
+ending.true.snake.desc = ごく普通のヘビ。\
+真っ直ぐ這い続ける。
+
+ending.true.nbs.name = 悪くないヘビ
+ending.true.nbs.desc = 言葉を話せるヘビ。\
+他のヘビのせいで風評被害を受けている。
+
+
+ending.true.nbsmom.name = 悪くないヘビのママ
+ending.true.nbsmom.desc = 人に好かれるため、言葉を覚えた。\
+しっかり者で、放任主義。
+
+ending.true.bat.desc2 = 獲物を見つけると襲ってくるが、\
+見失うとすぐに諦める。
+ending.true.snake.desc2 = 実は頭が良いが、\
+たいていのヘビはそのことを\
+わかっていない。
+
+ending.true.using = 制作に使ったソフトウェア
+
+ending.true.using.unity = Unity\
+\
+ゲーム開発環境。\
+
+ending.true.using.logic = Logic Pro X\
+macOS 用の楽曲制作ソフトウェア。\
+\
+本作のBGMはすべてこれで作成した。\
+
+ending.true.using.aseprite = Aseprite\
+Steam で配信されているドット絵エディター。\
+\
+安価ながら多機能。
+
+ending.true.using.ptn = VisualPTN\
+効果音作成ツール。\
+\
+本作で描き下ろしたほとんどすべての効果音は\
+これで制作された。
+
+ending.true.xeltica = ++ Xeltica ++\
+プログラミング\
+作曲\
+ドット絵\
+シナリオ\
+ねこの仲裁

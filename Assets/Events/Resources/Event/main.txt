@@ -239,7 +239,12 @@
 	// door -72, -96 entity.door
 
 	#credit_true
-	+freeze on
+	+move "SimpleField"
+	+spset p, entity.player.walk, 2880, -144
+	+spset g, entity.guy.walk, 2904, -144
+	+spsetf bat, entity.enemy.bat.fly, 2560, -128
+	bat+spdir right
+	+spritecamera p
 	+gui off
 	+wait 0.5
 
@@ -256,19 +261,20 @@
 
 	+txtset t1, ending.title, "middle_center", 0, 32, center
 	+txtset t2, ending.staff_credit, "middle_center", 0, -32, center
-	+bgmwait 1.5
+	+bgmwait 7.5
 	+txtclr t1,t2
 	+bgmwait 0.5
-	+txtset t1, ending.xeltica, "middle_center", 0, 0, center
-	+bgmwait 1.5
-	+txtclr t1
-	+bgmwait 0.5
-	+txtset t1, ending.tools, "middle_center", 0, 0, center
-	+bgmwait 1.5
-	+txtclr t1
-	+bgmwait 0.5
-	+txtset t1, ending.ty, "middle_center", 0, 0, center
-	+bgmwait 1.5
-	+txtclr t1
-	+bgmwait 0.5
+	+fadeasync in, 0
+
+	p+spwalktoasync 2608, 6
+	g+spwalkto 2632, 6
+	p+spchr entity.player.stay
+	g+spchr entity.guy.stay
+	+bgmwait 8
+	+txtset name, ending.true.bat.name, "middle_right", -16, -16
+	+txtset desc, ending.true.bat.desc, "middle_right", -16, -48
+	+bgmwait 7.5
+
+
+
 	+end

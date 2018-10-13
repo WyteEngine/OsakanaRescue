@@ -171,3 +171,57 @@ ending.true.19 = $v=entity.player.saying;Bro!!!!!
 
 ending.true.credit.1 = The cat brothers successfully reconciled.
 ending.true.credit.2 = So they are going home...
+
+ending.true.bat.name = The Bat
+ending.true.bat.desc = Just a normal bat.\
+They have an ability to fly in the sky.
+
+
+ending.true.snake.name = The Snake
+ending.true.snake.desc = Just a normal snake.\
+He always crawl straight.
+
+ending.true.nbs.name = Not-bad Snake
+ending.true.nbs.desc = A snake who can speak.\
+He is usually suffering due to harmful rumor due to other snakes.
+
+ending.true.nbsmom.name = Mother Snake
+ending.true.nbsmom.desc = She learned words to be liked by people.
+
+
+ending.true.switch.name = A Switch
+ending.true.switch.desc = Nobody knows how it connects.
+
+ending.true.bat.desc2 = They attack to target if finds, but \
+gives up if loses it.
+ending.true.snake.desc2 = Actually, they are so intelligence,\
+but most of them don't know that.\
+
+ending.true.using = Software to develop this game
+
+ending.true.using.unity = Unity\
+\
+Game development environment.\
+
+ending.true.using.logic = Logic Pro X\
+A music creation software.\
+\
+I created all BGM of this game by using it.\
+
+ending.true.using.aseprite = Aseprite\
+A pixel-art editor distributed on Steam.\
+\
+It's so cheap but its features are so rich!
+
+ending.true.using.ptn = VisualPTN\
+A SFX creation tool.\
+\
+I made almost all sounds of this game by\
+using it.
+
+ending.true.xeltica = ++ Xeltica ++\
+Game Program\
+Music\
+Pixel Art\
+Scenario\
+Arbitration of cats

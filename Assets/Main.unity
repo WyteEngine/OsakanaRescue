@@ -939,7 +939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea30bdc9f6605ee47b4e203946952423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4913391894958084, guid: c4d66b37ecaf53c44bf9351039088a9c, type: 2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2058,6 +2057,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: gauge
+      value: 
+      objectReference: {fileID: 55079596}
+    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: host
+      value: 
+      objectReference: {fileID: 1544167300}
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: itemBar
@@ -2068,20 +2077,15 @@ Prefab:
       propertyPath: gamePad
       value: 
       objectReference: {fileID: 2017740126}
-    - target: {fileID: 114244664975831212, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: host
-      value: 
-      objectReference: {fileID: 1544167300}
-    - target: {fileID: 114549298682737474, guid: 8a402e9606461418dac1418ecac03eef,
-        type: 2}
-      propertyPath: gauge
-      value: 
-      objectReference: {fileID: 55079596}
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: bootstrapLabel
-      value: true_ending_memory
+      value: boot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: gameVersion
+      value: 1.0.0pre4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a402e9606461418dac1418ecac03eef, type: 2}
