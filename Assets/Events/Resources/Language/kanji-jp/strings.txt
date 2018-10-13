@@ -80,8 +80,8 @@ ending.tools = ** かいはつツール **\
 Unity\
 Aseprite\
 Logic Pro X\
-VisualPTN\
-Audacity
+VisualPTN
+
 ending.ty = ** スペシャルサンクス **\
 \
 ++ Amamizu Sui ++\
@@ -208,31 +208,44 @@ ending.true.snake.desc2 = 実は頭が良いが、\
 
 ending.true.using = 制作に使ったソフトウェア
 
-ending.true.using.unity = Unity\
+ending.true.using.unity = Unity - Unity Technologies\
 \
-ゲーム開発環境。\
+ゲーム開発環境。
 
-ending.true.using.logic = Logic Pro X\
+ending.true.using.logic = Logic Pro X - Apple\
+\
 macOS 用の楽曲制作ソフトウェア。\
-\
-本作のBGMはすべてこれで作成した。\
+本作のBGMはすべてこれで作成した。
 
-ending.true.using.aseprite = Aseprite\
-Steam で配信されているドット絵エディター。\
+ending.true.using.aseprite = Aseprite - Igara Studio\
 \
+Steam で配信されているドット絵エディター。\
 安価ながら多機能。
 
-ending.true.using.ptn = VisualPTN\
-効果音作成ツール。\
+ending.true.using.ptn = VisualPTN - falskreis\
 \
+効果音作成ツール。\
 本作で描き下ろしたほとんどすべての効果音は\
 これで制作された。
 
 ending.true.xeltica = ++ Xeltica ++\
+\
 プログラミング\
 作曲\
 ドット絵\
 シナリオ\
 ねこの仲裁
 
+ending.true.using.audacity = Audacity - The Audacity Team\
+\
+高機能オーディオエディター。\
+ほとんど全ての音楽を、ゲーム用に\
+ミックスするために使用した。
+
 ending.true.special.andyou = $col=yellow;AND YOU!
+
+
+ending.true.ty.1 = おさかなれすきゅ〜をプレイしていただき、\
+誠にありがとうございます。
+ending.true.ty.2 = Project Wyte より愛を込めて。
+ending.true.the_end = $sz=26;THE END

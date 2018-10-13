@@ -239,13 +239,13 @@
 
 	#credit_true
 	+move "SimpleField"
+	+fadeasync out, 0
 	+spset p, entity.player.walk, 2880, -144
-	+spset g, entity.guy.walk, 2904, -144
+	+spset g, entity.guy.noglasses.walk, 2904, -144
 	+spsetf bat, entity.enemy.bat.fly, 2560, -128
 	bat+spdir right
 	+spritecamera p
 	+gui off
-	+wait 0.5
 	// ねこの兄弟は無事仲直りし
 	+txtset t1, ending.true.credit.1, "middle_center", 0, 0, center
 	+bgmplay "ending"
@@ -265,34 +265,178 @@
 	+bgmwait 3.5
 	+txtclr t1,t2
 	+bgmwait 0.5
-	+fadeasync in, 0
+	
+	// 開発者
+	+txtset t1, ending.true.xeltica, "middle_center", 0, 0, center
+	+bgmwait 1.5
+	+txtclr t1
+	+bgmwait 0.5
+	// 開発ツール
+	+txtset t1, ending.tools, "middle_center", 0, 0, center
+	+bgmwait 1.5
+	+txtclr t1
+	+bgmwait 0.5
 	
 	// コウモリ
-	p+spwalktoasync 2608, 3.5
-	g+spwalkto 2632, 3.5
+	+fadeasync in, 0
+	p+spwalktoasync 2608, 7.5
+	g+spwalkto 2632, 7.5
 	p+spchr entity.player.stay
-	g+spchr entity.guy.stay
-	+bgmwait 4
-	+txtset name, ending.true.bat.name, "middle_right", -16, -16
-	+txtset desc, ending.true.bat.desc, "middle_right", -16, -48
+	g+spchr entity.guy.noglasses.stay
+	+bgmwait 8
+	+txtset name, ending.true.bat.name, "middle_right", -16, -16, right
+	+txtset desc, ending.true.bat.desc, "middle_right", -16, -48, right
+	+bgmwait 3.5
+	+txtclr desc
+	+bgmwait 0.5
+
+	+txtset desc, ending.true.bat.desc2, "middle_right", -16, -48, right
 	+bgmwait 3.5
 	+txtclr name, desc
 	+fadeasync out, 0
+	+bgmwait 0.5
 	bat+spdir left
-	// 開発者
+	
+	// Using Softwares
+	p+spofs 2344, -160
+	g+spofs 2322, -160
+	+txtset t1, ending.true.using, "middle_center", 0, 0, center
+	+bgmwait 1.5
+	+txtclr t1
 	+bgmwait 0.5
-	+txtset t1, ending.true.xeltica, "middle_center", 0, 0, center
+	+txtset t1, ending.true.using.unity, "middle_center", 0, 0, center
 	+bgmwait 3.5
-	+txtclt t1
+	+txtclr t1
 	+bgmwait 0.5
-	+txtset t1, ending.tools, "middle_center", 0, 0, center
+	+txtset t1, ending.true.using.logic, "middle_center", 0, -0, center
 	+bgmwait 3.5
-	+txtclt t1
+	+txtclr t1
+	+bgmwait 0.5
+	+txtset t1, ending.true.using.aseprite, "middle_center", 0, -0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+	+txtset t1, ending.true.using.ptn, "middle_center", 0, -0, center
+	+bgmwait 3.5
+	+txtclr t1
+	+bgmwait 0.5
+
+	// 白いねこが落ちる
+	+fadeasync in, 0
+	+spritecamera g
+	+spset snake, entity.enemy.snake.walk, 1792, -52
+	p+spchr entity.player.walk
+	g+spchr entity.guy.noglasses.walk
+	g+spwalktoasync 1952, 6.5
+	p+spwalktoasync 1920, 6
+	+bgmwait 6.5
+	
+	g+spchr entity.guy.noglasses.stay
+	p+spchr entity.player.stay
+	+bgmwait 0.5
+	p+spdir right
+	g+spchr entity.guy.smile
+	p+spchr entity.player.smile
+	+bgmwait 0.5
+	+fadeasync out, 0
+	g+spchr entity.guy.noglasses.stay
+	p+spchr entity.player.stay
+	p+spofs 1848, -48
+	g+spofs 1872, -48
+	+spritecamera p
 	+bgmwait 0.5
 	
+	+txtset name, ending.true.nbs.name, middle_center, 8, -8
+	+txtset desc, ending.true.nbs.desc, middle_right, -8, -32
+	+txtmod name, ending.true.nbs.name, center, 0, 0, black
+	+txtmod desc, ending.true.nbs.desc, right, 0, 0,  black
+	
+	+fadeasync in, 0
+	
+	p+spdir left
+	+bgmwait 3.5
+	+txtclr name, desc
+	+bgmwait 0.5
+	
+	+txtset name, ending.true.nbsmom.name, middle_center, 8, -8
+	+txtset desc, ending.true.nbsmom.desc, middle_right, -8, -32
+	+txtmod name, ending.true.nbsmom.name, center, 0, 0, black
+	+txtmod desc, ending.true.nbsmom.desc, right, 0, 0, black
+	+bgmwait 3.5
+	+txtclr name, desc
+	+bgmwait 0.5
+	p+spchr entity.player.walk
+	g+spchr entity.guy.noglasses.walk
+	g+spwalktoasync 1408, 6
+	p+spwalktoasync 1504, 6
+	+bgmwait 1
+	snake+spdir left
+	+bgmwait 6
+	g+spchr entity.guy.noglasses.stay
+	p+spchr entity.player.stay
+	+bgmwait 0.5
+	g+spdir right
+	+bgmwait 0.5
+	snake+spofs 1716, -120
+	+txtset name, ending.true.snake.name, middle_right, -8, 0, right
+	+txtset desc, ending.true.snake.desc, middle_right, -8, -32, right
+	snake+spwalktoasync 1568, 4
+	+bgmwait 3.5
+	+txtclr desc
+	g+spdir right
+	+bgmwait 0.5
+	+txtset desc, ending.true.snake.desc2, middle_right, -8, -32, right
+	+bgmwait 3
+	+txtclr name, desc
+	+bgmwait 0.5
+	+fadeasync out, 0
+	p+spofs 384, -96
+	g+spofs 416, -96
+	+bgmwait 0.5
+	+fadeasync in, 0
+	
+	p+spchr entity.player.walk
+	g+spchr entity.guy.noglasses.walk
+	p+spwalktoasync -72, 15
+	g+spwalktoasync -72, 15.5
 	
 	
+	
+	+txtset t, ending.ty, middle_center, 0, -32, center
+	+bgmwait 3.5
+	+txtclr t
+	+bgmwait 0.5
+	+txtset t, ending.true.special.andyou, middle_center, 0, -32, center
+	+bgmwait 3.5
+	+txtclr t
+	+bgmwait 0.5
+	+txtset t, ending.true.ty.1, middle_center, 0, -32, center
+	+bgmwait 3.5
+	+txtclr t
+	+bgmwait 0.5
+	+txtset t, ending.true.ty.2, middle_center, 0, -32, center
+	+bgmwait 3
+	p+spclr
+	+bgmwait 0.5
+	g+spclr
+	+spset door, entity.door, -73, -96
+	+txtclr t
+	+bgmwait 0.5
+	+txtset t, ending.true.the_end, middle_center, 0, -32, center
+	+wait 4
+	+onplatform pc, gosub, #prompt_true_pc, mobile, gosub, #prompt_true_mobile
+
+	+nod
+	+txtclr t, prompt
 	+gui on
-	player+sethp 4
-	+goto #credit_true
+	+setplayerhp 4
 +end
+
+
+#prompt_true_pc
+	+txtset prompt, ending.prompt.pc, "bottom_center", 0, 8, center
++return
+
+#prompt_true_mobile
+	+txtset prompt, ending.prompt.mobile, "bottom_center", 0, 8, center
++return

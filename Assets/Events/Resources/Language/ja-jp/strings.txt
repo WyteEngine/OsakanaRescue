@@ -82,7 +82,8 @@ ending.tools = ** かいはつツール **\
 Unity\
 Aseprite\
 Logic Pro X\
-Audacity
+VisualPTN
+
 ending.ty = ** スペシャルサンクス **\
 \
 ++ Amamizu Sui ++\
@@ -210,33 +211,41 @@ ending.true.switch.desc = どうやって　つながっているかは\
 ending.true.bat.desc2 = えものを　みつけると　おそってくるが\
 みうしなうと　すぐに　あきらめる。
 ending.true.snake.desc2 =じつは　あたまがよいが\
-たいていの　ヘビ　はそのことを\
+たいていの　ヘビは　そのことを\
 わかっていない。
 
 ending.true.using = せいさくに　つかった　ソフトウェア
 
-ending.true.using.unity = Unity\
+ending.true.using.unity = Unity - Unity Technologies\
 \
-ゲームを　つくるための　ソフト。\
+ゲームを　つくるための　ソフト。
 
-ending.true.using.logic = Logic Pro X\
+ending.true.using.logic = Logic Pro X - Apple\
+\
 macOSの　おんがく　さくせいソフト。\
-\
-ほんさくの　BGMは　すべて　これで　つくった。\
+ほんさくの　BGMは　すべて　これで　つくった。
 
-ending.true.using.aseprite = Aseprite\
-Steamで　はいしんされている
-ドットえエディター。\
+ending.true.using.aseprite = Aseprite - Igara Studio\
 \
+Steamで　はいしんされている\
+ドットえエディター。\
 やすいのに　いろんな　きのうが　ある。
 
-ending.true.using.ptn = VisualPTN\
+ending.true.using.ptn = VisualPTN - falskreis\
 こうかおん　さくせいツール。\
 \
 ほとんど　すべての　こうかおんは\
 これでつくられた。
 
+
+ending.true.using.audacity = Audacity - The Audacity Team\
+\
+こうきのう　オーディオエディター。\
+ほとんど　すべての　おんがくを、\
+ゲームように　ミックスするため　つかった。
+
 ending.true.xeltica = ++ Xeltica ++\
+\
 プログラミング\
 さっきょく\
 ドットえ\
@@ -244,3 +253,9 @@ ending.true.xeltica = ++ Xeltica ++\
 ねこの　ちゅうさい
 
 ending.true.special.andyou = $col=yellow;AND YOU!
+
+
+ending.true.ty.1 = おさかなれすきゅ〜を　プレイして　いただき、\
+ありがとうございます。
+ending.true.ty.2 = Project Wyte より　あいを　こめて。
+ending.true.the_end = $sz=26;THE END

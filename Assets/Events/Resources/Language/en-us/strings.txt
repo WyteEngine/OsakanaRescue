@@ -77,7 +77,7 @@ ending.tools = ** Development Tools **\
 Unity\
 Aseprite\
 Logic Pro X\
-Audacity
+VisualPTN
 ending.ty = ** Special Thanks **\
 \
 ++ Amamizu Sui ++\
@@ -199,27 +199,33 @@ but most of them don't know that.\
 
 ending.true.using = Software to develop this game
 
-ending.true.using.unity = Unity\
+ending.true.using.unity = Unity - Unity Technologies\
 \
-Game development environment.\
+Game development environment.
 
-ending.true.using.logic = Logic Pro X\
+ending.true.using.logic = Logic Pro X - Apple\
+\
 A music creation software.\
-\
-I created all BGM of this game by using it.\
+I created all BGM of this game by using it.
 
-ending.true.using.aseprite = Aseprite\
-A pixel-art editor distributed on Steam.\
+ending.true.using.aseprite = Aseprite - Igara Studio\
 \
+A pixel-art editor distributed on Steam.\
 It's so cheap but its features are so rich!
 
-ending.true.using.ptn = VisualPTN\
-A SFX creation tool.\
+ending.true.using.ptn = VisualPTN - falskreis\
 \
+A SFX creation tool.\
 I made almost all sounds of this game by\
 using it.
 
+ending.true.using.audacity = Audacity - The Audacity Team\
+\
+A powerful audio editor.\
+I used it to mix almost all music for game.
+
 ending.true.xeltica = ++ Xeltica ++\
+\
 Game Program\
 Music\
 Pixel Art\
@@ -227,3 +233,7 @@ Scenario\
 Arbitration of cats
 
 ending.true.special.andyou = $col=yellow;AND YOU!
+
+ending.true.ty.1 = Thanks for playing Osakana Rescue!
+ending.true.ty.2 = <3 from Project Wyte.
+ending.true.the_end = $sz=26;THE END
