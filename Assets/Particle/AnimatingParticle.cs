@@ -22,7 +22,11 @@ namespace Xeltica.Osakana
 
 		protected override void OnUpdate()
 		{
-			base.OnUpdate();
+			base.OnUpdate(); 
+
+			if (!Camera.IsVisible(transform.position))
+				Kill(this);
+
 			if (!IsAnimating)
 				Kill(this);
 		}

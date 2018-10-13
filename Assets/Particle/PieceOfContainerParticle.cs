@@ -27,7 +27,7 @@ namespace Xeltica.Osakana
 			base.Start();
 			collider2D.enabled = false;
 
-			if (Camera.CameraRects.Contains(transform.position))
+			if (!Camera.IsVisible(transform.position))
 				Kill(this);
 
 			Velocity = new Vector2((Random.Range(-64, 64) / 4f), Random.Range(96, 128));

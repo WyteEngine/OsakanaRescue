@@ -20,6 +20,9 @@ namespace Xeltica.Osakana
 
 			transform.Translate(Vector2.up * 4 * Time.deltaTime);
 
+			if (!Camera.IsVisible(transform.position))
+				Kill(this);
+
 			//アニメーションが終わったらkill
 			if (!IsAnimating)
 				Kill(this);
