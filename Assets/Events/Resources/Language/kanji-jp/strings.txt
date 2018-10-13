@@ -39,7 +39,7 @@ event.snake.glitch = $v=entity.snake.saying;ありえない！どうやってこ
 
 event.pre_battle.1 = $v=entity.guy.saying;まさか、本当にここまで来れるとはな...
 event.pre_battle.2 = $v=entity.guy.saying;コンテナも、コウモリも...
-event.pre_battle.3 = $v=entity.guy.saying;俺の仕掛けは、全て無駄だったか...
+event.pre_battle.3 = $v=entity.guy.saying;俺の作った仕掛けは、全て無駄だったか...
 event.pre_battle.4 = $v=entity.guy.saying;お前がそこまでノロマじゃないってことは、\
 よくわかった。
 event.pre_battle.5 = $v=entity.guy.saying;......
@@ -67,8 +67,8 @@ ending.2 = 彼は、自らをキャッツガイと呼びます
 ending.3 = 昔々、二人はとても仲良しでした
 ending.4 = $c=red;そう、彼が豹変するまでは...
 
-ending.title = $sz=26;おさかなれすきゅー
-ending.staff_credit = STAFF CREDIT
+ending.title = $sz=26;おさかなれすきゅ〜
+ending.staff_credit = スタッフ　クレジット
 ending.xeltica = ++ Xeltica ++\
 \
 プログラミング\
@@ -80,7 +80,8 @@ ending.tools = ** かいはつツール **\
 Unity\
 Aseprite\
 Logic Pro X\
-VisualPTN
+VisualPTN\
+Audacity
 ending.ty = ** スペシャルサンクス **\
 \
 ++ Amamizu Sui ++\

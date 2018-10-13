@@ -40,7 +40,7 @@ event.snake.glitch = $v=entity.snake.saying;ありえない！　どうやって
 
 event.pre_battle.1 = $v=entity.guy.saying;まさか　ほんとうに　ここまで　これるとはな。
 event.pre_battle.2 = $v=entity.guy.saying;コンテナも...　コウモリも...
-event.pre_battle.3 = $v=entity.guy.saying;おれの　しかけた　しかけは\
+event.pre_battle.3 = $v=entity.guy.saying;おれの　つくった　しかけは\
 すべて　むだだったか...
 event.pre_battle.4 = $v=entity.guy.saying;おまえが　そこまで　ノロマじゃないってことは\
 よくわかった。
@@ -69,8 +69,8 @@ ending.2 = かれは　みずからを　キャッツガイと　よびます
 ending.3 = むかしむかし　ふたりは　とても　なかよしでした
 ending.4 = $c=red;そう　かれが　ひょうへんするまでは...
 
-ending.title = $sz=26;おさかなれすきゅー
-ending.staff_credit = STAFF CREDIT
+ending.title = $sz=26;おさかなれすきゅ〜
+ending.staff_credit = スタッフ　クレジット
 ending.xeltica = ++ Xeltica ++\
 \
 プログラミング\
