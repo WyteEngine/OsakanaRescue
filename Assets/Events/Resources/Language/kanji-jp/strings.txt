@@ -233,3 +233,5 @@ ending.true.xeltica = ++ Xeltica ++\
 ドット絵\
 シナリオ\
 ねこの仲裁
+
+ending.true.special.andyou = $col=yellow;AND YOU!

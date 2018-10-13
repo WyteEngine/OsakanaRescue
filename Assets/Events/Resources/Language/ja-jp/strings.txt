@@ -242,3 +242,5 @@ ending.true.xeltica = ++ Xeltica ++\
 ドットえ\
 シナリオ\
 ねこの　ちゅうさい
+
+ending.true.special.andyou = $col=yellow;AND YOU!
