@@ -18,8 +18,8 @@ Wyte Engine で開発しています．
 
 
 ## ビルド用
-- Unity 2018.2.6
-- bash (Windows 上では、クローンおよびビルドに、Git Bashを使うことができます)
+- Unity 2018.2.12
+- bash (Windows 上では、クローンおよびビルドに、Git Bashや WSL Bash などを使うことができます)
 
 ## PC
 

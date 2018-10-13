@@ -18,8 +18,8 @@ This game supports 2 languages, Japanese and English.
 # Requirement
 
 ## To Build
-- Unity 2018.2.6
-- bash (In Windows, you can use Git Bash to clone & build)
+- Unity 2018.2.12
+- bash (If you're using windows, you can use Git-Bash, WSL-bash etc to clone & build)
 
 ## PC
 
