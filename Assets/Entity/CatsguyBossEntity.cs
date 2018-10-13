@@ -558,7 +558,7 @@ namespace Xeltica.Osakana
 				for (int i = 0; i < 3; i++)
 				{
 					if (isDoingEvent) yield break;
-					yield return new WaitForSeconds(0.4f);
+					yield return new WaitForSeconds(0.1f);
 					Sfx.Play("entity.guy.throw");
 					Instantiate(rock, transform.position, transform.rotation);
 				}
