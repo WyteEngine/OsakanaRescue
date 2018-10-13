@@ -236,7 +236,6 @@
 	+fadeasync out, 1.5
 	+bgmstop 1.5
 	+wait 2
-	// door -72, -96 entity.door
 
 	#credit_true
 	+move "SimpleField"
@@ -247,34 +246,53 @@
 	+spritecamera p
 	+gui off
 	+wait 0.5
-
+	// ねこの兄弟は無事仲直りし
 	+txtset t1, ending.true.credit.1, "middle_center", 0, 0, center
 	+bgmplay "ending"
 	+bgmwait 3.5
 	+txtclr t1
 	+bgmwait 0.5
-
+	
+	// お家に帰りました
 	+txtset t1, ending.true.credit.2, "middle_center", 0, 0, center
 	+bgmwait 3.5
 	+txtclr t1
 	+bgmwait 0.5
-
+	
+	// おさかなれすきゅ〜 STAFF CREDIT
 	+txtset t1, ending.title, "middle_center", 0, 32, center
 	+txtset t2, ending.staff_credit, "middle_center", 0, -32, center
-	+bgmwait 7.5
+	+bgmwait 3.5
 	+txtclr t1,t2
 	+bgmwait 0.5
 	+fadeasync in, 0
-
-	p+spwalktoasync 2608, 6
-	g+spwalkto 2632, 6
+	
+	// コウモリ
+	p+spwalktoasync 2608, 3.5
+	g+spwalkto 2632, 3.5
 	p+spchr entity.player.stay
 	g+spchr entity.guy.stay
-	+bgmwait 8
+	+bgmwait 4
 	+txtset name, ending.true.bat.name, "middle_right", -16, -16
 	+txtset desc, ending.true.bat.desc, "middle_right", -16, -48
-	+bgmwait 7.5
-
-
-
-	+end
+	+bgmwait 3.5
+	+txtclr name, desc
+	+fadeasync out, 0
+	bat+spdir left
+	// 開発者
+	+bgmwait 0.5
+	+txtset t1, ending.true.xeltica, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclt t1
+	+bgmwait 0.5
+	+txtset t1, ending.tools, "middle_center", 0, 0, center
+	+bgmwait 3.5
+	+txtclt t1
+	+bgmwait 0.5
+	
+	
+	
+	+gui on
+	player+sethp 4
+	+goto #credit_true
++end

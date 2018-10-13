@@ -278,6 +278,7 @@
 	
 	+clearallflag
 	+freeze off
+	player+sethp 4
 	+goto boot
 +end
 
