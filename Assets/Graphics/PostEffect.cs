@@ -7,7 +7,6 @@ using System;
 
 namespace Xeltica.Osakana
 {
-	[ExecuteInEditMode]
 	public class PostEffect : BaseBehaviour
 	{
 		public Material sepia;
