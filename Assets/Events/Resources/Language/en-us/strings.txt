@@ -15,7 +15,7 @@ event.batrace.8 = Well, get set, go!
 event.tutorial.1 = If you find talkable animals or searchable things,
 event.tutorial.2 = Then you can talk!
 event.tutorial.3.mobile = tap the screen!
-event.tutorial.3.pc = press the [↑] key!
+event.tutorial.3.pc = press the [$var=key_up;] key!
 
 event.prologue.1 = $v=entity.player.saying;Well. I was then......
 event.prologue.2 = $v=entity.player.saying;Wait!!! It's my fish!!
@@ -119,8 +119,8 @@ can remember the past.
 ending.snake.8 = $v=entity.snake.mom.saying;Then, good luck.
 
 system.initialize = The game will be initialized.
-system.key_help = [←][→]Move　[↑]Talk\
-[SHIFT]Dash　[Z]Jump
+system.key_help = [$var=key_left;][$var=key_right;]Move　[$var=key_up;]Talk\
+[$var=key_dash;]Dash　[$var=key_jump;]Jump
 system.debug.help = F1: Fast Text{0} F2:Reload scripts F3:Infomations\
 F4:Reset Flags F5: FTS Debug
 system.debug.true =✓
@@ -142,12 +142,12 @@ system.config.reset.really = Really?
 system.config.reset.yes = Yes
 system.config.reset.no = No
 system.config.key.header = Press the key to bind
-system.config.key.left = Left
-system.config.key.right = Right
-system.config.key.talk = Talk
-system.config.key.dash = Dash
-system.config.key.jump = Jump
-system.config.key.menu = Menu
+system.config.key.left = ← : {0}
+system.config.key.right = → : {0}
+system.config.key.talk = Talk : {0}
+system.config.key.dash = Dash : {0}
+system.config.key.jump = Jump : {0}
+system.config.key.menu = Menu : {0}
 
 ending.true.1 = $v=entity.player.saying;Stop, stop!!
 ending.true.2 = $v=entity.player.saying;I can't do it.

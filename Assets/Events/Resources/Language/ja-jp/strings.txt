@@ -16,7 +16,7 @@ event.tutorial.1 = はなしかけられそうな　いきものや\
 しらべられそうな　ものをみつけたら
 event.tutorial.2 = うまくいけば　おはなしできるよ。
 event.tutorial.3.mobile = がめんを　タップしてみよう！
-event.tutorial.3.pc = ↑キーを　おしてみよう！
+event.tutorial.3.pc = [$var=key_up;]キーを　おしてみよう！
 
 event.prologue.1 = $v=entity.player.saying;そう。あのとき　ぼくは...
 event.prologue.2 = $v=entity.player.saying;ねえ！　ぼくの　さかなだよ！？
@@ -130,8 +130,8 @@ ending.snake.8 = $v=entity.snake.mom.saying;それじゃあ　おげんきで...
 
 
 system.initialize = ゲームを　初期化します。
-system.key_help = [←][→]いどう　[↑]はなしかける\
-[SHIFT]ダッシュ　[Z]ジャンプ
+system.key_help = [$var=key_left;][$var=key_right;]いどう　[$var=key_up;]かいわ\
+[$var=key_dash;]ダッシュ　[$var=key_jump;]ジャンプ
 system.debug.help = F1: 高速テキスト{0} F2:イベント再読込 F3:情報\
 F4:フラグのリセット F5: FTS デバッグ
 system.debug.true=○
@@ -154,12 +154,12 @@ system.config.reset.yes = はい
 system.config.reset.no = いいえ
 system.config.key.header = わりあてる　キーを　おしてください
 
-system.config.key.left = ひだり
-system.config.key.right = みぎ
-system.config.key.talk = かいわ
-system.config.key.dash = ダッシュ
-system.config.key.jump = ジャンプ
-system.config.key.menu = メニュー
+system.config.key.left = ← : {0}
+system.config.key.right = → : {0}
+system.config.key.talk = かいわ : {0}
+system.config.key.dash = ダッシュ : {0}
+system.config.key.jump = ジャンプ : {0}
+system.config.key.menu = メニュー : {0}
 
 ending.true.1 = $v=entity.player.saying;もうやめて！
 ending.true.2 = $v=entity.player.saying;ぼくには　むりだよ...

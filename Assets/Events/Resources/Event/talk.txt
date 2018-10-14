@@ -278,7 +278,7 @@
 	
 	+clearallflag
 	+freeze off
-	player+sethp 4
+	+setplayerhp 4
 	+goto boot
 +end
 

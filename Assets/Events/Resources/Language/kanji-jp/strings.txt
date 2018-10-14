@@ -15,7 +15,7 @@ event.tutorial.1 = 話しかけられそうな生き物や、\
 調べられそうな物を見つけたら、
 event.tutorial.2 = うまくいけば、お話できるよ！
 event.tutorial.3.mobile = 画面をタップしてみよう！
-event.tutorial.3.pc = ↑キーを押してみよう！
+event.tutorial.3.pc = [$var=key_up;]キーを押してみよう！
 
 event.prologue.1 = $v=entity.player.saying;そう。あのとき、僕は...
 event.prologue.2 = $v=entity.player.saying;ねえ！僕のお魚だよ！？
@@ -128,8 +128,8 @@ ending.snake.8 = $v=entity.snake.mom.saying;それじゃあ、お元気で...
 
 
 system.initialize = ゲームを初期化します。
-system.key_help = [←][→]移動　[↑]話しかける\
-[SHIFT]ダッシュ　[Z]ジャンプ
+system.key_help = [$var=key_left;][$var=key_right;]移動　[$var=key_up;]会話\
+[$var=key_dash;]ダッシュ　[$var=key_jump;]ジャンプ
 system.debug.help = F1: 高速テキスト{0} F2:イベント再読込 F3:情報\
 F4:フラグのリセット F5: FTS デバッグ
 system.debug.true=○
@@ -151,12 +151,12 @@ system.config.reset.really = 本当に？
 system.config.reset.yes = はい
 system.config.reset.no = いいえ
 system.config.key.header = 割り当てるキーを押してください
-system.config.key.left = 左
-system.config.key.right = 右
-system.config.key.talk = 会話
-system.config.key.dash = ダッシュ
-system.config.key.jump = ジャンプ
-system.config.key.menu = メニュー
+system.config.key.left = ← : {0}
+system.config.key.right = → : {0}
+system.config.key.talk = 会話 : {0}
+system.config.key.dash = ダッシュ : {0}
+system.config.key.jump = ジャンプ : {0}
+system.config.key.menu = メニュー : {0}
 
 ending.true.1 = $v=entity.player.saying;もうやめて！
 ending.true.2 = $v=entity.player.saying;ぼくには無理だよ...

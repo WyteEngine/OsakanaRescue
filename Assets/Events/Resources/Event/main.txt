@@ -430,6 +430,9 @@
 	+txtclr t, prompt
 	+gui on
 	+setplayerhp 4
+	+clearallflags
+	+fade out, 0
+	+goto #boot
 +end
 
 
