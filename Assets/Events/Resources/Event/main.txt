@@ -371,10 +371,10 @@
 	p+spwalktoasync 1504, 6
 	+bgmwait 1
 	snake+spdir left
-	+bgmwait 6
+	+bgmwait 5
 	g+spchr entity.guy.noglasses.stay
 	p+spchr entity.player.stay
-	+bgmwait 0.5
+	+bgmwait 1.5
 	g+spdir right
 	+bgmwait 0.5
 	snake+spofs 1716, -120
@@ -430,7 +430,7 @@
 	+txtclr t, prompt
 	+gui on
 	+setplayerhp 4
-	+clearallflags
+	+clearallflag
 	+fade out, 0
 	+goto #boot
 +end
