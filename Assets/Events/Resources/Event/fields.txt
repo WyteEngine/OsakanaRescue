@@ -1,4 +1,5 @@
 #title
+	+txtset copyright, "（Ｃ）２０１７ - ２０１８　Ｘｅｌｔｉｃａ", top_right, -4, -8, right, 1, 8, black
 	+fade out, 0.3
 	+freecamera 0, 0
 	+phide
@@ -12,6 +13,7 @@
 #start
 	+pfreeze on
 	+bgmstopasync 0.1
+	+txtclr copyright
 	+fade out, 0.5
 	+wait 0.2
 	+playercamera

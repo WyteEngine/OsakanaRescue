@@ -144,7 +144,6 @@
 	:event.post_battle.8
 	+wait 2
 	+fade out, 1.2
-	+bossbarhide
 	+goto #ending
 +end
 
@@ -152,6 +151,7 @@
 	+fade out, 0.5
 	+freeze on
 	+gui off
+	+bossbarhide
 	+wait 0.5
 
 
