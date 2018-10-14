@@ -58,9 +58,9 @@
 	+phide
 	+move "Field1"
 	+pshow -72, -98
-	+wait 0.25
+	+wait 0.35
 	prologue_has_done+onflag gosub, #bgm2, #bgm1
-	+wait 0.25
+	+wait 0.15
 	+fadeasync in, 0.5
 	+pfreeze off
 +end
