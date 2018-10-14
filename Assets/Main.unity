@@ -2207,11 +2207,16 @@ Prefab:
     - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: gameVersion
-      value: 1.0.0pre5
+      value: 1.0.0
       objectReference: {fileID: 0}
     - target: {fileID: 82142883718534512, guid: 8a402e9606461418dac1418ecac03eef,
         type: 2}
       propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218272860490524, guid: 8a402e9606461418dac1418ecac03eef,
+        type: 2}
+      propertyPath: guiEnabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4452,6 +4457,15 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718595009880968, guid: e6449ca024a244f12ac0149eec9e23ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114120078897576058, guid: e6449ca024a244f12ac0149eec9e23ad,
+        type: 2}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6449ca024a244f12ac0149eec9e23ad, type: 2}
